@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="760" viewBox="0 0 1000 760">
+  <title>Placeholder art: Mendel's Games play screen</title>
+  <rect width="1000" height="760" fill="#eef2f8"/>
+  <!-- tablet -->
+  <rect x="90" y="70" width="820" height="600" rx="44" fill="#1c2230"/>
+  <rect x="130" y="110" width="740" height="520" rx="18" fill="#0b1f4d"/>
+  <!-- tap zone ring -->
+  <circle cx="610" cy="330" r="120" fill="none" stroke="#ffffff" stroke-opacity=".28" stroke-width="6" stroke-dasharray="18 14"/>
+  <!-- yellow ball -->
+  <circle cx="610" cy="330" r="62" fill="#ffd23f"/>
+  <path d="M560 292 q50 38 0 76" fill="none" stroke="#0b1f4d" stroke-width="7" stroke-linecap="round"/>
+  <path d="M660 292 q-50 38 0 76" fill="none" stroke="#0b1f4d" stroke-width="7" stroke-linecap="round"/>
+  <!-- motion lines -->
+  <path d="M430 300 h80 M410 330 h90 M430 360 h80" stroke="#ffffff" stroke-width="10" stroke-linecap="round" opacity=".8"/>
+  <!-- white bone -->
+  <g transform="translate(270 510) rotate(-18)" fill="#ffffff">
+    <rect x="-70" y="-16" width="140" height="32" rx="16"/>
+    <circle cx="-72" cy="-18" r="22"/><circle cx="-72" cy="18" r="22"/>
+    <circle cx="72" cy="-18" r="22"/><circle cx="72" cy="18" r="22"/>
+  </g>
+  <!-- feather with silver bell -->
+  <g transform="translate(760 520) rotate(30)">
+    <path d="M0 -90 C40 -50 40 30 0 70 C-40 30 -40 -50 0 -90 Z" fill="#ffffff"/>
+    <path d="M0 -80 L0 80" stroke="#0b1f4d" stroke-width="5"/>
+    <circle cx="0" cy="98" r="18" fill="#c9ced8" stroke="#ffffff" stroke-width="4"/>
+  </g>
+  <!-- label -->
+  <rect x="130" y="690" width="740" height="46" rx="10" fill="#fff3bf" stroke="#b08900" stroke-width="2"/>
+  <text x="500" y="721" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#5c4a00" text-anchor="middle">PLACEHOLDER ART · NOT A SCREENSHOT · replace before launch</text>
+</svg>

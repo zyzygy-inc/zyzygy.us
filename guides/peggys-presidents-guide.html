@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en"><head><meta name="robots" content="noindex"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Peggy's Presidents Guide · Zyzygy, Inc.</title><meta name="description" content="The large-print user guide to Peggy's Presidents: enjoyable daily trivia about the presidents of the United States, free and offline.">
+<style>
+:root{--ink:#1d2433;--muted:#4a5568;--bg:#fffdf8;--band:#f3efe6;--accent:#1f3a68;--accent2:#8a5a00;--soft:#eef2f9;--line:#ddd5c4;--gold:#c98a1b}
+*{box-sizing:border-box}
+html{font-size:100%}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Color Emoji",sans-serif;color:var(--ink);background:var(--bg);line-height:1.42;font-size:10.5pt}
+main{max-width:7.3in;margin:0 auto;padding:.4in .3in}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:.5rem 1rem}
+.skip:focus{left:0}
+a{color:var(--accent)}
+h1,h2,h3{line-height:1.15;color:var(--ink)}
+h2{font-size:21pt;margin:0 0 .12in;color:var(--accent)}
+h2 .kick{display:block;font-size:9.5pt;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:.03in}
+h3{font-size:13pt;margin:.16in 0 .05in}
+p{margin:.06in 0 .08in}
+ul,ol{margin:.04in 0 .1in;padding-left:.26in}
+li{margin:.03in 0}
+section.pg{break-before:page;padding-top:.02in}
+section.pg:first-of-type{break-before:auto}
+section.fl{margin-top:.28in;clear:both}
+h2,h3{break-after:avoid;break-inside:avoid}
+.cover .cast img{height:1.05in}
+.cover{background:linear-gradient(180deg,#14264a,var(--accent));color:#fff;border-radius:.22in;padding:.42in .42in .3in;position:relative;overflow:hidden}
+.cover h1{color:#fff;font-size:34pt;margin:.05in 0 .08in}
+.cover .kicker{font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:10pt;color:#e8eefb}
+.cover .lead{font-size:15pt;color:#e8eefb;margin:0 0 .12in}
+.cover .soon{display:inline-block;background:#fff;color:#14264a;font-weight:800;border-radius:.1in;padding:.05in .14in;margin-top:.06in}
+.cast{display:flex;flex-wrap:wrap;gap:.12in;justify-content:center;margin:.22in 0 .1in}
+.cast img{height:1.25in;width:auto}
+.small{font-size:9.5pt;color:var(--muted)}
+.cover .small{color:#e8eefb}
+.toc{columns:3;column-gap:.35in;padding-left:.22in}
+.toc li{break-inside:avoid}
+.box{background:#fff;border:1px solid var(--line);border-radius:.14in;padding:.12in .18in;margin:.12in 0;break-inside:avoid}
+.box h3{margin-top:.02in}
+.box.tint{background:var(--soft);border-color:var(--soft)}
+.box.note{border-left:6px solid var(--accent)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:.14in}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.12in}
+.grid2 > .box,.grid3 > .box,.grid2 > .joke,.grid3 > .joke{margin:0}
+.grid2,.grid3{margin:.08in 0;clear:both}
+table{border-collapse:collapse;width:100%;margin:.08in 0 .12in;font-size:10pt;break-inside:auto}
+th,td{border:1px solid var(--line);padding:.04in .07in;text-align:left;vertical-align:top}
+th{background:var(--band)}
+tr{break-inside:avoid}
+.aside{float:right;clear:right;width:2.6in;margin:.02in 0 .1in .18in;display:flex;gap:.08in;align-items:flex-start;break-inside:avoid}
+.aside.left{float:left;clear:left;margin:.02in .18in .1in 0}
+.aside img{width:.8in;height:auto;flex:0 0 auto}
+.aside .bubble{flex:1 1 auto;min-width:0}
+.aside.big img{width:1.15in}
+.bubble{position:relative;background:#fff;border:2px solid var(--accent);border-radius:.16in;padding:.07in .1in;font-size:10pt;line-height:1.35;margin:.08in 0 0}
+.bubble::before{content:"";position:absolute;left:-.1in;top:.16in;border:.06in solid transparent;border-right-color:var(--accent)}
+.bubble .who{display:block;font-weight:800;color:var(--accent);font-size:9pt}
+.clear{clear:both}
+figure{margin:.1in 0;break-inside:avoid;text-align:center}
+figure img{max-width:100%;height:auto}
+figcaption{font-size:9pt;color:var(--muted);margin-top:.04in}
+.shots{display:flex;gap:.14in;justify-content:center;align-items:flex-start}
+.shots figure{flex:1 1 0;margin:0}
+.shots img{max-height:3.3in;width:auto}
+.row{display:flex;gap:.1in;justify-content:center;align-items:flex-end;flex-wrap:wrap}
+.row img{height:.95in;width:auto}
+.joke{clear:both;background:#fff7d6;border:2px dashed var(--gold);border-radius:.14in;padding:.08in .14in;margin:.1in 0;break-inside:avoid}
+.joke b{color:#5c3d00}
+.price{font-weight:800;color:var(--accent)}
+.tag{display:inline-block;font-size:8.5pt;font-weight:800;border-radius:.06in;padding:0 .06in;background:var(--band);color:var(--ink);vertical-align:1px}
+.tag.free{background:#dff3e4;color:#1b5e20}
+.tag.paid{background:#e9e4fb;color:#3b2a7a}
+.steps{counter-reset:s;list-style:none;padding-left:0}
+.steps li{counter-increment:s;position:relative;padding-left:.38in;margin:.07in 0}
+.steps ul{list-style:disc;padding-left:.25in}
+.steps ul li{counter-increment:none;padding-left:0;margin:.02in 0}
+.steps ul li::before{content:none}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:.27in;height:.27in;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;text-align:center;line-height:.27in;font-size:10pt}
+.faq h3{font-size:11.5pt;margin:.12in 0 .02in}
+.faq p{margin-top:0}
+.dont{list-style:none;padding:0;font-size:12pt;font-weight:700}
+.dont li::before{content:"✗ ";color:#b3261e}
+.kid{background:#fff;border:3px solid var(--accent2);border-radius:.2in;padding:.14in .2in;font-size:15pt;line-height:1.45;break-inside:avoid;margin:.12in 0}
+.kid .badge{display:inline-block;background:var(--accent2);color:#fff;font-size:9pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border-radius:.08in;padding:.02in .1in;margin-bottom:.04in}
+.grownup{display:inline-block;background:#1d2433;color:#fff;font-size:9pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border-radius:.08in;padding:.02in .1in}
+.end{text-align:center}
+@page{size:letter;margin:.55in .6in .6in;@bottom-center{content:"Peggy's Presidents Guide · page " counter(page);font-family:system-ui,sans-serif;font-size:8.5pt;color:#4a5568}}
+@media print{main{max-width:none;padding:0} body{background:#fff} a{color:var(--accent);text-decoration:none} .skip{display:none}}
+@media screen{section.pg{border-top:2px dashed var(--line);margin-top:.4in;padding-top:.3in} section.pg:first-of-type{border:0;margin:0}}
+@media (max-width:40rem){.aside{float:none;width:auto;margin:.1in 0} .grid2,.grid3{grid-template-columns:1fr} .shots{flex-wrap:wrap} .toc{columns:1}}
+
+body{font-size:16pt;line-height:1.5}
+main{max-width:7.4in}
+h2{font-size:26pt;margin-bottom:.14in}
+h2 .kick{font-size:12pt}
+h3{font-size:19pt;margin:.2in 0 .06in}
+h3.cont{font-size:20pt;color:var(--accent);margin-top:0}
+p{margin:.08in 0 .12in}
+li{margin:.05in 0}
+.small{font-size:13pt;color:#3d4757}
+.cover{background:linear-gradient(180deg,#132646,#1f3a68);padding:.4in .45in .3in}
+.cover h1{font-size:44pt}
+.cover .kicker{font-size:12pt}
+.cover .lead{font-size:20pt;color:#f1f4fa}
+.cover .soon{font-size:15pt;color:#132646}
+.cover .small{color:#e8eefb}
+.promise{list-style:none;padding:0;font-size:18pt;font-weight:700}
+.promise li::before{content:"✓  ";color:#f2c46d}
+.stars{color:#f2c46d;font-size:20pt;letter-spacing:.2em;margin:.08in 0}
+.toc-h{margin-top:.35in}
+.toc{columns:2;column-gap:.4in;font-size:16pt;padding-left:.4in}
+section.fl{margin-top:.45in}
+.box,figure,.grid2,.faq h3,.steps li{break-inside:avoid}
+.faq h3{break-after:avoid}
+.steps li{padding-left:.55in;margin:.09in 0}
+.steps li::before{width:.38in;height:.38in;line-height:.38in;font-size:15pt}
+.box{padding:.16in .22in;border-width:2px;border-radius:.16in}
+.box.note{border-left:8px solid var(--accent)}
+.box .steps li{padding-left:.5in}
+.grid2{gap:.2in}
+ul.big{font-size:17pt}
+.faq h3{font-size:19pt;margin:.2in 0 .04in;color:var(--accent)}
+.two{display:grid;grid-template-columns:1.25fr 1fr;gap:.25in;align-items:start}
+figure.mock img{max-height:4in;width:auto}
+figure.fr{float:right;width:2.45in;margin:0 0 .1in .25in}
+figcaption{font-size:12pt;color:#3d4757}
+figure.ph{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:.06in;border:3px dashed #6b5b3e;border-radius:.18in;background:repeating-linear-gradient(135deg,#faf6ec,#faf6ec 14px,#f3ecda 14px,#f3ecda 28px);padding:.2in;text-align:center;color:var(--ink)}
+figure.ph .phlabel{background:#7a1f1f;color:#fff;font-weight:800;letter-spacing:.08em;font-size:12pt;padding:.03in .14in;border-radius:.06in}
+figure.ph b{font-size:17pt}
+figure.ph span:last-child{font-size:14pt;color:#3d4757}
+.quote{font-size:16pt}
+mark{background:#fff1a8;color:#3b2f00;padding:0 .1em}
+.email{font-size:26pt;font-weight:800;margin:.1in 0}
+@media (max-width:40rem){.two{grid-template-columns:1fr}}
+</style></head>
+<body><div role="note" style="background:#7a1f1f;color:#fff;text-align:center;font:600 14px system-ui,sans-serif;padding:6px 12px">Draft, not published. <a href="../guides.html" style="color:#fff">Back to all user guides</a></div><a class="skip" href="#main">Skip to content</a><main id="main">
+<section class="pg" aria-labelledby="t-cover">
+<div class="cover">
+<p class="kicker">Zyzygy, Inc. · Goldthwaite, Texas</p>
+<h1 id="t-cover">Peggy's Presidents</h1>
+<p class="lead">The User Guide</p>
+<p class="lead">Enjoyable daily trivia about the presidents of the United States, in big, clear type.</p>
+<ul class="promise">
+<li>Free. Nothing to buy, ever.</li>
+<li>No ads. No accounts. No sign-in.</li>
+<li>Collects no information about you.</li>
+<li>Works without the internet.</li>
+</ul>
+<p><span class="soon">In development for the App Store and Google Play</span></p>
+<p class="small">For iPhone, iPad and Android phones and tablets. The app is still being built, so the pictures in this guide are placeholders and illustrations, not screenshots.</p>
+</div>
+<h2 class="toc-h">What's inside</h2>
+<ol class="toc">
+<li>Welcome</li>
+<li>President of the Day</li>
+<li>Next fact, and browsing all the presidents</li>
+<li>Making the text bigger</li>
+<li>Quizzes (only if you want one)</li>
+<li>No internet needed</li>
+<li>For family members: setting it up</li>
+<li>Questions and answers</li>
+<li>Getting help</li>
+</ol>
+</section>
+
+<section class="pg" aria-labelledby="t-welcome">
+<h2 id="t-welcome"><span class="kick">Chapter 1</span>Welcome</h2>
+<p>Thank you for trying <b>Peggy's Presidents</b>. Each day it shows you one president of the United States, with a few short, interesting facts. Nothing to learn and nothing to buy.</p>
+<h3>Why we made it</h3>
+<p>This application was inspired by Peggy and her love of historical facts.</p>
+<h3>What you'll find inside</h3>
+<ul class="big">
+<li><b>A president every day</b>, ready the moment you open the app.</li>
+<li><b>A few short facts</b>, with more whenever you like, and <b>every president</b> to browse.</li>
+<li><b>Large text</b>, set once in Settings.</li>
+<li><b>Three gentle quiz questions a day</b>, only if you want them. No timers.</li>
+<li><b>Just the facts.</b> No opinions and no politics.</li>
+</ul>
+</section>
+
+<section class="pg" aria-labelledby="t-today">
+<h2 id="t-today"><span class="kick">Chapter 2</span>President of the Day</h2>
+<figure class="mock fr"><img src="images/pp-mock-today.svg" alt="Illustration of the President of the Day screen: today's date, a round badge with the initials GW circled by stars, George Washington, 1st President, 1789 to 1797, three short facts, a big Next fact button, an Another president button, and four buttons along the bottom: Today, All, Quiz and Settings"><figcaption>Illustration, not a screenshot. The app is still being built, so the real screen may look a little different.</figcaption></figure>
+<p>When you open Peggy's Presidents, there's nothing to set up and nothing to choose. It goes <b>straight to the President of the Day</b>, with today's date. You'll see:</p>
+<ol class="steps">
+<li><b>A round badge with his initials</b>, circled by stars. (Portraits may come in a later version.)</li>
+<li><b>His name</b>, <b>which number president</b> he was, and his <b>years in office</b>: <i>George Washington · 1st President · 1789–1797</i>.</li>
+<li><b>Three short facts</b>, one or two sentences each.</li>
+</ol>
+<p>A new president comes up every day, in order. After the last one, it starts again with different facts first.</p>
+<div class="clear"></div>
+<div class="box tint"><b>Getting around:</b> four big buttons run along the bottom of the screen. <b>Today</b> brings you back to the President of the Day. <b>All</b> lists every president (Chapter 3). <b>Quiz</b> has three gentle questions (Chapter 5). <b>Settings</b> is where you choose the text size (Chapter 4).</div>
+</section>
+
+<section class="pg" aria-labelledby="t-browse">
+<h2 id="t-browse"><span class="kick">Chapter 3</span>Next fact, and browsing all the presidents</h2>
+<h3>Want another fact?</h3>
+<ol class="steps">
+<li>Tap the big <b>Next fact</b> button.</li>
+<li>A new fact appears under the others. Take your time; nothing disappears.</li>
+<li>When you've seen them all, the app says <i>"That's every fact for today."</i></li>
+</ol>
+<h3>Want to meet someone else?</h3>
+<ul>
+<li>Tap <b>Another president</b> to see the next president in order.</li>
+<li>Or tap <b>All</b> at the bottom for the whole list, in order, with numbers and years. Tap any name.</li>
+<li>On a president's page, <b>Previous president</b>, <b>Next president</b> and <b>Next fact</b> all work.</li>
+<li>Tap <b>Today</b> at the bottom any time to come back to today's president.</li>
+</ul>
+<figure class="ph" role="img" aria-label="Screenshot placeholder: The All Presidents list" style="min-height:1.05in"><span class="phlabel">SCREENSHOT PLACEHOLDER</span><b>The All Presidents list</b><span>Each row: the number, the name and the years in office, in large type.</span></figure>
+<div class="box note"><b>Good to know:</b> Grover Cleveland served two terms that weren't back to back, so he appears once, as 22 &amp; 24. That's why the list has 47 numbers but fewer names. History, not a typo.</div>
+</section>
+
+<section class="pg" aria-labelledby="t-text">
+<h2 id="t-text"><span class="kick">Chapter 4</span>Making the text bigger</h2>
+<p>Peggy's Presidents has two text sizes: <b>Regular</b> and <b>Large</b>.</p>
+<ol class="steps">
+<li>Tap <b>Settings</b> at the bottom right.</li>
+<li>Under <b>Text size</b>, tap <b>Large</b>.</li>
+<li>The words get bigger right away, and the app keeps your choice for next time.</li>
+<li>Tap <b>Today</b> to go back to the President of the Day.</li>
+</ol>
+<p>Changed your mind? Do the same thing and tap <b>Regular</b>.</p>
+<figure class="ph" role="img" aria-label="Screenshot placeholder: Settings: Text size" style="min-height:1.8in"><span class="phlabel">SCREENSHOT PLACEHOLDER</span><b>Settings: Text size</b><span>Two big choices, Regular and Large, with Large selected.</span></figure>
+<p><b>It works together with your phone's own text size.</b> If the phone or tablet is already set to bigger text, Large makes the app bigger still. See <b>"Your phone's own text size"</b> in Chapter 7.</p>
+<p class="small">Settings also has an <b>About</b> section: the app's name, a line about why we made it, our privacy promise, and where the facts come from.</p>
+</section>
+
+<section class="pg" aria-labelledby="t-quiz">
+<h2 id="t-quiz"><span class="kick">Chapter 5</span>Quizzes (only if you want one)</h2>
+<p>Quizzes are <b>completely optional</b>. You never have to take one, and the app never pops one up on its own. If you'd like to try:</p>
+<ol class="steps">
+<li>Tap <b>Quiz</b> at the bottom. You'll see <i>Today's questions: "Three gentle questions, just for fun. Take your time."</i></li>
+<li>Read the question, for example: <i>"Which president was the first to live in the White House?"</i></li>
+<li>Tap one of the four big answers.</li>
+<li>The app says <i>"That's right!"</i> or <i>"Good try. The answer is …"</i>, with a short fact. (It's John Adams. He moved in during November 1800.)</li>
+<li>Tap <b>Next question</b>. After the third, tap <b>Finish</b>.</li>
+</ol>
+<div class="grid2">
+<div class="box"><b>No timers.</b> No clock, no hurry. Take all the time you want.</div>
+<div class="box"><b>No score.</b> No points, no streaks, nothing to lose. A wrong guess just means you learned something.</div>
+</div>
+<p>There are three new questions every day. Want to go again? Tap <b>Play again</b>, or <b>Back to today</b>.</p>
+<figure class="ph" role="img" aria-label="Screenshot placeholder: A quiz question" style="min-height:1.6in"><span class="phlabel">SCREENSHOT PLACEHOLDER</span><b>A quiz question</b><span>Question 1 of 3, in large type, with four big answer buttons. No timer on the screen.</span></figure>
+</section>
+
+<section class="pg" aria-labelledby="t-offline">
+<h2 id="t-offline"><span class="kick">Chapter 6</span>No internet needed</h2>
+<p>Once Peggy's Presidents is installed, <b>it works without the internet</b>. All the presidents and facts are already inside the app.</p>
+<ul class="big">
+<li>No Wi-Fi? It still works.</li>
+<li>On a car trip, at the cabin, or on a plane? It still works.</li>
+<li>It doesn't use your data plan.</li>
+</ul>
+<p>You only need the internet to <b>download the app</b> the first time, and later to <b>get updates</b> from the App Store or Google Play. Updates can bring new facts and fixes.</p>
+</section>
+
+<section class="pg" aria-labelledby="t-family">
+<h2 id="t-family"><span class="kick">Chapter 7 · For family members</span>How to set it up for your loved one</h2>
+<p>Setting Peggy's Presidents up for someone you love takes about five minutes. There's <b>no account to create, no sign-in, no password and no email address</b> needed for the app itself.</p>
+<h3>1. Install the app</h3>
+<div class="grid2">
+<div class="box"><b>iPhone or iPad</b>
+<ol class="steps">
+<li>Open the <b>App Store</b>.</li>
+<li>Tap <b>Search</b> and type <b>Peggy's Presidents</b>.</li>
+<li>Tap <b>Get</b>. The phone may ask for the Apple Account password, Face ID or Touch ID. That's the phone's own check, not ours. The app is free.</li>
+</ol></div>
+<div class="box"><b>Android phone or tablet</b>
+<ol class="steps">
+<li>Open the <b>Google Play Store</b>.</li>
+<li>Tap the search bar and type <b>Peggy's Presidents</b>.</li>
+<li>Tap <b>Install</b>. The app is free.</li>
+</ol></div>
+</div>
+
+<h3>2. Find the app icon</h3>
+
+<ul>
+<li><b>iPhone or iPad:</b> new apps usually appear on the Home Screen. If you don't see it, swipe left past the last Home Screen page to the <b>App Library</b>, or swipe down on the Home Screen and type <b>Peggy</b> in the search box.</li>
+<li><b>Android:</b> swipe up from the bottom of the Home screen to see all your apps. Look for <b>Peggy's Presidents</b>, or type <b>Peggy</b> in the search box at the top.</li>
+</ul>
+</section>
+
+<section class="pg" aria-labelledby="t-family2">
+<figure class="ph" role="img" aria-label="Screenshot placeholder: The app icon on a Home Screen" style="min-height:1.6in"><span class="phlabel">SCREENSHOT PLACEHOLDER</span><b>The app icon on a Home Screen</b><span>Where the Peggy's Presidents icon sits, with its name underneath.</span></figure>
+<h3 id="t-family2">3. Put the icon where it's easy to find</h3>
+<p>Put it on the first Home Screen, ideally in the bottom row, so it's the first thing your loved one sees.</p>
+<div class="grid2">
+<div class="box"><b>iPhone or iPad</b>
+<ol class="steps">
+<li>If it's only in the App Library: touch and hold the icon, then tap <b>Add to Home Screen</b>.</li>
+<li>To move it: touch and hold an empty spot on the Home Screen until the icons jiggle.</li>
+<li>Drag the icon to where you want it, then tap <b>Done</b>.</li>
+</ol></div>
+<div class="box"><b>Android</b>
+<ol class="steps">
+<li>Swipe up from the bottom to see all apps.</li>
+<li>Touch and hold the <b>Peggy's Presidents</b> icon and slide it onto the Home screen.</li>
+<li>Drag it to a good spot and lift your finger.</li>
+</ol></div>
+</div>
+<p class="small">Exact steps vary a little between phone makers and system versions. If something looks different, your phone's own help pages will have the details.</p>
+
+</section>
+
+<section class="pg" aria-labelledby="t-family4">
+<h3 id="t-family4" class="cont">4. Turn on Large text in the app</h3>
+<ol class="steps">
+<li>Open Peggy's Presidents.</li>
+<li>Tap <b>Settings</b> at the bottom, then <b>Large</b> under Text size (Chapter 4).</li>
+</ol>
+
+<h3>5. Your phone's own text size (optional)</h3>
+<p>This makes words bigger in many apps on the phone, not just ours.</p>
+<ul>
+<li><b>iPhone or iPad:</b> open <b>Settings</b>, tap <b>Display &amp; Brightness</b>, tap <b>Text Size</b>, and drag the slider. For even bigger sizes: <b>Settings › Accessibility › Display &amp; Text Size › Larger Text</b>.</li>
+<li><b>Android:</b> open <b>Settings</b>, search for <b>Font size</b>, and move the slider. (Menu names vary by phone; searching Settings is the easiest way.)</li>
+</ul>
+
+<h3 id="t-family3">6. A few final touches</h3>
+<ul class="big">
+<li><b>Open the app once together</b> so the first President of the Day is waiting.</li>
+<li><b>No internet needed</b> after it's installed (Chapter 6). Nothing to keep logged in.</li>
+<li><b>No accounts, no sign-ins.</b> There's nothing to keep track of and nothing that expires.</li>
+<li><b>Updates:</b> leaving the phone's automatic app updates on is the easiest way to get new facts and fixes.</li>
+<li><b>Show the buttons</b> that matter most: <b>Next fact</b>, and <b>Today</b> at the bottom to get back home.</li>
+<li><b>A conversation starter:</b> on your next call, try "Who did you get today?"</li>
+</ul>
+</section>
+
+<section class="pg" aria-labelledby="t-faq">
+<h2 id="t-faq"><span class="kick">Chapter 8</span>Questions and answers</h2>
+<div class="faq">
+<h3>Is it really free?</h3>
+<p>Yes. Peggy's Presidents is free to download and free to use. There's nothing to buy inside the app, no subscription and no ads. We're happy to share it.</p>
+<h3>Does it collect any information?</h3>
+<p>No. There are no accounts, no ads, and no tracking or analytics, and the app doesn't use the internet at all. The only thing it saves is your Regular or Large choice, on your own phone or tablet. The full privacy policy is at <b>zyzygy.us/peggys-presidents-privacy</b>.</p>
+<h3>Why doesn't it share opinions about the presidents?</h3>
+<p>Because it's for everyone. Peggy's Presidents sticks to facts: dates, places, family, and interesting firsts. There are no opinions, no rankings and no commentary, so it's comfortable for every family, whatever their views. Where a fact mentions a political party, it simply says which one, the same way for every president.</p>
+<h3>Where do the facts come from?</h3>
+<p>From public-domain data (Wikidata and the congress-legislators project, both free for anyone to use), checked against U.S. government sources such as the National Archives, the Library of Congress, the National Park Service and the U.S. Congress. The sentences are our own plain-English writing. Every fact is checked before it goes into the app. You'll find the credits under <b>Settings › About</b>.</p>
+<h3>Do I need the internet?</h3>
+<p>Only to download the app and get updates. Everything else works offline.</p>
+<h3>Does it need a password or an email address?</h3>
+<p>No. You just open it.</p>
+<h3>Will the app send notifications?</h3>
+<p>No. Peggy's Presidents never sends notifications. The new president is simply waiting each time you open the app.</p>
+<h3>Can I use it on more than one device?</h3>
+<p>Yes. Install it on each phone or tablet you like. It's free on each one.</p>
+<h3>I think a fact is wrong. What should I do?</h3>
+<p>Please tell us! Email <b>support@zyzygy.us</b> with the president's name and the fact. We'll check it against our sources and fix it in an update if needed.</p>
+<h3>Does it include every president?</h3>
+<p>Yes, every president from George Washington onward, 1st to 47th. The facts for each are short, neutral and checked.</p>
+<h3>Who decides which president comes up today?</h3>
+<p>The calendar does. The presidents go in order, one a day, and everyone sees the same president on the same date. The new one appears after midnight.</p>
+<h3>Is there a dark screen option?</h3>
+<p>The app follows your phone's own light or dark setting.</p>
+</div>
+</section>
+
+<section class="pg" aria-labelledby="t-help">
+<h2 id="t-help"><span class="kick">Chapter 9</span>Getting help</h2>
+<div class="cover" style="text-align:center">
+<p class="lead" style="margin-top:0">Questions, a fact to check, or just want to say hello? We'd love to hear from you.</p>
+<p class="email">support@zyzygy.us</p>
+<p style="font-size:18pt">We reply within 2 business days.</p>
+<p>Website: <b>zyzygy.us</b></p>
+<p>It helps to tell us your phone or tablet (for example "iPhone" or "Samsung Galaxy tablet") and what happened.</p>
+<div class="stars" aria-hidden="true">★ ★ ★</div>
+<p class="small">Peggy's Presidents is in development for the App Store and Google Play. Pictures in this guide are placeholders and illustrations. © Zyzygy, Inc., Goldthwaite, Texas.</p>
+</div>
+</section>
+</main></body></html>

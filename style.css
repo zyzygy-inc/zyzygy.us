@@ -49,3 +49,16 @@ li{margin:.25rem 0}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 /* From company.css (the contact-form rules were dropped: the site uses an email link only). */
 button.btn{border:0;font:inherit;font-weight:700;cursor:pointer}
+/* Oct 15, 2026 (b): badge, section highlight in the nav, splash mockup. */
+.badge{display:inline-block;background:#ffd23f;color:#14264a;font-weight:800;font-size:.9rem;padding:.2rem .7rem;border-radius:999px;margin:0 0 .75rem}
+nav a.here{text-decoration:underline;text-decoration-style:dotted;text-underline-offset:.3em}
+.splash{background:linear-gradient(180deg,#0f1e3d,#1f4e8c);color:#fff;padding:5rem 0 6rem;text-align:center}
+.splash a:not(.btn){color:#fff}
+.splash-card{max-width:40rem;margin:0 auto}
+.splash-mark{display:inline-flex;align-items:center;justify-content:center;width:5rem;height:5rem;border-radius:1.25rem;background:#ffd23f;color:#0f1e3d;font-weight:900;font-size:3rem;margin:0 auto 1.25rem}
+.splash .lead{color:#e8eefb;margin:0 auto 1rem;font-size:1.35rem}
+.splash .buttons{justify-content:center}
+.splash .btn{background:#fff;color:#14264a}
+.splash .btn.alt{background:transparent;color:#fff;border:2px solid #fff}
+.splash .btn.big{background:#ffd23f;color:#0f1e3d;font-size:1.15rem;padding:.85rem 1.6rem}
+@media (max-width:30rem){nav ul{gap:.35rem .8rem}nav a{font-size:.95rem}}
