@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en"><head><link rel="icon" href="../favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kitty's Squeak & Splash Guide · Zyzygy, Inc.</title><meta name="description" content="The illustrated user guide to Kitty's Squeak & Splash, two hunting games for cats on iPhone, iPad and Android.">
+<style>
+:root{--ink:#1d2433;--muted:#4a5568;--bg:#fffdf8;--band:#f3efe6;--accent:#0B3D91;--accent2:#B07A00;--soft:#E7EEFB;--line:#ddd5c4;--gold:#c98a1b}
+*{box-sizing:border-box}
+html{font-size:100%}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Color Emoji",sans-serif;color:var(--ink);background:var(--bg);line-height:1.42;font-size:10.5pt}
+main{max-width:7.3in;margin:0 auto;padding:.4in .3in}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:.5rem 1rem}
+.skip:focus{left:0}
+a{color:var(--accent)}
+h1,h2,h3{line-height:1.15;color:var(--ink)}
+h2{font-size:21pt;margin:0 0 .12in;color:var(--accent)}
+h2 .kick{display:block;font-size:9.5pt;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:.03in}
+h3{font-size:13pt;margin:.16in 0 .05in}
+p{margin:.06in 0 .08in}
+ul,ol{margin:.04in 0 .1in;padding-left:.26in}
+li{margin:.03in 0}
+section.pg{break-before:page;padding-top:.02in}
+section.pg:first-of-type{break-before:auto}
+section.fl{margin-top:.28in;clear:both}
+h2,h3{break-after:avoid;break-inside:avoid}
+.cover .cast img{height:1.05in}
+.cover{background:linear-gradient(180deg,#14264a,var(--accent));color:#fff;border-radius:.22in;padding:.42in .42in .3in;position:relative;overflow:hidden}
+.cover h1{color:#fff;font-size:34pt;margin:.05in 0 .08in}
+.cover .kicker{font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:10pt;color:#e8eefb}
+.cover .lead{font-size:15pt;color:#e8eefb;margin:0 0 .12in}
+.cover .soon{display:inline-block;background:#fff;color:#14264a;font-weight:800;border-radius:.1in;padding:.05in .14in;margin-top:.06in}
+.cast{display:flex;flex-wrap:wrap;gap:.12in;justify-content:center;margin:.22in 0 .1in}
+.cast img{height:1.25in;width:auto}
+.small{font-size:9.5pt;color:var(--muted)}
+.cover .small{color:#e8eefb}
+.toc{columns:3;column-gap:.35in;padding-left:.22in}
+.toc li{break-inside:avoid}
+.box{background:#fff;border:1px solid var(--line);border-radius:.14in;padding:.12in .18in;margin:.12in 0;break-inside:avoid}
+.box h3{margin-top:.02in}
+.box.tint{background:var(--soft);border-color:var(--soft)}
+.box.note{border-left:6px solid var(--accent)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:.14in}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.12in}
+.grid2 > .box,.grid3 > .box,.grid2 > .joke,.grid3 > .joke{margin:0}
+.grid2,.grid3{margin:.08in 0;clear:both}
+table{border-collapse:collapse;width:100%;margin:.08in 0 .12in;font-size:10pt;break-inside:auto}
+th,td{border:1px solid var(--line);padding:.04in .07in;text-align:left;vertical-align:top}
+th{background:var(--band)}
+tr{break-inside:avoid}
+.aside{float:right;clear:right;width:2.6in;margin:.02in 0 .1in .18in;display:flex;gap:.08in;align-items:flex-start;break-inside:avoid}
+.aside.left{float:left;clear:left;margin:.02in .18in .1in 0}
+.aside img{width:.8in;height:auto;flex:0 0 auto}
+.aside .bubble{flex:1 1 auto;min-width:0}
+.aside.big img{width:1.15in}
+.bubble{position:relative;background:#fff;border:2px solid var(--accent);border-radius:.16in;padding:.07in .1in;font-size:10pt;line-height:1.35;margin:.08in 0 0}
+.bubble::before{content:"";position:absolute;left:-.1in;top:.16in;border:.06in solid transparent;border-right-color:var(--accent)}
+.bubble .who{display:block;font-weight:800;color:var(--accent);font-size:9pt}
+.clear{clear:both}
+figure{margin:.1in 0;break-inside:avoid;text-align:center}
+figure img{max-width:100%;height:auto}
+figcaption{font-size:9pt;color:var(--muted);margin-top:.04in}
+.shots{display:flex;gap:.14in;justify-content:center;align-items:flex-start}
+.shots figure{flex:1 1 0;margin:0}
+.shots img{max-height:3.3in;width:auto}
+.row{display:flex;gap:.1in;justify-content:center;align-items:flex-end;flex-wrap:wrap}
+.row img{height:.95in;width:auto}
+.joke{clear:both;background:#fff7d6;border:2px dashed var(--gold);border-radius:.14in;padding:.08in .14in;margin:.1in 0;break-inside:avoid}
+.joke b{color:#5c3d00}
+.price{font-weight:800;color:var(--accent)}
+.tag{display:inline-block;font-size:8.5pt;font-weight:800;border-radius:.06in;padding:0 .06in;background:var(--band);color:var(--ink);vertical-align:1px}
+.tag.free{background:#dff3e4;color:#1b5e20}
+.tag.paid{background:#e9e4fb;color:#3b2a7a}
+.steps{counter-reset:s;list-style:none;padding-left:0}
+.steps li{counter-increment:s;position:relative;padding-left:.38in;margin:.07in 0}
+.steps ul{list-style:disc;padding-left:.25in}
+.steps ul li{counter-increment:none;padding-left:0;margin:.02in 0}
+.steps ul li::before{content:none}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:.27in;height:.27in;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;text-align:center;line-height:.27in;font-size:10pt}
+.faq h3{font-size:11.5pt;margin:.12in 0 .02in}
+.faq p{margin-top:0}
+.dont{list-style:none;padding:0;font-size:12pt;font-weight:700}
+.dont li::before{content:"✗ ";color:#b3261e}
+.kid{background:#fff;border:3px solid var(--accent2);border-radius:.2in;padding:.14in .2in;font-size:15pt;line-height:1.45;break-inside:avoid;margin:.12in 0}
+.kid .badge{display:inline-block;background:var(--accent2);color:#fff;font-size:9pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border-radius:.08in;padding:.02in .1in;margin-bottom:.04in}
+.grownup{display:inline-block;background:#1d2433;color:#fff;font-size:9pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border-radius:.08in;padding:.02in .1in}
+.end{text-align:center}
+@page{size:letter;margin:.55in .6in .6in;@bottom-center{content:"Kitty's Squeak & Splash Guide · page " counter(page);font-family:system-ui,sans-serif;font-size:8.5pt;color:#4a5568}}
+@media print{main{max-width:none;padding:0} body{background:#fff} a{color:var(--accent);text-decoration:none} .skip{display:none}}
+@media screen{section.pg{border-top:2px dashed var(--line);margin-top:.4in;padding-top:.3in} section.pg:first-of-type{border:0;margin:0}}
+@media (max-width:40rem){.aside{float:none;width:auto;margin:.1in 0} .grid2,.grid3{grid-template-columns:1fr} .shots{flex-wrap:wrap} .toc{columns:1}}
+
+.cover{background:linear-gradient(180deg,#071a42,#0B3D91)}
+.cover .soon{color:#071a42}
+.pill{display:inline-block;border-radius:.2in;padding:.03in .16in;font-weight:800;font-size:11pt}
+.pill.ok{background:#dff3e4;color:#1b5e20}
+.pill.warn{background:#fff0d0;color:#7a4a00}
+.grid3 .box img{max-width:100%}
+.shots img{max-height:1.95in}
+.toc{font-size:9.5pt}
+.toc li{margin:.01in 0}
+</style></head>
+<body><a class="skip" href="#main">Skip to content</a><main id="main">
+<section class="pg" aria-labelledby="t-cover">
+<div class="cover">
+<p class="kicker">Zyzygy, Inc. · Goldthwaite, Texas</p>
+<h1 id="t-cover">Kitty's Squeak & Splash<br>The Official User Guide</h1>
+<p class="lead">Two hunting games for your cat. Paw-proof, no ads, no subscriptions, nothing collected.</p>
+<div class="cast">
+<img src="images/ss-goldie.svg" alt="Goldie, a bright yellow goldfish blowing bubbles" style="height:.95in">
+<img src="images/ss-biscuit-point.svg" alt="Biscuit, a gray tabby cat with a white bib, raising one paw with an excited open mouth" style="height:1.15in">
+<img src="images/ss-squeakers-run.svg" alt="Squeakers, a little gray mouse, running away with speed lines behind him" style="height:.95in">
+</div>
+<p><span class="soon">In development for the App Store and Google Play</span></p>
+<p class="small">For iPhone, iPad and Android phones and tablets (best on a tablet). The app is still being built, so every app screen in this guide is an illustration, not a screenshot.</p>
+</div>
+<section class="fl" aria-labelledby="t-welcome">
+<h2 id="t-welcome"><span class="kick">Before we begin</span>Hello, human. Your cat has a new favorite thing.</h2>
+<aside class="aside" aria-label="Aside from Biscuit:"><img src="images/ss-biscuit-smug.svg" alt="Biscuit, a gray tabby cat, looking unimpressed"><p class="bubble"><span class="who">Biscuit:</span>I'm Biscuit. I have reviewed this guide by lying on every page. The guide is acceptable.</p></aside>
+<p>Kitty's Squeak & Splash is a game <b>for cats</b>, run by their humans. You lock the screen, pick a game and lay the tablet flat on the floor. Your cat does the rest: swatting fish in a pond or chasing a mouse across the kitchen floor. Every paw that lands is a <b>catch</b>, with a happy little animation and sound. When the timer runs out, the game winds down and reminds you to finish with a real toy.</p>
+<p>It answers the question every cat owner asks first, <i>"how do I stop my cat swiping out of the app?"</i>, in Chapter 3. Don't skip it.</p>
+<h3>What's inside</h3>
+<ol class="toc">
+<li>What it is, and who it's for</li><li>Getting started</li><li>Locking the screen</li><li>The lock coach and "Locked ✅"</li><li>The grown-up exit</li><li>Fishing</li>
+<li>Mouse Chase</li><li>Settings</li><li>Sessions and nap time</li><li>The Holiday Pack</li><li>Add-on games</li><li>Buying and restoring</li>
+<li>Cat welfare tips</li><li>Our philosophy and your privacy</li><li>Troubleshooting</li><li>FAQ</li><li>Say hello</li>
+</ol>
+<div class="clear"></div>
+</section>
+</section>
+
+<section class="pg" aria-labelledby="t-what" style="position:relative">
+<img class="cameo" src="images/ss-goldie-smug.svg" alt="Goldie the goldfish, looking smug" style="position:absolute;top:0;right:0;height:.55in;width:auto">
+<h2 id="t-what"><span class="kick">Chapter 1</span>What it is, and who it's for</h2>
+<p><b>It's for cat owners and their cats.</b> It isn't a kids' app. The cartoon fish and mice are there because cats love things that dart, wiggle and splash. It's made for grown-ups (and teens) who share a home with a cat, and the games are tuned for cats: big catch areas for paws, colors cats can see, and prey that moves like prey.</p>
+<h3>Meet the cast</h3>
+<div class="grid3">
+<div class="box"><img src="images/ss-biscuit-smug.svg" alt="Biscuit the gray tabby cat with half-closed, unimpressed eyes" style="height:.85in;float:right;margin-left:.06in"><b>Biscuit</b>, your narrator. A gray tabby house cat, a tough critic and, secretly, a big fan. Biscuit lives in this guide, not in the app.</div>
+<div class="box"><img src="images/ss-goldie.svg" alt="Goldie the goldfish" style="height:.45in;float:right;margin-left:.06in"><b>Goldie</b> is the show-off of Fishing: a bright yellow goldfish, always one flick ahead. <img src="images/ss-bob.svg" alt="Bluegill Bob" style="height:.45in;float:right;margin-left:.06in;clear:right"><b>Bluegill Bob</b>, her laid-back sidekick, is blue with a yellow belly and unbothered by everything.</div>
+<div class="box"><img src="images/ss-squeakers.svg" alt="Squeakers the gray mouse" style="height:.45in;float:right;margin-left:.06in"><b>Squeakers</b> is the drama mouse of Mouse Chase. Every catch is a tiny stage faint. <img src="images/ss-cheddar.svg" alt="Cheddar the cream mouse" style="height:.45in;float:right;margin-left:.06in;clear:right"><b>Cheddar</b>, his bolder cousin, thinks the cupboard is a fort.</div>
+</div>
+<p class="small">Goldie, Bluegill Bob, Squeakers and Cheddar are real prey in the app. It's all catch and release: everyone gets caught, everyone comes back 1 to 3 seconds later, and nobody gets hurt.</p>
+<h3>What's free, for keeps</h3>
+<div class="grid2">
+<div class="box"><span class="tag free">FREE</span> <b>🐟 Fishing</b>: the Koi Pond and Night Pond scenes, with Goldie, Bluegill Bob, a koi, a frog, a crab and a dragonfly that zips across the water.<br><span class="tag free">FREE</span> <b>🐭 Mouse Chase</b>: the Kitchen Floor, with Squeakers and Cheddar.</div>
+<div class="box"><span class="tag free">FREE</span> Every setting, the session timer, the Paw Counter and the lock coach.<br><span class="tag free">FREE</span> No ads, no time limits, no "free trial." It's a complete app, not a demo.</div>
+</div>
+<p class="small">Night Pond and the extra pond animals (koi, frog, crab and dragonfly) are free. If they aren't in your version yet, they'll arrive in a free update.</p>
+<h3>What you need</h3>
+<ul>
+<li><b>iPhone or iPad</b> with iOS 17 or later, or an <b>Android</b> phone or tablet with Android 8.0 or later.</li>
+<li><b>A tablet is best.</b> Bigger screen, bigger hunting ground. Phones work too, and prey are drawn Large on phones by default.</li>
+<li>No account, no sign-in and no internet connection, except to buy or restore a purchase.</li>
+<li>On your home screen, the icon is labeled <b>Squeak&amp;Splash</b>, because the full name doesn't fit under an icon.</li>
+</ul>
+<div class="joke" role="note"><b>Joke break:</b> What do you call a pile of kittens? <em>A meowntain.</em></div>
+</section>
+
+<section class="pg" aria-labelledby="t-start" style="position:relative">
+<h2 id="t-start"><span class="kick">Chapter 2</span>Getting started</h2>
+<aside class="aside" aria-label="Aside from Squeakers:"><img src="images/ss-squeakers-run.svg" alt="Squeakers the mouse running"><p class="bubble"><span class="who">Squeakers:</span>Step 5 is where I make my entrance. Step 6 is where I faint dramatically. Every time.</p></aside>
+<ol class="steps">
+<li><b>Once it's released, install</b> Kitty's Squeak & Splash from the App Store or Google Play. There's no account to make.</li>
+<li><b>Open it.</b> The first time, you'll see a welcome ("A game for your cat, set up by you"), then the <b>Paw-proof coach</b> that shows you how to lock the screen, then a short safety card. You can skip the coach, but please don't. It takes about 30 seconds.</li>
+<li><b>Pick a game</b> on the main menu: 🐟 <b>Fishing</b> or 🐭 <b>Mouse Chase</b>. A pre-play sheet opens with the scene, speed and timer, and a <b>Locked ✅</b> or <b>Not locked ⚠️</b> badge.</li>
+<li><b>Lock the screen</b> (Chapter 3), so a curious paw can't swipe out of the game.</li>
+<li><b>Tap Play</b>, then lay the tablet <b>flat on the floor</b>.</li>
+<li><b>Step back and enjoy the show.</b> When the timer ends, finish with a real toy.</li>
+</ol>
+<figure><img src="images/ss-mock-menu.svg" alt="Illustration of the main menu: the title Kitty's Squeak and Splash, big tiles for Fishing and Mouse Chase, a Feather Frenzy tile for an owned add-on game, and buttons for Paw-proof setup, More games and holidays, and Settings" style="max-height:2.6in"><figcaption>The main menu (for humans). Illustration, not a screenshot. The app is still being built, so the real screens may look different.</figcaption></figure>
+<div class="box note"><b>The main menu is for you, the game is for the cat.</b> Settings, the store and the lock coach live only on the main menu. Once a game starts, the whole screen is play area. There are no buttons a cat could hit, apart from one dim paw corner that only a grown-up can use (Chapter 5).</div>
+</section>
+
+<section class="pg" aria-labelledby="t-lock" style="position:relative">
+<h2 id="t-lock"><span class="kick">Chapter 3 · The most important page</span>Locking the screen</h2>
+<aside class="aside" aria-label="Aside from Biscuit:"><img src="images/ss-biscuit-point.svg" alt="Biscuit the gray tabby cat raising a paw"><p class="bubble"><span class="who">Biscuit:</span>Cats are clever. Let's be cleverer.</p></aside>
+<p><b>Why can't the app just lock itself?</b> Picture a world where any app could trap you inside it and hide the way out. Not great! So Apple and Google built the lock into the <i>device</i>, and only the device's owner can switch it on. That's good for everybody. It does mean we can't flip the switch for you, but we can coach you through it, and we'll show you when it's working.</p>
+<p>On its own, the game does what it's allowed to do. It hides the system bars, makes the first swipe from an edge only show a hint, ignores the Android Back button, and keeps every button out of paw's reach. That cuts down on accidents. But to be honest: <b>without the lock, a determined paw can still swipe home.</b> The lock is the real lock.</p>
+<h3>🍎 iPhone and iPad: Guided Access</h3>
+<div class="grid2">
+<div><p><b>Set it up once</b></p>
+<ol class="steps">
+<li>Open <b>Settings › Accessibility › Guided Access</b> and turn it on.</li>
+<li>Tap <b>Passcode Settings</b> and set a <b>Guided Access passcode</b>. You can also allow Face ID or Touch ID.</li>
+</ol>
+<p><b>Start it each time</b></p>
+<ol class="steps">
+<li>Open Kitty's Squeak & Splash.</li>
+<li><b>Triple-click</b> the <b>side button</b> (iPhone) or <b>top button</b> (iPad). On older devices, triple-click the <b>Home button</b>. If a shortcuts menu pops up, tap <b>Guided Access</b>.</li>
+<li>Check <b>Options</b> (see the table below), then tap <b>Start</b>.</li>
+</ol></div>
+<div><figure><img src="images/ss-ios-buttons.svg" alt="Diagram: an iPhone with its side button highlighted and an iPad with its top button highlighted, each marked click times 3" style="max-height:1.8in"><figcaption>Where to triple-click</figcaption></figure>
+<div class="box tint" style="margin-top:.06in"><b>To finish:</b> triple-click again (on iOS or iPadOS 18 and earlier, double-click), enter your passcode or use Face ID or Touch ID, then tap <b>End</b>.</div></div>
+</div>
+<table><thead><tr><th scope="col">Guided Access option</th><th scope="col">Set it to</th><th scope="col">Why</th></tr></thead><tbody>
+<tr><td>Touch</td><td><b>On</b></td><td>Important! With Touch off, the screen ignores every touch, paws included. That's a very boring game.</td></tr>
+<tr><td>Motion</td><td>Off</td><td>Stops the screen from rotating when a cat bumps the tablet.</td></tr>
+<tr><td>Side / Top button, Volume buttons</td><td>Off</td><td>A paw on a button doesn't do anything.</td></tr>
+<tr><td>Time Limit</td><td>Optional</td><td>A backup to the game's own timer.</td></tr>
+<tr><td>Grown-up exit corner</td><td>Your choice</td><td>On (the default) keeps the in-game paw corner. Off hides it, so the triple-click is the only way out (Chapter 5).</td></tr>
+</tbody></table>
+</section>
+
+<section class="pg" aria-labelledby="t-android" style="position:relative">
+<img class="cameo" src="images/ss-bob.svg" alt="Bluegill Bob, a blue fish with a yellow belly" style="position:absolute;top:0;right:0;height:.55in;width:auto">
+<h3 id="t-android" style="font-size:16pt;color:var(--accent);margin-top:0">🤖 Android: screen pinning</h3>
+<p>On Android, the app can <i>ask</i> to pin itself to the screen. Android then asks <i>you</i> to confirm, every time. No app can skip that question, and that's on purpose.</p>
+<div class="grid2">
+<div><ol class="steps">
+<li>On the main menu, tap <b>🔒 Paw-proof setup</b>, then the <b>Lock to Kitty's Squeak & Splash</b> button.</li>
+<li>Android asks <b>"Pin app?"</b>. Read its note on how to unpin, then confirm.</li>
+<li><b>Nothing happened?</b> Some phones need pinning switched on first. The coach will show you. It's usually under <b>Settings › Security › Advanced › App pinning</b>, but menus differ by phone maker. Typing "pin" into the Settings search box finds it fastest.</li>
+<li><b>Turn on "Ask for PIN before unpinning."</b> This is strongly recommended. A cat <i>can</i> accidentally swipe up and hold. With this on, your phone's PIN is needed to get out.</li>
+</ol></div>
+<div><figure><img src="images/ss-android-pin.svg" alt="Illustration of two Android screens: the app's Paw-proof setup with a Lock to Kitty's Squeak and Splash button, then Android's own Pin app? message" style="max-height:2.4in"><figcaption>Lock button, then Android's own question. The wording varies by phone maker. Illustration, not a screenshot. The app is still being built, so the real screens may look different.</figcaption></figure></div>
+</div>
+<h3>Stay locked between games</h3>
+<p>This setting is on by default. Pin once from the menu, and the app stays pinned while you switch games, so Android doesn't ask again each time. Tap <b>Done playing</b> on the main menu when you're finished, and the app unpins.</p>
+<h3>How to unpin</h3>
+<table><thead><tr><th scope="col">If your phone uses…</th><th scope="col">Do this</th></tr></thead><tbody>
+<tr><td>Gesture navigation (swipe bar)</td><td>Swipe up and hold</td></tr>
+<tr><td>3-button navigation</td><td>Touch and hold <b>Back</b> and <b>Overview</b> together</td></tr>
+<tr><td>2-button navigation</td><td>Touch and hold <b>Back</b> and <b>Home</b> together</td></tr>
+</tbody></table>
+<p>Then enter your PIN, pattern or password if asked. Or just tap <b>Done playing</b> on the main menu.</p>
+<aside class="aside left" aria-label="Aside from Cheddar:"><img src="images/ss-cheddar.svg" alt="Cheddar, a yellow-cream mouse"><p class="bubble"><span class="who">Cheddar:</span>Pinned? Fine. Nobody leaves. I'll be in my fort. (The cupboard. It's a fort.)</p></aside>
+<div class="box note"><b>Bonus:</b> pinning also hides notifications during play. If you skip the lock on any device, turning on Do Not Disturb keeps pop-ups from distracting the hunter.</div>
+<div class="clear"></div>
+</section>
+
+<section class="pg" aria-labelledby="t-coach" style="position:relative">
+<h2 id="t-coach"><span class="kick">Chapter 4</span>The lock coach and "Locked ✅"</h2>
+<aside class="aside" aria-label="Aside from Goldie:"><img src="images/ss-goldie-smug.svg" alt="Goldie the goldfish looking smug"><p class="bubble"><span class="who">Goldie:</span>Locked ✅ is my favorite emoji. Nobody swipes me away mid-bloop.</p></aside>
+<p>You don't have to remember Chapter 3, because the app walks you through it. The <b>Paw-proof coach</b> appears the first time you open the app, and it's always on the main menu under <b>🔒 Paw-proof setup</b>. It's a few short illustrated cards for your kind of device:</p>
+<ul>
+<li><b>iPhone and iPad:</b> turn on Guided Access and set a passcode, come back and triple-click, then tap Start. The last card says <b>"Try it now"</b> and <b>turns green</b> the moment Guided Access is on. The coach shows the right button clicks for your iOS version.</li>
+<li><b>Android:</b> one line on what pinning does, the <b>Lock</b> button, help if pinning didn't start, the "Ask for PIN" tip, and how to unpin with your phone's kind of navigation.</li>
+</ul>
+<figure><img src="images/ss-mock-coach.svg" alt="Illustration of the iPad coach: three numbered cards for turning on Guided Access, triple-clicking, and tapping Start, and a green fourth card saying Try it now, Locked" style="max-height:1.65in"><figcaption>The iPad coach. Illustration, not a screenshot. The app is still being built, so the real screens may look different.</figcaption></figure>
+<h3>The badge on the pre-play sheet</h3>
+<p>Every time you open a game, the pre-play sheet tells you where things stand:</p>
+<p style="text-align:center"><span class="pill ok">Locked ✅</span> &nbsp; or &nbsp; <span class="pill warn">Not locked ⚠️ · Set up (30 seconds)</span></p>
+<div class="shots">
+<figure><img src="images/ss-mock-preplay.svg" alt="Illustration of the Fishing pre-play sheet showing a green Locked badge, choices for scene, speed, catch helper, prey on screen and timer, and a yellow Play button"><figcaption>Locked and ready</figcaption></figure>
+<figure><img src="images/ss-mock-preplay-unlocked.svg" alt="Illustration of the same pre-play sheet with an orange badge reading Not locked, Set up in 30 seconds"><figcaption>Not locked yet</figcaption></figure>
+</div>
+<p class="small">Illustration, not a screenshot. The app is still being built, so the real screens may look different.</p>
+<ul>
+<li>Tap <b>Set up</b> to open the coach. <b>Play is never blocked</b>, though. It's your cat and your call.</li>
+<li>If you play unlocked, you get one friendly reminder each time you open the app, with a <b>Don't remind me</b> option.</li>
+<li>If the lock ends in the middle of a game, nothing dramatic happens. The badge updates the next time you pause.</li>
+</ul>
+</section>
+
+<section class="pg" aria-labelledby="t-exit" style="position:relative">
+<h2 id="t-exit"><span class="kick">Chapter 5</span>The grown-up exit</h2>
+<aside class="aside" aria-label="Aside from Biscuit:"><img src="images/ss-biscuit-wow.svg" alt="Biscuit the gray tabby cat with wide eyes and an O-shaped mouth"><p class="bubble"><span class="who">Biscuit:</span>The human needed three numbers to leave. I needed zero to stay.</p></aside>
+<p>The lock keeps your cat in the app. The grown-up exit is how <b>you</b> get out of a game to pause, change the speed or stop early. A human can do it in about five seconds. A cat, even one lying across the screen, basically can't.</p>
+<ol class="steps">
+<li><b>Find the dim 🐾 paw</b> in the <b>top-left corner</b> (top-right in right-to-left languages). It never moves, and prey never run under it.</li>
+<li><b>Press and hold it for 3 seconds</b> with one finger. A ring fills up. Keep your finger still, and keep everything else off the screen: a second touch, a big touch (like a cat's belly) or sliding your finger starts the ring over.</li>
+<li><b>Prove you're human.</b> A panel says something like <b>"Tap 4 · 1 · 7"</b> above a keypad with the numbers shuffled. Tap the three digits in order within 10 seconds. A wrong digit makes the panel shake and start again. If you wait too long, it closes and the game carries on. There's no PIN to remember. (No cat has ever passed it. Several have tried napping on it.)</li>
+<li><b>The pause sheet opens</b> with the game frozen and the prey hidden: <b>Resume</b>, <b>End session</b>, or <b>Speed − / +</b>.</li>
+</ol>
+<div class="shots">
+<figure><img src="images/ss-mock-exit.svg" alt="Illustration of Mouse Chase with the paw badge in the top-left corner, a yellow ring partly filled around it, and a panel saying Tap 4, 1, 7 above a shuffled 3 by 3 keypad"><figcaption>Hold the paw, then tap the digits</figcaption></figure>
+<figure><img src="images/ss-mock-pause.svg" alt="Illustration of the pause sheet with Resume, End session, and Speed minus and plus buttons"><figcaption>The pause sheet</figcaption></figure>
+</div>
+<p class="small">Illustration, not a screenshot. The app is still being built, so the real screens may look different.</p>
+<div class="grid2">
+<div class="box"><h3>Good to know</h3><ul>
+<li>The pause sheet <b>resumes by itself</b> after 20 seconds with no touches, so a cat can't "win" by sitting on a frozen screen.</li>
+<li>The grown-up exit leaves the <i>game</i>. It doesn't end Guided Access or pinning. Do that when you're done for the day.</li>
+<li>With VoiceOver or TalkBack on, the paw is a normal labeled button ("Grown-up menu, double-tap and hold"), followed by the same digit check.</li>
+</ul></div>
+<div class="box"><h3>Want no corner at all? (iPad, iPhone)</h3><p>In Guided Access <b>Options</b>, switch off <b>Grown-up exit corner</b>. The paw disappears completely, and the only way out is the triple-click plus your passcode.</p>
+<h3>If the app gets left anyway</h3><p>The game pauses immediately and the sound stops. When you come back, you'll see the pause sheet, never the store or settings.</p></div>
+</div>
+</section>
+
+<section class="pg" aria-labelledby="t-fish" style="position:relative">
+<img class="cameo" src="images/ss-bob.svg" alt="Bluegill Bob, a blue fish with a bright yellow belly" style="position:absolute;top:0;right:0;height:.55in;width:auto">
+<h2 id="t-fish"><span class="kick">Chapter 6 · Free</span>🐟 Fishing</h2>
+<aside class="aside big" aria-label="Aside from Goldie:"><img src="images/ss-goldie-flip.svg" alt="Goldie the goldfish flipping out of a splash with sparkles"><p class="bubble"><span class="who">Goldie:</span>Catch and release, darling. You can catch me. You just can't keep me. Always one flick ahead.</p></aside>
+<p>A top-down pond seen from above. Fish glide in lazy S-curves, then <b>flick</b> away in a sudden burst. They dive (they fade and shrink, leaving a ripple) and pop up somewhere else, hide under lily pads, and dart off if a paw lands <i>near</i> them. Cats do most of their fishing with a swipe, so a paw that drags across a fish counts as a catch too.</p>
+<div class="shots">
+<figure><img src="images/ss-scene-koi-pond.svg" alt="Koi Pond scene: deep blue water with ripples, lily pads, two yellow fish, a blue fish and a pale dragonfly"><figcaption><b>Koi Pond</b>: deep blue water, lily pads, gentle ripples</figcaption></figure>
+<figure><img src="images/ss-scene-night-pond.svg" alt="Night Pond scene: a dark navy pond under a pale moon with glowing yellow fish"><figcaption><b>Night Pond</b>: a moonlit pond with glowing yellow fish</figcaption></figure>
+</div>
+<p class="small">Scene art in this guide is illustrated. The app's own art is still being made.</p>
+<table><thead><tr><th scope="col">Who's in the pond</th><th scope="col">What they're like</th></tr></thead><tbody>
+<tr><td>🐠 <b>Goldie</b></td><td>A yellow goldfish. Bright gold on deep blue is easy for cats to see.</td></tr>
+<tr><td>🐟 <b>Bluegill Bob</b></td><td>A blue fish with a bright yellow belly. Goldie's laid-back sidekick. Nothing bothers Bob.</td></tr>
+<tr><td>Koi, frog and crab</td><td>More pond pals, so the cast keeps changing.</td></tr>
+<tr><td>Dragonfly</td><td>A flyover that skims the surface. It's the fast, erratic one.</td></tr>
+</tbody></table>
+<h3>When a paw lands</h3>
+<p>A splash ring and sparkles, the fish does a flip and a "bloop," then swims off the screen. A new one arrives 1 to 3 seconds later. Nothing is ever hurt. You'll hear soft splashes and bubble plips. Nothing loud, ever.</p>
+<div class="joke" role="note"><b>Joke break:</b> Why are fish so smart? <em>Because they live in schools.</em></div>
+</section>
+
+<section class="pg" aria-labelledby="t-mouse" style="position:relative">
+<h2 id="t-mouse"><span class="kick">Chapter 7 · Free</span>🐭 Mouse Chase</h2>
+<aside class="aside big" aria-label="Aside from Squeakers:"><img src="images/ss-squeakers-dizzy.svg" alt="Squeakers the mouse, dizzy, with stars circling his head and the word Eep"><p class="bubble"><span class="who">Squeakers:</span>Eep! *faints dramatically* …I'm fine. I'm FINE. Same time tomorrow?</p></aside>
+<p>A top-down kitchen floor: tiles, a rug, the edge of a cupboard to hide under, and a mouse hole on each side. Mice move like real mice: <b>dart, freeze, twitch, dart</b>. They make short, fast runs, then freeze with a tiny whisker or tail twitch. They hug the walls, duck under the rug or the cupboard and peek back out, and they run <i>away from</i> or <i>across</i> your cat's path, never straight at it.</p>
+<figure><img src="images/ss-scene-kitchen-floor.svg" alt="Kitchen Floor scene: slate-blue tiles, a cupboard edge along the top, a golden rug, mouse holes at each side, a gray mouse and a cream mouse" style="max-height:1.9in"><figcaption><b>Kitchen Floor</b> (illustrated)</figcaption></figure>
+<div class="grid2">
+<div class="box"><img src="images/ss-squeakers.svg" alt="Squeakers" style="height:.55in;float:right"><b>Squeakers</b><br>The classic gray mouse. Every catch is a tiny stage faint.</div>
+<div class="box"><img src="images/ss-cheddar.svg" alt="Cheddar" style="height:.55in;float:right"><b>Cheddar</b><br>A bright yellow-cream mouse with a dark tail. Squeakers' bolder cousin. Thinks the cupboard is a fort.</div>
+</div>
+<ul>
+<li><b>The tail counts.</b> It's a separate, wiggly bit, because cats love to go for the tail.</li>
+<li><b>On a catch:</b> a puff of stars, a dizzy spin with little stars overhead ("Eep!"), and the mouse scampers into a hole. A new one pops out 1 to 3 seconds later.</li>
+<li><b>Sounds:</b> a squeak when a mouse darts, a double squeak when it freezes (not nonstop), and the skitter of little feet on tile.</li>
+</ul>
+<h3>Tricks both games use to keep cats interested</h3>
+<ul>
+<li><b>Something new every minute or so.</b> Every 45 to 90 seconds, the game swaps in a different prey or changes the light or ripples. Cats get bored of a toy that never changes.</li>
+<li><b>A "come back!" call.</b> If nobody has touched the screen for 30 seconds, a prey does something extra tempting with a squeak or splash. After three tries in a row, it stops. The cat has left the building, and we don't nag.</li>
+<li><b>Multi-cat friendly.</b> Up to four paws at once all count, so two cats can both catch.</li>
+</ul>
+<div class="joke" role="note"><b>Joke break:</b> What's a mouse's favorite game? <em>Hide and squeak.</em></div>
+</section>
+
+<section class="pg" aria-labelledby="t-set" style="position:relative">
+<img class="cameo" src="images/ss-squeakers-run.svg" alt="Squeakers running across the top of the page" style="position:absolute;top:0;right:0;height:.55in;width:auto">
+<h2 id="t-set"><span class="kick">Chapter 8</span>Settings</h2>
+<h3 style="margin-top:0">On the pre-play sheet (remembered for each game)</h3>
+<table><thead><tr><th scope="col">Setting</th><th scope="col">Choices (default in bold)</th><th scope="col">What it does</th></tr></thead><tbody>
+<tr><td>Scene and prey</td><td>Depends on the game</td><td>Pick the scene and which prey join in. Holiday scenes appear here if you own the Holiday Pack.</td></tr>
+<tr><td>Speed</td><td>Extra slow (seniors) · Slow · <b>Normal</b> · Zoomies · Frenzy (kittens)</td><td>How fast prey dart and swim.</td></tr>
+<tr><td>Catch helper</td><td>Easy · <b>Normal</b> · Tricky</td><td>How big the invisible catch area around each prey is. Easy is the most generous.</td></tr>
+<tr><td>Prey on screen</td><td>1 · 2 · <b>3</b> · 4 · 6 · 9 · 12 · 18 · 24 · 36</td><td>One or two suit a focused cat. Kittens and multi-cat homes often like more. Try 9 or more for a busy hunt.</td></tr>
+<tr><td>Prey size</td><td>Small · <b>Medium</b> · Large</td><td>Phones start on Large.</td></tr>
+<tr><td>Adaptive help</td><td><b>On</b> · Off</td><td>If paws are tapping but nothing's been caught for 45 seconds, prey quietly slow down a little and the catch area grows a little (up to twice). After three quick catches, it eases back.</td></tr>
+<tr><td>Session timer</td><td>5 · <b>10</b> · 15 · 20 · 30 minutes</td><td>See Chapter 9.</td></tr>
+</tbody></table>
+<p><b>Presets:</b> <b>Kitten</b> (Frenzy, 9 prey), <b>Adult</b> (the default: Normal, 3 prey) and <b>Senior</b> (Extra slow, 2 prey) set speed, catch helper, prey count and size in one tap.</p>
+<aside class="aside" aria-label="Aside from Biscuit:"><img src="images/ss-biscuit-happy.svg" alt="Biscuit the gray tabby cat grinning with a paw up"><p class="bubble"><span class="who">Biscuit:</span>Zoomies isn't a setting. It's a lifestyle. (Fine. It's also a setting.)</p></aside>
+<div class="box tint"><b>Why so much blue and yellow?</b> Cats see color differently from us. They tell blue from yellow well, but red and green look like dull gray-brown to them. So the app puts bright gold prey on deep blue water and slate-blue floors, and this guide is printed in the same colors. Biscuit approves.</div>
+<div class="joke" role="note"><b>Joke break:</b> What's a cat's favorite color? <em>Purr-ple! (Goldie says: to a cat, purple mostly looks blue. Nobody asked, Goldie.)</em></div>
+</section>
+
+<section class="pg" aria-labelledby="t-set2" style="position:relative">
+<h3 id="t-set2" style="font-size:16pt;color:var(--accent);margin-top:0">⚙️ Settings (main menu)</h3>
+<table><thead><tr><th scope="col">Setting</th><th scope="col">What it does</th></tr></thead><tbody>
+<tr><td>Sound</td><td>Off · <b>Soft</b> · Normal. <b>Play sound even on silent</b> is <b>on</b> by default on iPhone and iPad, so the game is heard even with the Ring/Silent switch on silent. Turn it off if you want the silent switch to mute the game.</td></tr>
+<tr><td>Haptics (phones)</td><td>A light buzz on each catch. On by default. iPads don't have the hardware for it.</td></tr>
+<tr><td>Paw Counter</td><td>A score for humans. Off by default (Chapter 9).</td></tr>
+<tr><td>Cat's name</td><td>Optional, for up to 3 cats. Used on the Paw Counter card. Kept on this device only.</td></tr>
+<tr><td>Default timer</td><td>The session length new games start with.</td></tr>
+<tr><td>Colors</td><td><b>Cat-vision colors</b> or <b>Realistic colors</b>. Both are checked for contrast.</td></tr>
+<tr><td>Nudge</td><td>Off by default. Some paws don't register well on glass (very dry or very furry pads). With Nudge on, a near miss makes the prey startle and dart away. It doesn't count as a catch, but your cat still gets a reaction.</td></tr>
+<tr><td>Reduce motion</td><td>Calms the animations on the <i>human</i> screens. Prey motion never changes, because prey motion is the whole point.</td></tr>
+<tr><td>Reset cat names and totals</td><td>Clears the cat names and Paw Counter totals on this device. Purchases aren't affected.</td></tr>
+<tr><td>Stay locked between games</td><td>Android only. On by default (Chapter 3).</td></tr>
+<tr><td>About, Privacy, Safety tips</td><td>The fine print, and the welfare tips from Chapter 13.</td></tr>
+</tbody></table>
+<h3>Quick recipes</h3>
+<div class="grid2">
+<div class="box"><b>🐈 Senior cat or a careful hunter:</b> the Senior preset (Extra slow), 1 or 2 prey, Large prey.</div>
+<div class="box"><b>🐾 Kitten with endless energy:</b> the Kitten preset (Frenzy, 9 prey). Go up to 18 or 36 for a real frenzy.</div>
+<div class="box"><b>🐈🐈 Two cats:</b> 3 to 6 prey on screen, so nobody has to share.</div>
+<div class="box"><b>📱 Playing on a phone:</b> Large prey (the phone default) and Catch helper on Easy.</div>
+<div class="box"><b>🫥 Paws not registering:</b> Catch helper on Easy, and Nudge on.</div>
+<div class="box"><b>🌙 Late-night hunt:</b> Sound on Soft, and the Night Pond scene.</div>
+</div>
+</section>
+
+<section class="pg" aria-labelledby="t-session" style="position:relative">
+<h2 id="t-session"><span class="kick">Chapter 9</span>Sessions and nap time</h2>
+<aside class="aside" aria-label="Aside from Biscuit:"><img src="images/ss-biscuit-sleepy.svg" alt="Biscuit the gray tabby cat asleep with z&#x27;s floating up"><p class="bubble"><span class="who">Biscuit:</span>Fine. One more fish. Then a four-hour nap.</p></aside>
+<p>Every game has a <b>session timer</b>. It's <b>10 minutes</b> by default, and you can choose 5, 10, 15, 20 or 30. A thin, dim line along the top edge shows how much time is left. You can see it, and it won't distract the cat.</p>
+<ul>
+<li><b>The wind-down.</b> In the last 30 seconds, prey slow down and head home: fish swim deep, mice duck into their holes. It's a natural finish, not a sudden stop.</li>
+<li><b>"All done!"</b> A calm, dark blue screen with a sleepy cartoon cat and the message <i>"Great hunt! Now grab a real toy and let them catch it 🧶"</i>. The sound stops and the device is allowed to sleep again.</li>
+<li><b>Play again?</b> Use the grown-up exit (Chapter 5), so a cat can't restart it with a paw. Most cats enjoy a few short sessions a day more than one long one.</li>
+<li><b>30 minutes is the most</b>, and there's no endless mode. That's on purpose (Chapter 13).</li>
+</ul>
+<figure><img src="images/ss-mock-alldone.svg" alt="Illustration of the All done screen: a sleepy tabby cat under a crescent moon, the words All done, Great hunt, now grab a real toy and let them catch it, and a Paw Counter card" style="max-height:2.3in"><figcaption>The &quot;All done!&quot; screen. Illustration, not a screenshot. The app is still being built, so the real screens may look different.</figcaption></figure>
+<h3>🐾 The Paw Counter (for humans)</h3>
+<p>Cats don't care about scores, but people love them. Turn on the <b>Paw Counter</b> in Settings to show a small, dim counter in the corner opposite the paw badge: catches, best streak and time played. At the end you get a card like <i>"Mittens caught <b>23</b> fish! Best streak: <b>5</b>."</i> with a fun title earned by catch count, from "Curious Kitten" (1 catch) and "Whisker Warrior" (10) to "Certified Mouser" (25) and "Legend of the Living Room" (50). Biscuit is still waiting for "Certified Pond Pirate." Totals are kept on this device for up to 3 named cats. There's no sharing button and no leaderboard.</p>
+<p>If your cat lies down on the screen, the counter may report <b>🍞 Loaf detected</b>. (See Chapter 15.)</p>
+<h3>🔋 Battery and heat</h3>
+<p>The screen stays awake <i>only</i> while a game is playing. If the battery drops to 15% and isn't charging, the game pauses with "Low battery · playing paused." In Low Power Mode or Battery Saver, the game uses a little less power by skipping some background effects. The scenes are dark by default, which also saves power on many screens.</p>
+</section>
+
+<section class="pg" aria-labelledby="t-holiday" style="position:relative">
+<img class="cameo" src="images/ss-cheddar.svg" alt="Cheddar the mouse" style="position:absolute;top:0;right:0;height:.55in;width:auto">
+<h2 id="t-holiday"><span class="kick">Chapter 10 · <span class="price">$1.99 once</span></span>The Holiday Pack</h2>
+<p><b>One purchase, every holiday scene, in every game, all year.</b> A holiday scene swaps in a themed backdrop and adds two holiday "guest" prey that join the game's usual cast, plus its own catch animation and sounds. It works in Fishing, Mouse Chase and every add-on game. (A game's own star, like Feather Frenzy's feather lure, stays put, and the guests run and flutter around it.)</p>
+<aside class="aside" aria-label="Aside from Squeakers:"><img src="images/ss-squeakers.svg" alt="Squeakers the mouse waving"><p class="bubble"><span class="who">Squeakers:</span>Hearts? Eggs? Finally, somebody else for the cat to chase.</p></aside>
+<h3>At launch: two scenes</h3>
+<div class="shots">
+<figure><img src="images/ss-scene-heart-flutters.svg" alt="Heart Flutters scene: a twilight rose garden under a deep blue sky with gold fairy lights, pink hearts with gold outlines, and a tiny heart-winged beetle"><figcaption><b>Heart Flutters</b> (Valentine's)</figcaption></figure>
+<figure><img src="images/ss-scene-egg-hunt.svg" alt="Egg Hunt scene: a spring meadow with blue sky, yellow daffodils, blue-and-yellow decorated eggs in the grass and a fluffy white bunny tail"><figcaption><b>Egg Hunt</b> (Easter)</figcaption></figure>
+</div>
+<div class="grid2">
+<div class="box"><h3>💗 Heart Flutters</h3><p>A twilight rose garden with soft gold fairy lights. <b>Flutter hearts</b> (pink with bright gold outlines, because red alone looks dull to a cat) zigzag like butterflies, hover, climb and land on a rose. <b>Lovebugs</b>, tiny beetles with heart-shaped wings, scurry along the stems and freeze. A caught heart pops into a puff of mini hearts with a soft "pop!" and a little "mwah."</p></div>
+<div class="box"><h3>🥚 Egg Hunt</h3><p>A spring meadow full of daffodils. <b>Wobble eggs</b> in blue and yellow wobble, roll, hop and hide in the grass. A <b>bunny tail</b> pops up, wiggles and ducks down. A caught egg cracks open to a random surprise: a chick that peeps and scurries off (bonus prey for 5 seconds), confetti, a butterfly, or a rolling jelly bean. The surprises are free and just for fun. Nothing is ever for sale inside an egg.</p></div>
+</div>
+<h3>And more as we make them</h3>
+<p>More holiday scenes are added over time, at no extra cost to Holiday Pack owners. They arrive in regular app updates (we don't have servers, so everything ships inside the app), so keep the app updated. We don't announce them ahead of time. You'll find out what's new in the update notes. The in-app store always shows what's actually included today, for example "2 holiday scenes so far, more as we add them."</p>
+<ul>
+<li><b>Featured, never locked.</b> In the weeks before a holiday, its scene gets an "In season" ribbon in the store, and owners see it suggested on the pre-play sheet. But every scene plays all year. Egg Hunt in October? Sure. Cats don't read calendars.</li>
+<li><b>Buy it any day</b>, not just in season. Nothing pops up during play, ever.</li>
+<li><b>No bangs, booms, fireworks or party horns</b>, in any scene. Many cats are afraid of them.</li>
+</ul>
+<div class="joke" role="note"><b>Holiday joke:</b> Why did the Easter egg hide? <em>It was a little chicken.</em></div>
+</section>
+
+<section class="pg" aria-labelledby="t-addon" style="position:relative">
+<h2 id="t-addon"><span class="kick">Chapter 11 · <span class="price">$0.99 each, once</span></span>Add-on games</h2>
+<p>Want more than fish and mice? Three more games are available at launch. Each one has its own scene and its own prey, all the usual settings, the grown-up exit and Paw Counter, and it works with the Holiday Pack.</p>
+<div class="grid3">
+<div class="box"><img src="images/ss-scene-feather-frenzy.svg" alt="Feather Frenzy scene: a living-room floor with a couch edge and a golden feather lure on a string" style="width:100%;border-radius:.08in"><h3>🪶 Feather Frenzy</h3><p><i>The wand toy, without the tired arm.</i> A bundle of feathers with two little bells hangs on a springy string that always comes in from off screen, like a real wand toy. It swoops in arcs to every corner, drags along the floor, flicks, hides behind the couch and peeks out, then dangles and twitches, and the bells jingle. The lure "lands" often, so your cat gets real catches.</p></div>
+<div class="box"><img src="images/ss-scene-bug-bonanza.svg" alt="Bug Bonanza scene: tiles with grout lines, yellow ladybugs, a dark blue beetle and a cricket" style="width:100%;border-radius:.08in"><h3>🐞 Bug Bonanza</h3><p><i>Beetles, ladybugs and crickets doing what bugs do best: being annoying.</i> They scurry and freeze along the tile lines, crickets hop, beetles flip over and right themselves, and little swarms scatter after a near miss. Bugs are small, so the catch area starts out extra generous.</p></div>
+<div class="box"><img src="images/ss-scene-birdie-buffet.svg" alt="Birdie Buffet scene: a lawn under a blue sky with two brown sparrows on the grass and a yellow finch flying" style="width:100%;border-radius:.08in"><h3>🐦 Birdie Buffet</h3><p><i>Cat TV, but this time she gets to play.</i> Sparrows and a finch, drawn from above with beating wings, hop, peck, freeze and look around, then flutter a short way when a paw lands nearby. Now and then one flies across the top. They tweet as they move, stop and get caught.</p></div>
+</div>
+<aside class="aside" aria-label="Aside from Biscuit:"><img src="images/ss-biscuit-smug.svg" alt="Biscuit the gray tabby cat looking smug"><p class="bubble"><span class="who">Biscuit:</span>Feather Frenzy: the wand toy, but nobody's arm gets tired. Not even mine. Especially not mine.</p></aside>
+<figure><img src="images/ss-mock-store.svg" alt="Illustration of the More games and holidays store: the Holiday Pack at $1.99 with an In season ribbon and the text 2 holiday scenes so far, three game tiles for Feather Frenzy, Bug Bonanza and Birdie Buffet at $0.99 each, and a Restore purchases link" style="max-height:1.75in"><figcaption>🛍️ More games &amp; holidays, on the main menu. Illustration, not a screenshot. The app is still being built, so the real screens may look different.</figcaption></figure>
+<p class="small">Each game in the store has a 5-second preview loop so you can see it move before you buy. Games you haven't bought can't be started, and there are no time-limited trials. The free games are the free trial, and they're free forever. Everything at launch (the Holiday Pack plus all three games) comes to $4.96.</p>
+</section>
+
+<section class="pg" aria-labelledby="t-buy" style="position:relative">
+<img class="cameo" src="images/ss-goldie.svg" alt="Goldie the goldfish" style="position:absolute;top:0;right:0;height:.55in;width:auto">
+<h2 id="t-buy"><span class="kick">Chapter 12</span>Buying, Family Sharing and restoring</h2>
+<div class="grid2">
+<div class="box tint"><h3>The rules we sell by</h3><ul>
+<li>Every purchase is <b>one-time</b>. You buy it once and keep it.</li>
+<li><b>No subscriptions</b>, no coins, no "special offer" pop-ups, and no timers on free play.</li>
+<li><b>Nothing can be bought from inside a game.</b> The store is only on the main menu, so a paw can't buy anything by accident.</li>
+<li><b>Restore purchases</b> is always visible in the store.</li>
+</ul></div>
+<div class="box"><h3>What's for sale</h3>
+<table style="margin:0"><tbody>
+<tr><td>Holiday Pack</td><td class="price">$1.99</td></tr>
+<tr><td>Feather Frenzy</td><td class="price">$0.99</td></tr>
+<tr><td>Bug Bonanza</td><td class="price">$0.99</td></tr>
+<tr><td>Birdie Buffet</td><td class="price">$0.99</td></tr>
+</tbody></table>
+<p class="small">US prices. Your store shows the price in your country.</p></div>
+</div>
+<h3>👨‍👩‍👧 Family Sharing (iPhone and iPad)</h3>
+<p>Family Sharing is <b>on for every purchase</b>. Buy the Holiday Pack once, and everyone in your Apple Family Sharing group can use it on their own devices. It shares the purchase only. Each device keeps its own settings and Paw Counter.</p>
+<p>On Android, purchases belong to the Google account you bought them with, and they come back on any Android device signed in to that account.</p>
+<h3>Restoring purchases (new phone, new tablet, reinstall)</h3>
+<ol class="steps">
+<li>Sign in to the same Apple account or Google account you bought with.</li>
+<li>On the main menu, tap <b>🛍️ More games &amp; holidays</b>.</li>
+<li>Tap <b>Restore purchases</b>. Your games and Holiday Pack unlock again.</li>
+</ol>
+<p><b>Got a gift code?</b> Tap <b>Redeem code</b> in the grown-up area on the main menu and type it in. The extra it's for unlocks right away.</p>
+<p>A purchase that's waiting for approval (like Apple's Ask to Buy) unlocks once it's approved. Settings, cat names and Paw Counter totals only move to a new device through the device's own backup (Chapter 14).</p>
+<aside class="aside left" aria-label="Aside from Biscuit:"><img src="images/ss-biscuit.svg" alt="Biscuit the gray tabby cat sitting politely"><p class="bubble"><span class="who">Biscuit:</span>One-time purchase. No subscription. Unlike my food bowl, which has a subscription. It's called 'me, yelling.'</p></aside>
+<div class="joke" role="note"><b>Joke break:</b> Why don't cats play cards in the jungle? <em>Too many cheetahs. (No cheating here either: one price, paid once.)</em></div>
+<div class="clear"></div>
+</section>
+
+<section class="pg" aria-labelledby="t-welfare" style="position:relative">
+<h2 id="t-welfare"><span class="kick">Chapter 13</span>Cat welfare tips</h2>
+<aside class="aside" aria-label="Aside from Biscuit:"><img src="images/ss-biscuit-yarn.svg" alt="Biscuit the gray tabby cat smiling next to a blue ball of yarn"><p class="bubble"><span class="who">Biscuit:</span>The best part of the hunt is the end. Bring the real toy. I'll wait. (I will not wait.)</p></aside>
+<p>We built this for cats we love, so here's the honest advice. The app shows these tips on first run and in <b>Settings › Safety tips</b>, too.</p>
+<h3>🧶 End with a real catch</h3>
+<p>On-screen prey can't truly be caught, so <b>every session ends with the "now grab a real toy" reminder</b>. Finish with a wand toy or a kicker your cat can grab and bite, or a treat. Cat experts recommend letting cats complete the whole hunt, right to the "got it!" part. The catch animations help, and the real toy finishes the job.</p>
+<h3>⏱️ Short and often</h3>
+<p>The default is 10 minutes. Most cats do best with a few short play sessions a day. The American Animal Hospital Association suggests two or three sessions of 10 to 15 minutes. <b>Stop sooner</b> if your cat seems frustrated (tail lashing, biting the screen, growling) or wanders off.</p>
+<h3>📱 Protect the screen, and the cat</h3>
+<ul>
+<li><b>Lay the tablet flat on the floor</b>, not propped up or near a table edge. Use a protective case.</li>
+<li><b>A tempered-glass screen protector</b> is cheap insurance against scratches. Bare glass usually holds up well to claws, but thin plastic film protectors may not, so we suggest glass.</li>
+<li><b>Keep claws trimmed</b>, and wipe the screen afterwards.</li>
+<li><b>Unplug the charger during play.</b> Cats chew cords. Charge before the session instead.</li>
+<li><b>Stay nearby.</b> Don't leave a cat alone with a device, and watch for chewing.</li>
+<li><b>Not for cats with known light-triggered seizures.</b> The app has no flashing, no strobing and no sudden loud noises, but check with your vet if you're unsure.</li>
+</ul>
+<div class="box note"><h3>🔦 Why there are no laser dots</h3><p>A laser dot is the one "prey" a cat can never catch. Studies of laser-pointer play (Kogan and Grigg, 2021 and 2022) found that cats who played with lasers often were more likely to show repetitive behaviors their owners noticed, like chasing lights and shadows. Those studies show a link, not proof that lasers cause it. But we'd rather every hunt end in a catch. So there's no laser dot in Kitty's Squeak & Splash. Every fish, mouse, bug and feather gets caught (and released).</p></div>
+<p class="small">These are general tips, not veterinary advice. Kitty's Squeak & Splash is a game, not a health product. Your vet knows your cat best.</p>
+</section>
+
+<section class="pg" aria-labelledby="t-phil" style="position:relative">
+<h2 id="t-phil"><span class="kick">Chapter 14</span>Our philosophy and your privacy</h2>
+<div class="grid2">
+<div><p>We make apps the way we'd want them for our own family (whiskered members included). Our apps are inexpensive, and you pay once for what you want. There are <b>no ads, no subscriptions and no accounts</b>, and <b>we don't collect or share any data</b>. Kitty's Squeak & Splash keeps everything on your device.</p>
+<p>Ads are especially bad in cat games. A cat can't close an ad, and a cat definitely shouldn't be tapping "Buy." So there aren't any.</p>
+<p>Kitty's Squeak & Splash comes from Zyzygy, Inc., a small company in Goldthwaite, Texas.</p></div>
+<div class="box tint"><h3>What we don't do</h3><ul class="dont"><li>No ads, ever</li><li>No subscriptions</li><li>No accounts or sign-in</li><li>No analytics or tracking</li><li>No data collected or shared</li></ul></div>
+</div>
+<aside class="aside" aria-label="Aside from Bluegill Bob:"><img src="images/ss-bob.svg" alt="Bluegill Bob, a blue fish with a yellow belly"><p class="bubble"><span class="who">Bluegill Bob:</span>No tracking, no accounts, no ads? Cool. Very relaxing. Carry on.</p></aside>
+<h3>What the app keeps, and where</h3>
+<p>Your settings, the optional cat names (up to 3) with their Paw Counter totals, whether you've seen the coach, and your "stay locked" choice. That's it. It's stored in one small file in the app's own storage on <b>this device</b>. Zyzygy has no server and never receives any of it.</p>
+<h3>The fine print, in plain words</h3>
+<ul>
+<li><b>Store privacy labels:</b> "Data Not Collected" on the App Store, and "No data collected · No data shared" on Google Play.</li>
+<li><b>No camera, microphone, location or contacts.</b> No photos, no sharing button, no chat.</li>
+<li><b>The internet is only for purchases.</b> Buying or restoring goes through Apple or Google under their privacy policies, and we never see your payment details. Everything else works offline.</li>
+<li><b>No "rate this app" pop-ups.</b> Nothing interrupts the hunt.</li>
+<li><b>Backups:</b> App data stays on the device. If you have Android's own backup turned on, the system may include it in your personal Google account backup so it can be restored to a new device. On iPhone and iPad, your own iCloud Backup or computer backup may include it the same way. Zyzygy never receives or can see those backups.</li>
+<li><b>Deleting:</b> <b>Reset cat names and totals</b> in Settings clears those, or delete the app to remove everything it kept. Your purchases stay with your Apple or Google account, ready for Restore.</li>
+</ul>
+<div class="clear"></div>
+</section>
+
+<section class="pg" aria-labelledby="t-trouble" style="position:relative">
+<img class="cameo" src="images/ss-cheddar.svg" alt="Cheddar the mouse" style="position:absolute;top:0;right:0;height:.55in;width:auto">
+<h2 id="t-trouble"><span class="kick">Chapter 15</span>Troubleshooting</h2>
+<aside class="aside" aria-label="Aside from Biscuit:"><img src="images/ss-biscuit-wow.svg" alt="Biscuit the gray tabby cat looking startled"><p class="bubble"><span class="who">Biscuit:</span>Have you tried sitting on it? (Please don't. That's my job.)</p></aside>
+<div class="faq">
+<h3>My cat got out of the app.</h3><p>Check the pre-play sheet for <b>Locked ✅</b>. Without the lock, a paw can still swipe home (Chapter 3). On iPhone and iPad, start Guided Access with the side or top button set to off. On Android, turn on <b>Ask for PIN before unpinning</b>, since a swipe-and-hold from a paw can unpin otherwise. Good news: the game paused itself the moment it was left, and you'll come back to the pause sheet.</p>
+<h3>My cat isn't interested.</h3><p>Try a different speed (Slow for careful hunters, Zoomies for the athletes), 1 or 2 prey for focus or 9 or more for kittens, the other game, or another scene. Turn the sound to Soft or Normal, because the squeaks and splashes matter. Put the tablet flat on the floor at cat level, and try when your cat is in a playful mood (often around dawn and dusk). Some cats just aren't screen cats, and that's OK. The free games let you find out without spending a cent.</p>
+<h3>Paw taps aren't counting.</h3><p>Set <b>Catch helper</b> to Easy and <b>Prey size</b> to Large. On iPad, a light fingertip or paw tap counts as well as a firm one. Turn on <b>Nudge</b> in Settings for cats whose pads don't register well on glass. Touches right at the very edge of the screen are ignored on purpose (that's where system swipes live). A thick screen protector can make any touchscreen less responsive.</p>
+<h3>The sound is too loud (or too quiet).</h3><p>Choose Off, Soft or Normal under <b>Settings › Sound</b>, and use the device's volume. Set the volume <i>before</i> starting Guided Access if you've turned the volume buttons off. No sound on an iPhone? Check that <b>Play sound even on silent</b> is on in Settings (it's on by default); if it's off, the Ring/Silent switch mutes the game. Every sound in the app is short and soft. There are no bangs or booms.</p>
+<h3>My cat lies down on the screen.</h3><p>Classic. Big touches like a belly, a tail or a whole cat loaf never count as catches and can't open the grown-up exit. If a cat settles in, the prey scatter to the far side of the screen and keep playing there, which often gets the cat back up. The Paw Counter may even report <b>🍞 Loaf detected</b>. (Why do cats sit on tablets? To keep an eye on the mouse.)</p>
+<h3>The battery drains fast, or the tablet gets warm.</h3><p>Shorter sessions help, and the timer ends play anyway. The game pauses at 15% battery when it isn't charging, uses less power in Low Power Mode or Battery Saver, and lets the screen sleep after "All done!". Please don't play while it's plugged in, because of the cord-chewing.</p>
+<h3>Tapping "Play again" does nothing.</h3><p>That's on purpose, so a cat can't restart the game. Use the grown-up exit: hold the 🐾 for 3 seconds, then tap the digits.</p>
+<h3>I bought the Holiday Pack, but a scene I've heard about isn't there.</h3><p>New scenes arrive in app updates. Update the app from the App Store or Google Play. If the pack itself looks locked, tap <b>Restore purchases</b>.</p>
+<h3>My purchase isn't showing.</h3><p>Tap <b>🛍️ More games &amp; holidays › Restore purchases</b> while signed in to the account you bought with.</p>
+<h3>Pop-up notifications distract my cat.</h3><p>On Android, pinning hides them. Otherwise, turn on Do Not Disturb before playing.</p>
+</div>
+</section>
+
+<section class="fl" aria-labelledby="t-faq" style="position:relative">
+<h2 id="t-faq"><span class="kick">Chapter 16</span>FAQ</h2>
+<aside class="aside" aria-label="Aside from Goldie:"><img src="images/ss-goldie.svg" alt="Goldie the goldfish blowing bubbles"><p class="bubble"><span class="who">Goldie:</span>Frequently Asked Questions. Mine is: 'Why is the cat staring at me?' Every day.</p></aside>
+<div class="faq">
+<h3>Is this a kids' app?</h3><p>No. It's made for grown-ups (and teens) who own cats, and for their cats.</p>
+<h3>Is it really free?</h3><p>Yes. Fishing and Mouse Chase, with every setting, are free forever, with no ads and no time limits. The Holiday Pack and add-on games are optional extras.</p>
+<h3>Is anything a subscription?</h3><p>No. Every purchase is one-time.</p>
+<h3>Could my cat buy something?</h3><p>No. There's no store, button or link anywhere in a game. The store lives only on the main menu.</p>
+<h3>Will future holiday scenes cost extra?</h3><p>Not if you own the Holiday Pack. Holiday scenes we add later are included at no extra cost.</p>
+<h3>Does it need the internet?</h3><p>No. Only buying or restoring a purchase does, through Apple or Google.</p>
+<h3>Where's the app on my home screen?</h3><p>Look for <b>Squeak&amp;Splash</b> under the icon. The full name is a bit long for that spot.</p>
+<h3>Does it play secret sounds only cats can hear?</h3><p>No. Phone and tablet speakers play sounds in the range people hear, too. The squeaks and splashes are recordings or sounds we made ourselves, short and soft.</p>
+<h3>Can two cats play at once?</h3><p>Yes. Up to four paws at once all count. Try 3 to 9 prey on screen.</p>
+<h3>Is it good for my cat?</h3><p>It's play. Play it the way Chapter 13 describes: short hunts, a real toy at the end, and you nearby. It's a game, not a health product.</p>
+<h3>Is it accessible for the humans?</h3><p>The menus and settings follow your text size (Dynamic Type on iPhone and iPad, font size on Android), work with VoiceOver and TalkBack, and meet WCAG AA contrast. The grown-up exit has a VoiceOver and TalkBack version (Chapter 5).</p>
+</div>
+<div class="joke" role="note"><b>Joke break:</b> What do you call a cat that always gets its way? <em>Purr-suasive.</em></div>
+</section>
+
+<section class="pg" aria-labelledby="t-hello">
+<h2 id="t-hello"><span class="kick">The end of the hunt</span>Say hello</h2>
+<div class="cover" style="text-align:center">
+<p class="lead" style="margin-top:0">Questions, ideas, or a story about the greatest hunter in your house? We'd love to hear it.</p>
+<p style="font-size:16pt;margin:.06in 0"><b>support@zyzygy.us</b></p>
+<p>We reply within 2 business days.</p>
+<p>Website: <b>zyzygy.us</b></p>
+<div class="cast"><img src="images/ss-goldie-smug.svg" alt="Goldie the goldfish" style="height:.8in"><img src="images/ss-biscuit-happy.svg" alt="Biscuit the gray tabby cat grinning and waving a paw" style="height:1.3in"><img src="images/ss-squeakers.svg" alt="Squeakers the mouse waving goodbye" style="height:.8in"></div>
+<p class="small">Kitty's Squeak & Splash is in development for the App Store and Google Play. App screens and scenes in this guide are illustrations. Prices are set by the stores and shown here as US prices. © Zyzygy, Inc., Goldthwaite, Texas.</p>
+</div>
+<div class="joke" role="note"><b>One more for the road:</b> What's a cat's favorite button on the remote? <em>Paws.</em></div>
+</section>
+</main></body></html>

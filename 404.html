@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found · Zyzygy, Inc.</title>
+<meta name="description" content="Page not found.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<style>
+/* Zyzygy draft site: one shared stylesheet. System fonts only, no external requests. */
+:root{--ink:#1d2433;--muted:#4a5568;--bg:#fffdf8;--band:#f3efe6;--accent:#1f4e8c;--accent-ink:#fff;--gold:#c98a1b;--line:#ddd5c4;--mark:#fff1a8}
+*{box-sizing:border-box}
+html{font-size:100%}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.25rem}
+a{color:var(--accent)}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:.5rem 1rem;z-index:10}
+.skip:focus{left:0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.draft{background:#7a1f1f;color:#fff;text-align:center;font-size:.9rem;padding:.35rem 1rem}
+header.site{border-bottom:1px solid var(--line);background:#fff}
+header.site .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem;padding-top:.75rem;padding-bottom:.75rem}
+.brand{font-weight:800;font-size:1.2rem;text-decoration:none;color:var(--ink)}
+nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:1rem}
+nav a{text-decoration:none;font-weight:600}
+nav a[aria-current="page"]{text-decoration:underline;text-underline-offset:.3em}
+section{padding:3rem 0}
+section.band:nth-of-type(even){background:var(--band)}
+.hero{background:linear-gradient(180deg,#14264a,#1f4e8c);color:#fff}
+.hero a:not(.btn){color:#fff}
+.hero .lead{color:#e8eefb}
+h1{font-size:clamp(2rem,5vw,3rem);line-height:1.15;margin:0 0 1rem}
+h2{font-size:clamp(1.5rem,3.5vw,2rem);line-height:1.2;margin:0 0 .75rem}
+h3{font-size:1.15rem;margin:1.25rem 0 .25rem}
+.lead{font-size:1.2rem;color:var(--muted);max-width:40rem}
+.split{display:grid;grid-template-columns:1.3fr 1fr;gap:2.5rem;align-items:center}
+@media (max-width:48rem){.split{grid-template-columns:1fr}}
+.media{text-align:center}
+img{max-width:100%;height:auto}
+.shot{max-height:32rem;width:auto;border-radius:1rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));gap:1.5rem;margin-top:1rem}
+.card{background:#fff;border:1px solid var(--line);border-radius:1rem;padding:1.25rem}
+.cardimg{display:block;margin:0 auto 1rem;max-height:14rem;width:auto;border-radius:.75rem}
+.card h3{margin-top:0}
+.tag{color:var(--muted);font-size:.95rem;margin:.25rem 0 .75rem}
+.buttons{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.25rem}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:.7rem 1.2rem;border-radius:.6rem;font-weight:700;text-decoration:none;min-height:44px}
+.hero .btn{background:#fff;color:#14264a}
+.btn.alt{background:transparent;color:var(--accent);border:2px solid var(--accent)}
+.hero .btn.alt{color:#fff;border-color:#fff;background:transparent}
+.faq h3{margin-top:1.5rem}
+mark.ph{background:var(--mark);color:#3b2f00;padding:0 .2em;border-radius:.2em}
+footer.site{border-top:1px solid var(--line);padding:2rem 0;background:#fff}
+.small{font-size:.9rem;color:var(--muted)}
+ul,ol{padding-left:1.4rem}
+li{margin:.25rem 0}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+/* From company.css (the contact-form rules were dropped: the site uses an email link only). */
+button.btn{border:0;font:inherit;font-weight:700;cursor:pointer}
+/* Oct 15, 2026 (b): badge, section highlight in the nav, splash card. */
+.badge{display:inline-block;background:#ffd23f;color:#14264a;font-weight:800;font-size:.9rem;padding:.2rem .7rem;border-radius:999px;margin:0 0 .75rem}
+nav a.here{text-decoration:underline;text-decoration-style:dotted;text-underline-offset:.3em}
+.splash{background:linear-gradient(180deg,#0f1e3d,#1f4e8c);color:#fff;padding:5rem 0 6rem;text-align:center}
+.splash a:not(.btn){color:#fff}
+.splash-card{max-width:40rem;margin:0 auto}
+.splash-mark{display:inline-flex;align-items:center;justify-content:center;width:5rem;height:5rem;border-radius:1.25rem;background:#ffd23f;color:#0f1e3d;font-weight:900;font-size:3rem;margin:0 auto 1.25rem}
+.splash .lead{color:#e8eefb;margin:0 auto 1rem;font-size:1.35rem}
+.splash .buttons{justify-content:center}
+.splash .btn{background:#fff;color:#14264a}
+.splash .btn.alt{background:transparent;color:#fff;border:2px solid #fff}
+.splash .btn.big{background:#ffd23f;color:#0f1e3d;font-size:1.15rem;padding:.85rem 1.6rem}
+@media (max-width:30rem){nav ul{gap:.35rem .8rem}nav a{font-size:.95rem}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="wrap"><a class="brand" href="index.html">Zyzygy, Inc.</a>
+<nav aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="apps.html">Apps</a></li><li><a href="guides.html">Guides</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></nav></div></header>
+<main id="main">
+<section id="not-found" class="hero" aria-labelledby="not-found-h"><div class="wrap"><div class="text"><h1 id="not-found-h">Page not found</h1><p class="lead">Sorry, that page isn't here. It may have moved, or the address may have a typo.</p><p class="buttons"><a class="btn" href="index.html">Go to the home page</a><a class="btn alt" href="contact.html">Contact us</a></p></div></div></section>
+</main>
+<footer class="site"><div class="wrap">
+<nav aria-label="Site, support and privacy"><p><a href="index.html">Home</a> · <a href="services.html">Services</a> · <a href="apps.html">Apps</a> · <a href="guides.html">User guides</a> · <a href="about.html">About</a> · <a href="contact.html">Contact</a> · <a href="countdown-calendar-support.html">Countdown Calendar support</a> · <a href="countdown-calendar-privacy.html">Countdown Calendar privacy</a> · <a href="reward-buddy-support.html">Reward Buddy support</a> · <a href="reward-buddy-privacy.html">Reward Buddy privacy</a> · <a href="squeak-splash-support.html">Kitty's Squeak & Splash support</a> · <a href="squeak-splash-privacy.html">Kitty's Squeak & Splash privacy</a> · <a href="peggys-presidents-support.html">Peggy's Presidents support</a> · <a href="peggys-presidents-privacy.html">Peggy's Presidents privacy</a> · <a href="ww2-facts-support.html">WWII Facts support</a> · <a href="ww2-facts-privacy.html">WWII Facts privacy</a> · <a href="mendels-games-support.html">Mendel's Games support</a> · <a href="mendels-games-privacy.html">Mendel's Games privacy</a> · <a href="site-privacy.html">Website privacy</a></p></nav>
+<p class="small">Countdown Calendar, Reward Buddy, Kitty&#x27;s Squeak &amp; Splash, WWII Facts and Mendel&#x27;s Games are working names. They aren&#x27;t confirmed in the App Store or Google Play yet and may change.</p>
+<p class="small">© 2026 Zyzygy, Inc. · Goldthwaite, Texas · <a href="mailto:support@zyzygy.us">support@zyzygy.us</a></p>
+</div></footer>
+</body>
+</html>

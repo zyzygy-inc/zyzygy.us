@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en"><head><link rel="icon" href="../favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reward Buddy Guide · Zyzygy, Inc.</title><meta name="description" content="The illustrated guide to Reward Buddy, the chore-and-reward app for kids 2 to 8.">
+<style>
+:root{--ink:#1F2340;--muted:#4a5568;--bg:#fffdf8;--band:#f3efe6;--accent:#6C4AB6;--accent2:#1A5FD0;--soft:#F1E9FF;--line:#ddd5c4;--gold:#c98a1b}
+*{box-sizing:border-box}
+html{font-size:100%}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Color Emoji",sans-serif;color:var(--ink);background:var(--bg);line-height:1.42;font-size:10.5pt}
+main{max-width:7.3in;margin:0 auto;padding:.4in .3in}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:.5rem 1rem}
+.skip:focus{left:0}
+a{color:var(--accent)}
+h1,h2,h3{line-height:1.15;color:var(--ink)}
+h2{font-size:21pt;margin:0 0 .12in;color:var(--accent)}
+h2 .kick{display:block;font-size:9.5pt;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:.03in}
+h3{font-size:13pt;margin:.16in 0 .05in}
+p{margin:.06in 0 .08in}
+ul,ol{margin:.04in 0 .1in;padding-left:.26in}
+li{margin:.03in 0}
+section.pg{break-before:page;padding-top:.02in}
+section.pg:first-of-type{break-before:auto}
+section.fl{margin-top:.28in;clear:both}
+h2,h3{break-after:avoid;break-inside:avoid}
+.cover .cast img{height:1.05in}
+.cover{background:linear-gradient(180deg,#14264a,var(--accent));color:#fff;border-radius:.22in;padding:.42in .42in .3in;position:relative;overflow:hidden}
+.cover h1{color:#fff;font-size:34pt;margin:.05in 0 .08in}
+.cover .kicker{font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:10pt;color:#e8eefb}
+.cover .lead{font-size:15pt;color:#e8eefb;margin:0 0 .12in}
+.cover .soon{display:inline-block;background:#fff;color:#14264a;font-weight:800;border-radius:.1in;padding:.05in .14in;margin-top:.06in}
+.cast{display:flex;flex-wrap:wrap;gap:.12in;justify-content:center;margin:.22in 0 .1in}
+.cast img{height:1.25in;width:auto}
+.small{font-size:9.5pt;color:var(--muted)}
+.cover .small{color:#e8eefb}
+.toc{columns:3;column-gap:.35in;padding-left:.22in}
+.toc li{break-inside:avoid}
+.box{background:#fff;border:1px solid var(--line);border-radius:.14in;padding:.12in .18in;margin:.12in 0;break-inside:avoid}
+.box h3{margin-top:.02in}
+.box.tint{background:var(--soft);border-color:var(--soft)}
+.box.note{border-left:6px solid var(--accent)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:.14in}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.12in}
+.grid2 > .box,.grid3 > .box,.grid2 > .joke,.grid3 > .joke{margin:0}
+.grid2,.grid3{margin:.08in 0;clear:both}
+table{border-collapse:collapse;width:100%;margin:.08in 0 .12in;font-size:10pt;break-inside:auto}
+th,td{border:1px solid var(--line);padding:.04in .07in;text-align:left;vertical-align:top}
+th{background:var(--band)}
+tr{break-inside:avoid}
+.aside{float:right;clear:right;width:2.6in;margin:.02in 0 .1in .18in;display:flex;gap:.08in;align-items:flex-start;break-inside:avoid}
+.aside.left{float:left;clear:left;margin:.02in .18in .1in 0}
+.aside img{width:.8in;height:auto;flex:0 0 auto}
+.aside .bubble{flex:1 1 auto;min-width:0}
+.aside.big img{width:1.15in}
+.bubble{position:relative;background:#fff;border:2px solid var(--accent);border-radius:.16in;padding:.07in .1in;font-size:10pt;line-height:1.35;margin:.08in 0 0}
+.bubble::before{content:"";position:absolute;left:-.1in;top:.16in;border:.06in solid transparent;border-right-color:var(--accent)}
+.bubble .who{display:block;font-weight:800;color:var(--accent);font-size:9pt}
+.clear{clear:both}
+figure{margin:.1in 0;break-inside:avoid;text-align:center}
+figure img{max-width:100%;height:auto}
+figcaption{font-size:9pt;color:var(--muted);margin-top:.04in}
+.shots{display:flex;gap:.14in;justify-content:center;align-items:flex-start}
+.shots figure{flex:1 1 0;margin:0}
+.shots img{max-height:3.3in;width:auto}
+.row{display:flex;gap:.1in;justify-content:center;align-items:flex-end;flex-wrap:wrap}
+.row img{height:.95in;width:auto}
+.joke{clear:both;background:#fff7d6;border:2px dashed var(--gold);border-radius:.14in;padding:.08in .14in;margin:.1in 0;break-inside:avoid}
+.joke b{color:#5c3d00}
+.price{font-weight:800;color:var(--accent)}
+.tag{display:inline-block;font-size:8.5pt;font-weight:800;border-radius:.06in;padding:0 .06in;background:var(--band);color:var(--ink);vertical-align:1px}
+.tag.free{background:#dff3e4;color:#1b5e20}
+.tag.paid{background:#e9e4fb;color:#3b2a7a}
+.steps{counter-reset:s;list-style:none;padding-left:0}
+.steps li{counter-increment:s;position:relative;padding-left:.38in;margin:.07in 0}
+.steps ul{list-style:disc;padding-left:.25in}
+.steps ul li{counter-increment:none;padding-left:0;margin:.02in 0}
+.steps ul li::before{content:none}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:.27in;height:.27in;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;text-align:center;line-height:.27in;font-size:10pt}
+.faq h3{font-size:11.5pt;margin:.12in 0 .02in}
+.faq p{margin-top:0}
+.dont{list-style:none;padding:0;font-size:12pt;font-weight:700}
+.dont li::before{content:"✗ ";color:#b3261e}
+.kid{background:#fff;border:3px solid var(--accent2);border-radius:.2in;padding:.14in .2in;font-size:15pt;line-height:1.45;break-inside:avoid;margin:.12in 0}
+.kid .badge{display:inline-block;background:var(--accent2);color:#fff;font-size:9pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border-radius:.08in;padding:.02in .1in;margin-bottom:.04in}
+.grownup{display:inline-block;background:#1d2433;color:#fff;font-size:9pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border-radius:.08in;padding:.02in .1in}
+.end{text-align:center}
+@page{size:letter;margin:.55in .6in .6in;@bottom-center{content:"Reward Buddy Guide · page " counter(page);font-family:system-ui,sans-serif;font-size:8.5pt;color:#4a5568}}
+@media print{main{max-width:none;padding:0} body{background:#fff} a{color:var(--accent);text-decoration:none} .skip{display:none}}
+@media screen{section.pg{border-top:2px dashed var(--line);margin-top:.4in;padding-top:.3in} section.pg:first-of-type{border:0;margin:0}}
+@media (max-width:40rem){.aside{float:none;width:auto;margin:.1in 0} .grid2,.grid3{grid-template-columns:1fr} .shots{flex-wrap:wrap} .toc{columns:1}}
+</style></head>
+<body><a class="skip" href="#main">Skip to content</a><main id="main">
+<section class="pg" aria-labelledby="t-cover">
+<div class="cover">
+<p class="kicker">Zyzygy, Inc. · Goldthwaite, Texas</p>
+<h1 id="t-cover">Reward Buddy<br>The Official Guide</h1>
+<p class="lead">Chores earn robot dance parties. Made for kids 2 to 8 and the grown-ups who love them.</p>
+<div class="cast"><img src="images/rb-robo-cheer.png" alt="Robo the robot cheering with both arms up and its antenna light glowing" style="height:1.25in"></div>
+<p><span class="soon">In development for the App Store and Google Play</span></p>
+<p class="small">Designed for the family tablet (iPad and Android tablets). Works on phones too. The characters in this guide are the app's own drawings.</p>
+</div>
+<section class="fl" aria-labelledby="t-welcome">
+<h2 id="t-welcome"><span class="kick">Hello!</span>Beep-boop! Welcome to Reward Buddy.</h2>
+<aside class="aside" aria-label="Aside from Robo:"><img src="images/rb-robo-idle.png" alt="Robo the robot, smiling"><p class="bubble"><span class="who">Robo:</span>I am Robo. I am an excellent dancer. (Everyone says I'm off-beat. That's on purpose.)</p></aside>
+<p>Reward Buddy is a chore chart that little kids can run themselves. A child taps their own picture, taps the chore they did, and gets a big happy celebration and points. Then <i>they</i> decide how to spend those points: a robot dance party, a joke read out loud, a certificate for their wall, or a grown-up reward like picking what's for dinner.</p>
+<p>This guide is for parents, grandparents and caregivers. Boxes marked <span class="tag">📖 Read along together</span> are written for kids to enjoy with a grown-up. Everything about purchases is in clearly marked <span class="grownup">For grown-ups</span> pages.</p>
+<h3>What's inside</h3>
+<p><b>1</b> How it works · <b>2</b> One tablet, by design · <b>3</b> Why it's built this way · <b>4</b> Setting up · <b>5</b> The kids' side · <b>6</b> Rewards · <b>7</b> The Wall of Wins · <b>8</b> The grown-up area · <b>9</b> Settings and kiosk · <b>10</b> The holiday surprise · <b>11</b> What unlocking adds · <b>12</b> Our philosophy and your privacy · <b>13</b> Troubleshooting · <b>14</b> FAQ · and Say hello</p>
+<div class="clear"></div>
+</section>
+</section>
+
+<section class="pg" aria-labelledby="t-how">
+<h2 id="t-how"><span class="kick">Chapter 1</span>How it works (in four taps)</h2>
+<ol class="steps">
+<li><b>Who's playing?</b> Each child taps their own picture on the home screen. Big tiles, no reading needed.</li>
+<li><b>What did you do?</b> They tap the chore they did, like 🛏️ Make bed or 🪥 Brush teeth. Robo cheers, confetti flies, and "+150 points!" pops up.</li>
+<li><b>🎁 Rewards.</b> When they're ready, they open Rewards and choose how to spend their points, or keep saving for something bigger.</li>
+<li><b>🖼️ My Wall.</b> Certificates they earn go up on their own Wall of Wins, where they can star their favorites.</li>
+</ol>
+<div class="box tint"><b>Grown-ups stay in charge of the menu.</b> Behind a 4-digit PIN, you set up the kids, the chores and the grown-up rewards, and you see when someone has redeemed a reward that needs you. The kids' side has no settings, no store and no links.</div>
+<h3>What's free</h3>
+<div class="clear"></div>
+<div class="grid2">
+<div class="box"><ul>
+<li>Unlimited kids, with 24 avatars and 10 colors</li>
+<li>Robo the robot</li>
+<li>5 built-in chores, which you can rename</li>
+<li>💃 Dance Party, 😂 Tell me a joke and 🏅 Great Job Certificate</li>
+</ul></div>
+<div class="box"><ul>
+<li>🍕 Pick dinner and 👑 Royalty for the day, two grown-up rewards</li>
+<li>30 jokes, the Classic Gold certificate design, and the Wall of Wins</li>
+<li>Sharing a certificate as a picture, the PIN, alerts and "Lock to app"</li>
+<li>A holiday surprise every December (Chapter 10)</li>
+</ul></div>
+</div>
+<div class="row" style="margin-top:.15in">
+<img src="images/rb-robo-cheer.png" alt="Robo cheering">
+</div>
+<div class="joke" role="note"><b>Robo's favorite joke:</b> Why did the robot go on vacation? <em>It needed to recharge its batteries!</em></div>
+</section>
+
+<section class="pg" aria-labelledby="t-one">
+<h2 id="t-one"><span class="kick">Chapter 2</span>One tablet, by design</h2>
+<div class="box" style="border:3px solid var(--accent);background:var(--soft)">
+<div class="aside" style="width:2.2in"><img src="images/rb-robo-idle.png" alt="Robo the robot"><p class="bubble"><span class="who">Robo:</span>I live on this tablet. I like it here. I never go anywhere else.</p></div>
+<p style="font-size:13pt;margin-top:0"><b>Reward Buddy has no accounts, and that's on purpose.</b> Everything it knows about your child stays on the one tablet (or phone) where you set it up. Nothing syncs between devices, and Zyzygy never receives any of it.</p>
+<p>We built it this way to protect your child. There's no profile in the cloud, no login to lose, and no company server holding your child's name, chores or points. We couldn't see that information even if we wanted to.</p>
+<div class="clear"></div>
+</div>
+<h3>What this means day to day</h3>
+<ul>
+<li><b>Pick one device for chores.</b> Reward Buddy is designed for a child to use <b>one device</b> to record finished chores and pick rewards. Most families use the family tablet in the kitchen or living room.</li>
+<li><b>Each device is its own separate copy.</b> If you install Reward Buddy on two devices, each one has its own kids, chores, points, rewards and Wall. Points earned on the iPad won't show up on Grandma's tablet, and that's expected.</li>
+<li><b>Grown-up alerts appear on the same tablet.</b> When a child redeems Pick dinner, the alert shows on that tablet, not on your phone. There's no server to send it anywhere else.</li>
+<li><b>Family Sharing shares the purchase, not the data.</b> On iPhone and iPad, Family Sharing lets everyone in your family group use <b>Reward Buddy Plus</b> on their own devices. It doesn't share or copy any kids, points or certificates.</li>
+<li><b>Moving to a new tablet?</b> Purchases come back with <b>Restore purchases</b>. Your kids' points and Walls can come along only through the tablet's own backup (Android's backup in your personal Google account, or iCloud Backup or a computer backup on iPad). Zyzygy never receives or can see those backups. See Chapter 12.</li>
+</ul>
+<div class="box note"><b>Visiting Grandma?</b> If Grandma has Reward Buddy too, her tablet keeps its own chart. Some families like that: "Grandma's house points" are their own special thing.</div>
+</section>
+
+<section class="pg" aria-labelledby="t-why">
+<h2 id="t-why"><span class="kick">Chapter 3</span>Why it's built this way</h2>
+<aside class="aside" aria-label="Aside from Robo:"><img src="images/rb-robo-cheer.png" alt="Robo cheering"><p class="bubble"><span class="who">Robo:</span>My design philosophy is: more dancing. The grown-ups added the other parts.</p></aside>
+<p>Little kids don't get to choose much. In Reward Buddy, they do. Every part of the app is built so a child of 2 to 8 makes the choices, and a grown-up sets the menu.</p>
+<div class="clear"></div>
+<div class="grid2">
+<div class="box"><h3>🙋 Their chores, their tap</h3><p>Kids record their own chores. They tap their own picture and the chore they did, and the celebration happens right then. Every kid-facing button has a picture <i>and</i> a word, so even kids who don't read yet can find their way.</p></div>
+<div class="box"><h3>🐷 Spend now or save up</h3><p>Rewards come in three sizes: 100, 500 and 1,000 points. Kids see every reward, including the ones they're saving for, with a friendly "Need 150 more." A Dance Party now, or Royalty for the day later? It's their call.</p></div>
+<div class="box"><h3>🎁 They pick the reward</h3><p>You choose which rewards are on the menu. They choose which one to spend their points on, and when.</p></div>
+<div class="box"><h3>🎉 Effort gets celebrated</h3><p>Every chore gets a cheer, confetti and a buddy who's thrilled. Nothing on the kids' side takes points away. Even when the points jar is full, the buddy still cheers and simply suggests it's time to spend.</p></div>
+</div>
+<h3>💛 Rewards that cost nothing</h3>
+<p>We wanted rewards that don't mean buying more stuff. The built-in rewards are a 10 to 15 second robot dance party, a joke read aloud, and a Great Job certificate, all delivered by the app. The bigger rewards are <b>time together and privileges</b> you already have at home: <b>Pick dinner</b> and <b>Royalty for the day</b>. With Plus, you can add your own, with ideas like "Bake cookies together," "Trip to the park," "Pick the movie," "Breakfast for dinner" or "Pick a game for family game night."</p>
+<h3>🧺 A full jar means it's time to spend</h3>
+<p>The points jar holds up to 1,000 points. When it fills up, the app says <i>"You filled your points jar! Time to spend your points!"</i> and the Rewards button starts to pulse. That way points turn into dance parties and family time instead of piling up forever.</p>
+<p class="small">These are design choices, not promises about behavior. Every family is different, and you know yours best.</p>
+</section>
+
+<section class="pg" aria-labelledby="t-setup">
+<h2 id="t-setup"><span class="kick">Chapter 4</span>Setting up (about five minutes)</h2>
+<aside class="aside" aria-label="Aside from Robo:"><img src="images/rb-robo-idle.png" alt="Robo the robot"><p class="bubble"><span class="who">Robo:</span>Step 1: install me. Step 2: there is no step 2. (There are steps 2 to 5. I miscounted.)</p></aside>
+<ol class="steps">
+<li><b>Once it's released, install</b> Reward Buddy from the App Store (iPad and iPhone) or Google Play (Android tablets and phones). There's no account to create.</li>
+<li><b>"Welcome to Reward Buddy!"</b> Tap to begin.</li>
+<li><b>Make a 4-digit grown-up PIN</b>, then type it again. If you pick an easy one like 1234 or 0000, the app warns you ("That PIN is easy to guess. Use it anyway?"). It's your choice.</li>
+<li><b>"Who's in your family?"</b> Add each child: a first name or nickname (up to 20 letters), one of 24 avatars (🦊 🐱 🐶 🐰 🦖 🚀 🌈 and friends) and a color. Want to look around first? Tap <b>Try it with a demo kid</b> to add "Demo Kid" 🦊 with 250 points. You can delete Demo Kid later.</li>
+<li><b>"All set! Chores are ready to go."</b> Five chores are already loaded: 🛏️ Make bed (100), 🪥 Brush teeth (150), 🧸 Put away toys (100), 🍽️ Help set table (150) and 👕 Get dressed (200).</li>
+</ol>
+<div class="box note"><b>Tip:</b> rename any of the five built-in chores so they use your family's own words, like "Feed the dog" instead of "Put away toys." Go to <b>Grown-ups 🔒 › Chores › Rename</b>. Renaming is free.</div>
+<h3>Turn on grown-up alerts</h3>
+<p>When asked, allow notifications. Then when a child redeems a grown-up reward, this tablet shows "Maya redeemed Pick dinner!" so you know to make it happen. You can change this any time in <b>Settings</b>.</p>
+<h3>Where to put it</h3>
+<p>Reward Buddy works in landscape or portrait. On a tablet held sideways, the buddy is on the left and the chores are on the right. On phones, everything stacks into one column with big buttons. A kitchen counter at kid height is perfect.</p>
+</section>
+
+<section class="pg" aria-labelledby="t-kids">
+<h2 id="t-kids"><span class="kick">Chapter 5</span>The kids' side</h2>
+<div class="kid" role="region" aria-label="Read-along: Hi, I'm Robo"><span class="badge">📖 Read along together</span><p style="margin-top:.04in"><img src="images/rb-robo-idle.png" alt="Robo waving hello" style="float:right;height:1.4in;margin-left:.15in">Hi! I'm <b>Robo</b>. I'm your Reward Buddy!</p>
+<p>First, find <b>your picture</b> and tap it.</p>
+<p>Did you make your bed? Brush your teeth? Tap the chore you did!</p>
+<p>Then I cheer: <b>"Beep-boop! You did it!"</b> 🎉 And you get <b>points</b>!</p>
+<div class="clear"></div></div>
+<h3>What kids see</h3>
+<ul>
+<li><b>"Who's playing?"</b> One big tile for each child. A small <b>Grown-ups 🔒</b> button sits in the corner for you.</li>
+<li><b>Their own screen:</b> their buddy (blinking and bobbing), their name, a points meter from 0 to 1,000 with marks at 100, 500 and 1,000, the chores, and two big buttons: <b>🎁 Rewards</b> and <b>🖼️ My Wall</b>.</li>
+<li><b>"What did you do?"</b> Their chores, each with a picture, a word and its points.</li>
+<li><b>Celebration:</b> the buddy jumps, confetti flies, and the points show, like "+150 points!"</li>
+</ul>
+<div class="kid" role="region" aria-label="Read-along: The points jar"><span class="badge">📖 Read along together</span><p style="margin-top:.04in">Your points go in your <b>points jar</b>. It can hold <b>1,000</b> points!</p>
+<p>When it's full, I say: <b>"Time to spend your points! 🎁"</b></p>
+<p>Spend them on something fun, then fill it up again!</p></div>
+<p class="small">Each child's points, chores history, Wall and jokes are kept separately, so siblings never mix up their points. A chore can be tapped again after a second and a half. There are no daily limits, so if someone gets a little tap-happy, you can fix points in the grown-up area (Chapter 8).</p>
+</section>
+
+<section class="pg" aria-labelledby="t-rewards">
+<h2 id="t-rewards"><span class="kick">Chapter 6</span>Rewards</h2>
+<div class="kid" role="region" aria-label="Read-along: Rewards"><span class="badge">📖 Read along together</span><p style="margin-top:.04in"><img src="images/rb-robo-cheer.png" alt="Robo dancing" style="float:right;height:1.3in;margin-left:.15in">Tap <b>🎁 Rewards</b> to see what you can get.</p>
+<p>The bright ones are ready! The dim ones say how many more points you need.</p>
+<p><b>💃 Dance Party:</b> I dance! Badly! On purpose! Dance with me!</p>
+<p><b>😂 Tell me a joke:</b> I tell you a joke out loud.</p>
+<p><b>🏅 Great Job:</b> you get a certificate for your Wall!</p>
+<div class="clear"></div></div>
+<table><thead><tr><th scope="col">Reward</th><th scope="col">Points</th><th scope="col">What happens</th></tr></thead><tbody>
+<tr><td>💃 Dance Party</td><td>100</td><td>A full-screen 10 to 15 second dance to music the app makes itself. The moves include the Wobbly Shuffle, Spin with Flailing Arms, Freeze and Wiggle, the Pretend Trip, and always a Finale Jump. A big <b>✋ Stop</b> button is always there. Points are spent when the dance starts.</td></tr>
+<tr><td>😂 Tell me a joke</td><td>100</td><td>The buddy reads a joke aloud with the tablet's own voice (on Android, only voices installed on the tablet), in big text too. No repeats until every joke has been told.</td></tr>
+<tr><td>🏅 Great Job Certificate</td><td>100</td><td>A certificate with the child's name, the reward and the date, saved to their Wall.</td></tr>
+<tr><td>🍕 Pick dinner</td><td>500</td><td>"Ask a grown-up for Pick dinner?" ✅ Yes! → a certificate, "A grown-up will make it happen!", and an alert for you.</td></tr>
+<tr><td>👑 Royalty for the day</td><td>1,000</td><td>The same, for the biggest reward of all. Grown-ups switch the three instant rewards on or off in Grown-ups › Rewards.</td></tr>
+</tbody></table>
+<h3>How jokes work</h3>
+<aside class="aside" aria-label="Aside from Robo:"><img src="images/rb-robo-idle.png" alt="Robo the robot"><p class="bubble"><span class="who">Robo:</span>Knock knock! (You say: Who's there?) Robo! (Robo who?) Robo-dy loves a good knock-knock joke!</p></aside>
+<p><b>Knock-knock jokes are interactive.</b> Robo says "Knock knock!" and your child taps <b>Who's there?</b>, then "<i>Lettuce</i> who?", then gets the punchline and taps <b>Ha ha! 😂</b>. For other jokes, the punchline comes after a few seconds, or right away with <b>Tell me! 🤔</b>. If "Speak jokes aloud" is off, or there's no voice installed, jokes show as text in a bouncing speech bubble.</p>
+<div class="joke" role="note"><b>From the app:</b> Knock knock. Who's there? Lettuce. Lettuce who? <em>Lettuce in, it's cold out here!</em></div>
+</section>
+
+<section class="pg" aria-labelledby="t-wall">
+<h2 id="t-wall"><span class="kick">Chapter 7</span>The Wall of Wins</h2>
+<div class="kid" role="region" aria-label="Read-along: My Wall"><span class="badge">📖 Read along together</span><p style="margin-top:.04in">Tap <b>🖼️ My Wall</b> to see all your certificates!</p>
+<p>Tap one to make it <b>big</b>. Tap <b>⭐ Favorite</b> to keep it at the top.</p>
+<p>Your Wall is getting full. Robo says we need a bigger wall! 🖼️🖼️🖼️</p></div>
+<figure><img src="images/rb-cert-classic-gold.png" alt="A gold-bordered certificate reading 'Certificate of Awesome. This certifies that Maya earned Royalty for the Day', dated October 9, 2026, with Robo in the corner" style="max-height:3.1in"><figcaption>A certificate, drawn by the app with the child's name, the reward, the date and their buddy</figcaption></figure>
+<ul>
+<li><b>Order:</b> starred favorites first, then newest first.</li>
+<li><b>Kids can star and unstar.</b> Only a grown-up can delete a certificate (press and hold it in the grown-up area).</li>
+<li><b>Share as a picture</b> (free): from the grown-up area, send a certificate to Grandma through the tablet's own share menu. It goes only where you send it.</li>
+<li><b>Print</b> (with Plus): print a letter-size certificate for the fridge with the tablet's own print dialog.</li>
+<li><b>Certificate design:</b> pick the family's design in <b>Settings › Certificate design</b>. Certificates already on the Wall keep the design they were made with.</li>
+</ul>
+<p class="small">The name on a certificate is saved when it's made, so renaming a child doesn't change old certificates.</p>
+</section>
+
+<section class="pg" aria-labelledby="t-grown">
+<h2 id="t-grown"><span class="kick">Chapter 8 · <span style="letter-spacing:.06em">For grown-ups</span></span>The grown-up area</h2>
+<aside class="aside" aria-label="Aside from Robo:"><img src="images/rb-robo-idle.png" alt="Robo the robot"><p class="bubble"><span class="who">Robo:</span>This door is for grown-ups. I am not a grown-up. I am a robot. I wait outside.</p></aside>
+<p>Tap <b>Grown-ups 🔒</b> on the home screen and enter your PIN. Purchases, Restore, settings, your own chores and rewards, requests, deleting a child, sharing and printing all live here, behind the "grown-up gate."</p>
+<div class="clear"></div>
+<div class="grid2">
+<div class="box"><h3>📬 Requests</h3><p>Grown-up rewards your kids have redeemed, oldest first, each with <b>Mark fulfilled ✅</b>. The Grown-ups button shows how many are waiting (on iPad, so does the app icon). Recent fulfilled requests are listed below.</p></div>
+<div class="box"><h3>👧 Kids</h3><p>Add, edit (name, avatar, color, buddy) or delete a child. <b>Give or take points</b> with an optional reason ("Extra help with the dishes"). Each change is logged under recent points.</p></div>
+<div class="box"><h3>🧹 Chores</h3><p>Rename the 5 built-in chores for free. With Plus, change their points or picture, hide them, or make brand-new chores worth 10 to 1,000 points.</p></div>
+<div class="box"><h3>🎁 Rewards</h3><p>Switch the three instant rewards on or off. Grown-up rewards are listed too, and with Plus you can make your own.</p></div>
+<div class="box"><h3>🤖 Buddies, ⭐ Plus &amp; Packs, ⚙️ Settings</h3><p>Meet the buddies (pick one per child under Kids › Edit), upgrades and <b>Restore purchases</b> (Chapter 11), and settings (Chapter 9).</p></div>
+</div>
+<h3>PIN safety, without the stress</h3>
+<ul>
+<li><b>Wrong PIN five times?</b> "Try again in 30 seconds." More misses double the wait, up to 5 minutes.</li>
+<li><b>Forgot your PIN?</b> Tap <b>Forgot PIN?</b> ("This only resets the PIN. Kids' points and walls are kept."), hold the button for 3 seconds, then answer a grown-up math question like "What is 7 × 8 + 13?", and set a new PIN. Nothing else is erased.</li>
+<li><b>Walked away?</b> The grown-up area closes after 5 minutes of no tapping, scrolling or typing, or when you leave the app. Your PIN is saved only in scrambled (hashed) form, never as the number itself.</li>
+</ul>
+</section>
+
+<section class="pg" aria-labelledby="t-set" style="position:relative">
+<img class="cameo" src="images/rb-pip-idle.png" alt="Pip the Penguin, one of the Plus buddies, waving" style="position:absolute;top:0;right:0;height:.5in;width:auto">
+<h2 id="t-set"><span class="kick">Chapter 9 · For grown-ups</span>Settings and "Lock to app"</h2>
+<table><thead><tr><th scope="col">Setting</th><th scope="col">What it does</th></tr></thead><tbody>
+<tr><td>Sounds</td><td>Dance music and cheers on or off. Volume follows the tablet's volume buttons.</td></tr>
+<tr><td>Speak jokes aloud</td><td>The buddy reads jokes with the tablet's own voice. Off means text only. On Android, only voices installed on the tablet are used.</td></tr>
+<tr><td>Notifications</td><td>"Tell me when a kid redeems a grown-up reward," shown on this tablet.</td></tr>
+<tr><td>Reduce motion</td><td>Follow the device's setting, or force it on or off. On means no confetti, no screen shake, simple fades and a gentle sway instead of the full dance.</td></tr>
+<tr><td>Certificate design</td><td>The look for new certificates.</td></tr>
+<tr><td>Lock to app</td><td>Keeps little fingers inside Reward Buddy (see below).</td></tr>
+<tr><td>Change PIN, Privacy</td><td>Set a new PIN, and read what the app keeps (Chapter 12).</td></tr>
+</tbody></table>
+<h3>🔒 Lock to app</h3>
+<div class="clear"></div>
+<div class="grid2">
+<div class="box"><h3>iPad and iPhone</h3><p>Apple doesn't let apps lock themselves, so Reward Buddy shows you how to use the tablet's built-in <b>Guided Access</b>: turn it on in <b>Settings › Accessibility › Guided Access</b> and set a passcode, then triple-click the top (or Home) button while Reward Buddy is open. The app shows "Guided Access is ON ✅" when it's working.</p></div>
+<div class="box"><h3>Android</h3><p>Turning on <b>Lock to app</b> uses Android's screen pinning. Android may ask you to confirm, and some tablets need <b>App pinning</b> turned on in Settings first. To unpin, use the switch in the grown-up area, or hold <b>Back + Overview</b> (or swipe up and hold) and enter your tablet's PIN if you set one. The app re-pins itself when it opens.</p></div>
+</div>
+<p class="small">These use your tablet's own built-in lock. A determined explorer may still find a way out, so a grown-up nearby is the best lock of all.</p>
+<h3>♿ Built for little hands and every kid</h3>
+<p>Kid buttons are big (at least 64 points) and always have a picture and a word. Every button has a VoiceOver or TalkBack label, like "Brush teeth, 150 points." Text grows with the tablet's text size, every joke is shown as text as well as spoken, and every text color meets WCAG AA contrast.</p>
+<div class="joke" role="note"><b>From the app:</b> What do you call a bear with no teeth? <em>A gummy bear!</em></div>
+</section>
+
+<section class="pg" aria-labelledby="t-holiday">
+<h2 id="t-holiday"><span class="kick">Chapter 10</span>The holiday surprise 🎄</h2>
+<aside class="aside" aria-label="Aside from Robo:"><img src="images/rb-robo-cheer.png" alt="Robo cheering"><p class="bubble"><span class="who">Robo:</span>I have been practicing my snow dance. It looks exactly like my regular dance.</p></aside>
+<p>Every year from <b>December 1 to January 6</b>, Reward Buddy brings out free holiday extras: <b>8 Christmas jokes</b> join the joke mix, and <b>2 Christmas certificate designs</b>, Snowflake Sparkle and Holly Jolly, appear in the design picker. They pack themselves away on January 7, and come back next December. There's nothing to buy and nothing to turn on.</p>
+<figure><img src="images/rb-cert-holiday-snowflakes.png" alt="A snowflake-bordered certificate titled 'Snow Awesome!' showing that Maya earned Royalty for the Day" style="max-height:2.6in"><figcaption>Snowflake Sparkle, one of the two free holiday designs</figcaption></figure>
+<div class="clear"></div>
+<div class="grid2">
+<div class="joke" role="note"><b>Holiday joke:</b> What do you call a cat at the beach in December? <em>Sandy Claws!</em></div>
+<div class="joke" role="note"><b>Holiday joke:</b> What do reindeer hang on their trees? <em>Horn-aments!</em></div>
+</div>
+<div class="kid" role="region" aria-label="Read-along: Holiday surprise"><span class="badge">📖 Read along together</span><p style="margin-top:.04in">In December, I learn <b>new jokes</b>! ❄️</p><p>Knock knock! Who's there? <b>Elf.</b> Elf who? <b>Elf me, I can't reach the doorbell!</b></p></div>
+<p class="small">Certificates made with a holiday design keep it on the Wall all year.</p>
+</section>
+
+<section class="pg" aria-labelledby="t-premium">
+<h2 id="t-premium"><span class="kick">Chapter 11 · <span>For grown-ups</span></span>What unlocking adds</h2>
+<p>Everything so far works in the free version, for as many kids as you have. Want more? Here's what's waiting in the grown-up area, behind your PIN. Kids never see a price or a buy button.</p>
+<figure><img src="images/rb-sparkle-cheer.png" alt="Sparkle the Dragon breathing a puff of rainbow glitter" style="height:.85in;width:auto;margin:0 .05in"><img src="images/rb-rainbow-cheer.png" alt="Rainbow the Unicorn with a sparkly rainbow mane" style="height:.85in;width:auto;margin:0 .05in"><img src="images/rb-stompy-cheer.png" alt="Stompy the Dinosaur stomping with its arms up" style="height:.85in;width:auto;margin:0 .05in"><img src="images/rb-pip-cheer.png" alt="Pip the Penguin belly-sliding" style="height:.85in;width:auto;margin:0 .05in"><img src="images/rb-robo-idle.png" alt="Robo in the audience, taking notes" style="height:.7in;width:auto;margin:0 .05in"><figcaption>The Plus buddy talent show. Robo is in the audience, taking notes.</figcaption></figure>
+<div class="box" style="border:3px solid var(--accent)">
+<h3>⭐ Reward Buddy Plus · <span class="price">$2.99 one time</span></h3>
+<ul>
+<li><b>Four more buddies, each with a signature move:</b> Sparkle the Dragon breathes a puff of rainbow glitter ("Woo-hoo! Glitter time!"), Rainbow the Unicorn's mane flows and sparkles ("Hooray! You're magical!"), Stompy the Dinosaur stomps with a cute ROAR ("ROAR! That means awesome!"), and Pip the Penguin waddles, then belly-slides ("Wheee! Great job!").</li>
+<li><b>Your own chores with your own points</b>, from 10 to 1,000, plus changing points or pictures on built-in chores, or hiding them. There are ideas to start with, like 🐶 Feed the pet, 🌱 Water the plants and 📚 Read a book.</li>
+<li><b>Your own grown-up rewards</b> at 500 or 1,000 points, with ideas like 🍪 Bake cookies together, 🛝 Trip to the park and ⛺ Sleepover in the living room.</li>
+<li><b>Print certificates</b> for the fridge, and the <b>Rainbow Stars</b> certificate design. (Ones already on your Wall keep it.)</li>
+<li><b>Family Sharing</b> is on for Plus on iPhone and iPad, so one purchase covers your Family Sharing group. (It shares the purchase only, never any kids' data.)</li>
+</ul></div>
+<h3>🎁 Packs · <span class="price">$1.99 each</span>, no Plus needed</h3>
+<table><thead><tr><th scope="col">Pack</th><th scope="col">What's inside</th></tr></thead><tbody>
+<tr><td>🐒 Animal Party Jokes</td><td>12 more silly animal jokes ("Who is a penguin's favorite relative? Aunt Arctica!")</td></tr>
+<tr><td>🍌 Silly Food Jokes</td><td>12 more giggly food jokes ("What do you call a fake noodle? An impasta!")</td></tr>
+<tr><td>🚀 Space Certificates</td><td>2 designs: Rocket Launch and Galaxy Glow</td></tr>
+<tr><td>🦁 Safari Certificates</td><td>2 designs: Jungle Leaves and Safari Sunset</td></tr>
+<tr><td>🎵 Party Beats</td><td>2 new Dance Party songs, Disco Dino and Bubble Bounce, made inside the app like Robo Bop</td></tr>
+</tbody></table>
+<div class="row"><img src="images/rb-cert-space-rocket.png" alt="Space Hero Award certificate in dark blue with planets" style="height:.8in"><img src="images/rb-cert-galaxy-glow.png" alt="Out of This World certificate in purple with stars" style="height:.8in"><img src="images/rb-cert-jungle-leaves.png" alt="Jungle Champion certificate with green leaves" style="height:.8in"><img src="images/rb-cert-safari-sunset.png" alt="Wild About You certificate with a sunset border" style="height:.8in"></div>
+<p class="small">Packs are separate from Plus (Plus doesn't include them) and aren't covered by Family Sharing. All one-time, no subscription. Prices are US prices; your store shows yours. On a new device, tap <b>Restore purchases</b> in <b>Plus &amp; Packs</b>.</p>
+</section>
+
+<section class="pg" aria-labelledby="t-phil" style="position:relative">
+<img class="cameo" src="images/rb-rainbow-idle.png" alt="Rainbow the Unicorn, one of the Plus buddies" style="position:absolute;top:0;right:0;height:.5in;width:auto">
+<h2 id="t-phil"><span class="kick">Chapter 12 · For grown-ups</span>Our philosophy and your privacy</h2>
+<div class="clear"></div>
+<div class="grid2">
+<div><p>We make apps the way we'd want them for our own family. You pay once, a little, for what you want. There are <b>no ads, no subscriptions and no accounts</b>, and <b>we don't collect or share any data</b>, about you or your child. Reward Buddy keeps everything on your tablet.</p>
+<p>Reward Buddy comes from Zyzygy, Inc., a small company in Goldthwaite, Texas.</p></div>
+<div class="box tint"><h3>What we don't do</h3><ul class="dont"><li>No ads, ever</li><li>No subscriptions</li><li>No accounts or sign-in</li><li>No analytics or tracking</li><li>No data collected or shared</li></ul></div>
+</div>
+<h3>What the app keeps, and where</h3>
+<p>Each child's first name or nickname, avatar, color and buddy; points, chore history, certificates and requests; your chores, rewards and settings; your PIN (scrambled, never the number itself); and whether you own Plus or packs. All of it stays in the app's own storage on <b>this tablet</b>. Zyzygy has no server and never receives any of it.</p>
+<h3>The fine print, in plain words</h3>
+<ul>
+<li><b>No camera, microphone, location or contacts.</b> Nothing a child does is sent anywhere. There's no chat, and nothing to sign up for.</li>
+<li><b>The internet is only for purchases.</b> Buying or restoring goes through Apple or Google under their privacy policies, and we never see payment details. Everything else works offline.</li>
+<li><b>Jokes are read aloud by the tablet's own voice.</b> On Android, jokes are read aloud only with voices installed on the tablet. If none is installed, the joke shows as text.</li>
+<li><b>Grown-up alerts</b> are notifications on this same tablet. No push service, no server.</li>
+<li><b>No links out.</b> The app doesn't send kids to websites. Sharing and printing sit behind your PIN and go only where you send them.</li>
+<li><b>Backups:</b> App data stays on the device. If your family has Android's own backup turned on, the system may include it in your personal Google account backup so it can be restored to a new device. On iPhone and iPad, your family's own iCloud Backup or computer backup may include it in the same way. Zyzygy never receives or can see those backups.</li>
+<li><b>Deleting:</b> delete a child in the grown-up area (with their points, history, Wall and requests), or delete the app to remove everything.</li>
+<li><b>If a save file ever gets damaged,</b> the app keeps the last good copy and restores it. If nothing can be read, it sets the damaged file aside instead of erasing it and asks a grown-up to set things up again.</li>
+</ul>
+</section>
+
+<section class="pg" aria-labelledby="t-trouble" style="position:relative">
+<img class="cameo" src="images/rb-stompy-idle.png" alt="Stompy the Dinosaur, one of the Plus buddies" style="position:absolute;top:0;right:0;height:.5in;width:auto">
+<h2 id="t-trouble"><span class="kick">Chapter 13 · For grown-ups</span>Troubleshooting</h2>
+<aside class="aside" aria-label="Aside from Robo:"><img src="images/rb-robo-idle.png" alt="Robo the robot"><p class="bubble"><span class="who">Robo:</span>Have you tried turning it off and on again? (Beep. That was a robot joke.)</p></aside>
+<div class="faq">
+<h3>I forgot my PIN.</h3><p>Tap <b>Forgot PIN?</b>, hold the button for 3 seconds, answer the math question, and set a new PIN. Kids' points and Walls are kept.</p>
+<h3>It says "Try again in 30 seconds."</h3><p>Too many wrong PINs in a row. Wait it out. The pause gets longer with more misses, up to 5 minutes.</p>
+<h3>The Dance Party is silent.</h3><p>Check that <b>Sounds</b> is on in Settings, that the tablet's volume is up, and that it isn't muted.</p>
+<h3>The buddy doesn't read the joke out loud.</h3><p>Check <b>Speak jokes aloud</b> in Settings and the tablet's volume. If the tablet has no voice installed, jokes show as text. On Android, jokes are read aloud only with voices installed on the tablet. If none is installed, the joke shows as text. You can add a voice in the tablet's text-to-speech settings.</p>
+<h3>I didn't get an alert when my child picked dinner.</h3><p>Alerts appear on the tablet Reward Buddy is on, not on your phone. Check that notifications are on in Reward Buddy's Settings and allowed for the app in the tablet's settings. Requests are always waiting in <b>Grown-ups › Requests</b> either way.</p>
+<h3>My child tapped "Make bed" ten times.</h3><p>Ah, an enthusiast. Take the extra points back in <b>Grown-ups › Kids</b> with a reason. It's logged so everyone can see why.</p>
+<h3>"Wow, your points jar is full!"</h3><p>The jar holds 1,000 points, and extra points aren't added. Time to spend some!</p>
+<h3>A buddy, chore editor or Print button has a 🔒.</h3><p>That's a Plus feature. Tapping it (behind the PIN) shows what Plus includes.</p>
+<h3>The grown-up area closed by itself.</h3><p>It closes after 5 minutes of no activity, or when you leave the app, so curious kids can't wander in. Enter the PIN again.</p>
+<h3>"Reward Buddy couldn't read its latest save, so it restored the last good copy."</h3><p>Something interrupted a save. Check recent points. If no saved copy could be read, the app keeps the damaged file and asks a grown-up to set up again.</p>
+<h3>My purchase isn't showing.</h3><p>Go to <b>Plus &amp; Packs › Restore purchases</b>, signed in to the account you bought with. A purchase waiting for approval (like Ask to Buy) unlocks once it's approved.</p>
+<h3>I can't get out of the pinned app (Android).</h3><p>Turn off <b>Lock to app</b> in the grown-up area, or hold Back + Overview (or swipe up and hold).</p>
+</div>
+</section>
+
+<section class="pg" aria-labelledby="t-faq" style="position:relative">
+<img class="cameo" src="images/rb-sparkle-idle.png" alt="Sparkle the Dragon, one of the Plus buddies" style="position:absolute;top:0;right:0;height:.5in;width:auto">
+<h2 id="t-faq"><span class="kick">Chapter 14 · For grown-ups</span>FAQ</h2>
+<aside class="aside" aria-label="Aside from Robo:"><img src="images/rb-robo-cheer.png" alt="Robo cheering"><p class="bubble"><span class="who">Robo:</span>Frequently Asked Questions! My favorite question is: 'Dance party?' The answer is always yes.</p></aside>
+<div class="faq">
+<h3>Can we use Reward Buddy on two tablets, or on my phone and the kids' tablet?</h3><p>You can install it on both, but they won't talk to each other. By design, Reward Buddy has no accounts and keeps a child's information only on the device where it's entered. Each device is a separate copy with its own kids, chores, points and rewards. It's meant for a child to use one device to record chores and pick rewards. Family Sharing on iPhone and iPad shares the Plus purchase, not any data. It's a deliberate privacy choice: your child's information stays on that tablet and never comes to us. (Your tablet's own backup can include it, if you have backup turned on. See Chapter 12.)</p>
+<h3>How many kids can I add?</h3><p>As many as you like, free.</p>
+<h3>Does it work on a phone?</h3><p>Yes. It's designed for the family tablet, and it works on phones too, with the same big buttons in one column.</p>
+<h3>What ages is it for?</h3><p>Kids 2 to 8. Pre-readers get pictures and words on every button, and jokes are read aloud.</p>
+<h3>Can my child buy something by accident?</h3><p>No. Every purchase, setting and Restore is behind your 4-digit PIN, and the kids' side has no store, prices or links.</p>
+<h3>Is Plus a subscription? Does it include the packs?</h3><p>No and no. Plus is a one-time purchase, and packs are separate one-time purchases. You don't need Plus to buy a pack.</p>
+<h3>Can I take points away?</h3><p>Yes, in <b>Grown-ups › Kids</b>, with an optional reason that's logged. There's no "lose points" button on the kids' side.</p>
+<h3>Is there a daily limit on chores?</h3><p>No. Keep it simple, and adjust points if you need to.</p>
+<h3>Does it need the internet?</h3><p>No. Only buying or restoring a purchase does, through Apple or Google. On Android, jokes are read aloud only with voices installed on the tablet. If none is installed, the joke shows as text.</p>
+<h3>Where does the dance music come from?</h3><p>Reward Buddy makes it inside the app as it plays. There are no music files and no licensed songs. Robo just has that much rhythm. (Robo has no rhythm.)</p>
+</div>
+</section>
+
+<section class="pg" aria-labelledby="t-hello">
+<h2 id="t-hello"><span class="kick">For grown-ups</span>Say hello</h2>
+<div class="cover" style="text-align:center">
+<p class="lead" style="margin-top:0">Questions, ideas, or a story about the best dance party in your house? We'd love to hear it.</p>
+<p style="font-size:16pt;margin:.06in 0"><b>support@zyzygy.us</b></p>
+<p>We reply within 2 business days.</p>
+<p>Website: <b>zyzygy.us</b></p>
+<div class="cast"><img src="images/rb-robo-cheer.png" alt="Robo cheering" style="height:1.3in"></div>
+<p class="small">Reward Buddy is in development for the App Store and Google Play. Prices are set in the stores and shown here as current US prices. © Zyzygy, Inc., Goldthwaite, Texas.</p>
+</div>
+<div class="joke" role="note"><b>One more from the app:</b> What did the left shoe say to the right shoe? <em>Let's go places together!</em></div>
+</section>
+</main></body></html>

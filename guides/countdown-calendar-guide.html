@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en"><head><link rel="icon" href="../favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Countdown Calendar User Guide · Zyzygy, Inc.</title><meta name="description" content="The illustrated user guide for Countdown Calendar on iPhone, iPad and Android.">
+<style>
+:root{--ink:#1d2433;--muted:#4a5568;--bg:#fffdf8;--band:#f3efe6;--accent:#1f4e8c;--accent2:#a3264a;--soft:#eef3fb;--line:#ddd5c4;--gold:#c98a1b}
+*{box-sizing:border-box}
+html{font-size:100%}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Color Emoji",sans-serif;color:var(--ink);background:var(--bg);line-height:1.42;font-size:10.5pt}
+main{max-width:7.3in;margin:0 auto;padding:.4in .3in}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:.5rem 1rem}
+.skip:focus{left:0}
+a{color:var(--accent)}
+h1,h2,h3{line-height:1.15;color:var(--ink)}
+h2{font-size:21pt;margin:0 0 .12in;color:var(--accent)}
+h2 .kick{display:block;font-size:9.5pt;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:.03in}
+h3{font-size:13pt;margin:.16in 0 .05in}
+p{margin:.06in 0 .08in}
+ul,ol{margin:.04in 0 .1in;padding-left:.26in}
+li{margin:.03in 0}
+section.pg{break-before:page;padding-top:.02in}
+section.pg:first-of-type{break-before:auto}
+section.fl{margin-top:.28in;clear:both}
+h2,h3{break-after:avoid;break-inside:avoid}
+.cover .cast img{height:1.05in}
+.cover{background:linear-gradient(180deg,#14264a,var(--accent));color:#fff;border-radius:.22in;padding:.42in .42in .3in;position:relative;overflow:hidden}
+.cover h1{color:#fff;font-size:34pt;margin:.05in 0 .08in}
+.cover .kicker{font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:10pt;color:#e8eefb}
+.cover .lead{font-size:15pt;color:#e8eefb;margin:0 0 .12in}
+.cover .soon{display:inline-block;background:#fff;color:#14264a;font-weight:800;border-radius:.1in;padding:.05in .14in;margin-top:.06in}
+.cast{display:flex;flex-wrap:wrap;gap:.12in;justify-content:center;margin:.22in 0 .1in}
+.cast img{height:1.25in;width:auto}
+.small{font-size:9.5pt;color:var(--muted)}
+.cover .small{color:#e8eefb}
+.toc{columns:3;column-gap:.35in;padding-left:.22in}
+.toc li{break-inside:avoid}
+.box{background:#fff;border:1px solid var(--line);border-radius:.14in;padding:.12in .18in;margin:.12in 0;break-inside:avoid}
+.box h3{margin-top:.02in}
+.box.tint{background:var(--soft);border-color:var(--soft)}
+.box.note{border-left:6px solid var(--accent)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:.14in}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.12in}
+.grid2 > .box,.grid3 > .box,.grid2 > .joke,.grid3 > .joke{margin:0}
+.grid2,.grid3{margin:.08in 0;clear:both}
+table{border-collapse:collapse;width:100%;margin:.08in 0 .12in;font-size:10pt;break-inside:auto}
+th,td{border:1px solid var(--line);padding:.04in .07in;text-align:left;vertical-align:top}
+th{background:var(--band)}
+tr{break-inside:avoid}
+.aside{float:right;clear:right;width:2.6in;margin:.02in 0 .1in .18in;display:flex;gap:.08in;align-items:flex-start;break-inside:avoid}
+.aside.left{float:left;clear:left;margin:.02in .18in .1in 0}
+.aside img{width:.8in;height:auto;flex:0 0 auto}
+.aside .bubble{flex:1 1 auto;min-width:0}
+.aside.big img{width:1.15in}
+.bubble{position:relative;background:#fff;border:2px solid var(--accent);border-radius:.16in;padding:.07in .1in;font-size:10pt;line-height:1.35;margin:.08in 0 0}
+.bubble::before{content:"";position:absolute;left:-.1in;top:.16in;border:.06in solid transparent;border-right-color:var(--accent)}
+.bubble .who{display:block;font-weight:800;color:var(--accent);font-size:9pt}
+.clear{clear:both}
+figure{margin:.1in 0;break-inside:avoid;text-align:center}
+figure img{max-width:100%;height:auto}
+figcaption{font-size:9pt;color:var(--muted);margin-top:.04in}
+.shots{display:flex;gap:.14in;justify-content:center;align-items:flex-start}
+.shots figure{flex:1 1 0;margin:0}
+.shots img{max-height:3.3in;width:auto}
+.row{display:flex;gap:.1in;justify-content:center;align-items:flex-end;flex-wrap:wrap}
+.row img{height:.95in;width:auto}
+.joke{clear:both;background:#fff7d6;border:2px dashed var(--gold);border-radius:.14in;padding:.08in .14in;margin:.1in 0;break-inside:avoid}
+.joke b{color:#5c3d00}
+.price{font-weight:800;color:var(--accent)}
+.tag{display:inline-block;font-size:8.5pt;font-weight:800;border-radius:.06in;padding:0 .06in;background:var(--band);color:var(--ink);vertical-align:1px}
+.tag.free{background:#dff3e4;color:#1b5e20}
+.tag.paid{background:#e9e4fb;color:#3b2a7a}
+.steps{counter-reset:s;list-style:none;padding-left:0}
+.steps li{counter-increment:s;position:relative;padding-left:.38in;margin:.07in 0}
+.steps ul{list-style:disc;padding-left:.25in}
+.steps ul li{counter-increment:none;padding-left:0;margin:.02in 0}
+.steps ul li::before{content:none}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:.27in;height:.27in;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;text-align:center;line-height:.27in;font-size:10pt}
+.faq h3{font-size:11.5pt;margin:.12in 0 .02in}
+.faq p{margin-top:0}
+.dont{list-style:none;padding:0;font-size:12pt;font-weight:700}
+.dont li::before{content:"✗ ";color:#b3261e}
+.kid{background:#fff;border:3px solid var(--accent2);border-radius:.2in;padding:.14in .2in;font-size:15pt;line-height:1.45;break-inside:avoid;margin:.12in 0}
+.kid .badge{display:inline-block;background:var(--accent2);color:#fff;font-size:9pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border-radius:.08in;padding:.02in .1in;margin-bottom:.04in}
+.grownup{display:inline-block;background:#1d2433;color:#fff;font-size:9pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border-radius:.08in;padding:.02in .1in}
+.end{text-align:center}
+@page{size:letter;margin:.55in .6in .6in;@bottom-center{content:"Countdown Calendar User Guide · page " counter(page);font-family:system-ui,sans-serif;font-size:8.5pt;color:#4a5568}}
+@media print{main{max-width:none;padding:0} body{background:#fff} a{color:var(--accent);text-decoration:none} .skip{display:none}}
+@media screen{section.pg{border-top:2px dashed var(--line);margin-top:.4in;padding-top:.3in} section.pg:first-of-type{border:0;margin:0}}
+@media (max-width:40rem){.aside{float:none;width:auto;margin:.1in 0} .grid2,.grid3{grid-template-columns:1fr} .shots{flex-wrap:wrap} .toc{columns:1}}
+</style></head>
+<body><a class="skip" href="#main">Skip to content</a><main id="main">
+<section class="pg" aria-labelledby="t-cover">
+<div class="cover">
+<p class="kicker">Zyzygy, Inc. · Goldthwaite, Texas</p>
+<h1 id="t-cover">Countdown Calendar<br>The Official User Guide</h1>
+<p class="lead">A surprise behind every door. For iPhone, iPad and Android.</p>
+<div class="cast">
+<img src="images/cc-cat-calico.svg" alt="The calico cat door, the ringleader of our cat troupe">
+<img src="images/cc-classic-door.svg" alt="A classic red paneled door with a gold bow, number 12">
+<img src="images/cc-car-0.svg" alt="A red race car door with the number 3">
+<img src="images/cc-egg-1.svg" alt="A purple speckled dinosaur egg in a nest, number 6">
+<img src="images/cc-hatch-2.svg" alt="A round rocket-ship porthole looking out at Mars">
+<img src="images/cc-truck-0.svg" alt="A yellow dump truck with a pile of dirt in its bed">
+</div>
+<p><span class="soon">Coming this holiday season to the App Store and Google Play</span></p>
+<p class="small">Written for parents, grandparents, couples and anyone who can't wait. The door art in this guide is the app's own drawings.</p>
+</div>
+
+<section class="fl" aria-labelledby="t-welcome">
+<h2 id="t-welcome"><span class="kick">Before we begin</span>Welcome! (Please don't open the guide early.)</h2>
+<aside class="aside" aria-label="Aside from The Scottish Fold:"><img src="images/cc-cat-scottish-fold-solo.svg" alt="The Scottish Fold cat, wearing round glasses"><p class="bubble"><span class="who">The Scottish Fold:</span>I've read this whole guide. Twice. The good bits are on every page, a bit like doors.</p></aside>
+<p>Countdown Calendar turns the days before something wonderful into a row of little doors. Each door unlocks at midnight on its day and opens to a note, a joke, a fun fact or a challenge, along with its own animated surprise. The last door gets the big finish.</p>
+<p>You can make one for Christmas, Hanukkah, Halloween, a wedding, a new baby, a big birthday, a trip, a retirement, or any date you like. Then you can keep it for yourself or send it to someone as a gift.</p>
+<h3>What's inside</h3>
+<ol class="toc">
+<li>Getting started</li><li>How the doors work</li><li>The 15 calendar types</li><li>Make it yours: Settings</li>
+<li>Door styles (meet the cats and dogs)</li><li>Help me write the notes</li><li>Daily reminders</li><li>Sharing and the gift lock</li>
+<li>My Calendars</li><li>What unlocking adds</li><li>Our philosophy and your privacy</li><li>Troubleshooting</li><li>FAQ</li><li>Say hello</li>
+</ol>
+<div class="clear"></div>
+</section>
+</section>
+
+<section class="pg" aria-labelledby="t-start">
+<h2 id="t-start"><span class="kick">Chapter 1</span>Getting started (the easy part)</h2>
+<aside class="aside" aria-label="Aside from Tabby:"><img src="images/cc-cat-tabby-solo.svg" alt="The tabby cat"><p class="bubble"><span class="who">Tabby:</span>Step one: install. Step two: wait patiently. I'm not great at step two.</p></aside>
+<ol class="steps">
+<li><b>Once it's released, install the app</b> from the App Store (iPhone and iPad, iOS 17 or later) or Google Play (Android 8.0 or later). There's no account to make and nothing to sign in to.</li>
+<li><b>Open it.</b> On iPhone and iPad you'll see a sample calendar for the season, so you can tap around right away. On Android you start in <b>My Calendars</b>.</li>
+<li><b>Make your own.</b> Open <b>My Calendars</b> (the stack icon at the top left on iPhone, the list icon on Android) and choose <b>New Calendar</b> (iPhone) or <b>＋ New calendar</b> (Android).</li>
+<li><b>Pick what you're counting down to.</b> The types are grouped into Holidays, Love, Life Events and Custom.</li>
+<li><b>Fill in the details</b> if your type has them: the date, how many doors, and names. For example, partner names for a wedding, a birthday person and their age, or a trip destination.</li>
+<li><b>Open today's door!</b> Then come back tomorrow. (We'll remind you if you like. See Chapter 7.)</li>
+</ol>
+<div class="shots">
+<figure><img src="images/cc-shot-01-picker.png" alt="Phone screen titled 'What are we counting down to?' listing calendar types in groups: Holidays, Love, Life Events and Custom"><figcaption>Choosing a calendar type</figcaption></figure>
+<figure><img src="images/cc-shot-02-advent-grid.png" alt="A Christmas Advent calendar grid of 24 colorful doors, with door 10 marked Today and a button to open today's door"><figcaption>A Christmas Advent grid</figcaption></figure>
+<figure><img src="images/cc-shot-03-door-open.png" alt="Door 10 swung open, showing the joke 'What do you call an elf who sings?' with the answer 'A wrapper!'"><figcaption>Door 10: a joke with a tap-to-reveal punchline</figcaption></figure>
+</div>
+<p class="small">These pictures are design previews made from the app's screens. Your phone may look a little different.</p>
+</section>
+
+<section class="fl" aria-labelledby="t-doors">
+<h2 id="t-doors"><span class="kick">Chapter 2</span>How the doors work</h2>
+<aside class="aside big" aria-label="Aside from Door 24:"><img src="images/cc-classic-door-green.svg" alt="A green classic door with a gold bow, number 24"><p class="bubble"><span class="who">Door 24:</span>I'm the finale. I've been rehearsing my big entrance since November.</p></aside>
+<ul>
+<li><b>Doors unlock at midnight</b>, your local time, on their own day. Door 1 is the first day, door 2 the next, and so on.</li>
+<li><b>Tap a door that's ready</b> and it opens with an animation (plus a little buzz, if haptics are on). Behind it is that day's message and its surprise animation.</li>
+<li><b>Tap a door that isn't ready yet</b> and it wiggles at you and tells you when to come back. No peeking!</li>
+<li><b>Opened doors stay open.</b> Tap one again any time to reread it.</li>
+<li><b>Jokes come in two parts.</b> If a message has two lines, the first line is the setup and the second is the punchline, which waits behind a tap.</li>
+<li><b>The last door is the big finale</b>, with its own celebration and confetti: "Merry Christmas!", "Wedding Day!", "Happy Birthday!" and so on.</li>
+<li><b>Holiday dates figure themselves out.</b> Easter, Thanksgiving (the fourth Thursday of November) and Hanukkah are calculated every year. Hanukkah's doors are Night 1 to Night 8, and Hanukkah is worked out from the Hebrew calendar.</li>
+</ul>
+<h3>Door labels</h3>
+<p>Holiday calendars like Advent and Halloween show the day of the month on each door. Calendars that end on a date you pick (a wedding, a birthday, a trip) count down: "12 days to go," "1 day to go," then the big day.</p>
+<div class="joke" role="note"><b>From door 2 of the Advent calendar:</b> What do you call a snowman with a six-pack? <em>An abdominal snowman!</em></div>
+<h3>Preview mode (the secret switch for grown-ups)</h3>
+<p>Want to see every surprise before you give a calendar away? <b>Press and hold the calendar's title</b> for about a second. Every door unlocks so you can try them all, and a <b>Close All</b> button (Android: <b>Reset doors</b>) appears to shut them again. Press and hold the title again to leave. Preview mode never unlocks doors on a gift-locked calendar someone sent you. That would spoil the fun!</p>
+<div class="box tint"><b>Reduce animations:</b> if you prefer calm surprises, turn on <b>Reduce animations</b> in Settings (or Reduce Motion on your device). Every door then opens with a gentle fade and every surprise is the calm version. No screen shakes.</div>
+</section>
+
+<section class="fl" aria-labelledby="t-kinds">
+<h2 id="t-kinds"><span class="kick">Chapter 3</span>The 15 calendar types</h2>
+<aside class="aside" aria-label="Aside from Ginger Kitten:"><img src="images/cc-cat-ginger-kitten-solo.svg" alt="The ginger kitten in a Santa hat"><p class="bubble"><span class="who">Ginger Kitten:</span>Christmas Advent is free. So is Hanukkah. I checked under the tree.</p></aside>
+<p>Every type comes with its own starter notes, finale, animations and suggested color themes, ready to go. Change anything you like.</p>
+<div class="joke" role="note"><b>From door 8 of the Advent calendar:</b> What did the wrapping paper say to the present? <em>"Don't worry, I've got you covered!"</em></div>
+<table style="break-inside:avoid">
+<caption class="sr" style="text-align:left;font-weight:700;padding-bottom:.04in">Calendar types, dates, doors and price</caption>
+<thead><tr><th scope="col">Type</th><th scope="col">Ends on</th><th scope="col">Doors (start, range)</th><th scope="col">Price</th></tr></thead>
+<tbody>
+<tr><th scope="row">🎄 Christmas Advent</th><td>Starts Dec 1 (you can change it)</td><td>24 (24–25)</td><td><span class="tag free">Free</span></td></tr>
+<tr><th scope="row">🕎 Hanukkah</th><td>8 nights, from the Hebrew calendar</td><td>8</td><td><span class="tag free">Free</span></td></tr>
+<tr><th scope="row">🎃 Halloween</th><td>Starts Oct 1</td><td>31 (1–31)</td><td>Holiday Pack</td></tr>
+<tr><th scope="row">🦃 Thanksgiving</th><td>The 4th Thursday of November</td><td>30 (1–60)</td><td>Holiday Pack</td></tr>
+<tr><th scope="row">🐣 Easter</th><td>Easter Sunday, worked out each year</td><td>14 (1–50)</td><td>Holiday Pack</td></tr>
+<tr><th scope="row">🎆 New Year's Eve</th><td>Dec 31</td><td>7 (1–31)</td><td>Holiday Pack</td></tr>
+<tr><th scope="row">🎂 Birthday</th><td>The birthday</td><td>30 (7–100)</td><td>Special Occasions</td></tr>
+<tr><th scope="row">🎓 Graduation</th><td>Graduation day</td><td>30 (7–100)</td><td>Special Occasions</td></tr>
+<tr><th scope="row">🏖️ Vacation</th><td>The day the trip starts</td><td>30 (7–100)</td><td>Special Occasions</td></tr>
+<tr><th scope="row">💍 Wedding</th><td>The wedding day</td><td>30 (7–100)</td><td>Special Occasions</td></tr>
+<tr><th scope="row">💞 Anniversary</th><td>The anniversary</td><td>30 (7–100)</td><td>Special Occasions</td></tr>
+<tr><th scope="row">💘 Valentine's Day</th><td>Feb 14</td><td>14 (1–14)</td><td>Holiday Pack</td></tr>
+<tr><th scope="row">👶 Baby on the way</th><td>The due date</td><td>40 (7–280)</td><td>Special Occasions</td></tr>
+<tr><th scope="row">🌅 Retirement</th><td>The last day of work</td><td>30 (7–100)</td><td>Special Occasions</td></tr>
+<tr><th scope="row">✨ Custom</th><td>Any date, with your own title</td><td>30 (1–365)</td><td>Special Occasions</td></tr>
+</tbody></table>
+<p class="small">Prices are one-time, shown in US dollars as currently set in the App Store and Google Play. Your store shows the price in your own currency. The <b>Holiday Pack</b> and the <b>Special Occasions Pack</b> are $1.99 each; <b>Everything</b> ($2.99) unlocks both packs plus every paid door style. More in Chapter 10.</p>
+<div class="box note"><b>Look before you unlock:</b> every type has a read-only <b>sample</b> with all its doors open. On iPhone, find them under <b>Samples</b> in My Calendars, or tap <b>Look at the sample first</b> on a locked type. On Android, use <b>Preview a kind</b>.</div>
+<p><b>Yearly holidays roll over by themselves.</b> If this year's Easter or Valentine's Day has already passed, a new calendar is set up for the next one, not a calendar full of old open doors.</p>
+<figure><div class="row">
+<img src="images/cc-cat-black-kitten.svg" alt="The black kitten with a pink bow">
+<img src="images/cc-cat-siamese.svg" alt="The Siamese cat">
+<img src="images/cc-cat-sphynx.svg" alt="The Sphynx cat">
+<img src="images/cc-cat-silver-tabby.svg" alt="The silver tabby in a bow tie">
+<img src="images/cc-cat-cat-in-a-scarf.svg" alt="The cat in a scarf">
+</div><figcaption>A few of the 24 cats. They come free with every calendar type you own.</figcaption></figure>
+</section>
+
+<section class="pg" aria-labelledby="t-settings">
+<h2 id="t-settings"><span class="kick">Chapter 4</span>Make it yours: Settings</h2>
+<p>Tap the <b>gear</b> at the top right of any calendar you can edit. Here's what you'll find.</p>
+<div class="clear"></div>
+<div class="grid2">
+<div class="box"><h3>📅 Calendar and dates</h3><p>Change the type, title, date and number of doors. For Advent and Halloween you can also move the first door. Changing the type asks first, because it replaces the current doors.</p></div>
+<div class="box"><h3>📝 Details</h3><p>The names and facts that make it personal: partner names, years married, the birthday person and their age, the baby's name and parents, the graduate and school, the retiree, the trip and travelers, or a custom title.</p></div>
+<div class="box"><h3>🎨 Theme</h3><p>21 color themes, from Classic Night and Candy Cane to Spooky Night, Ruby, Sunny Beach, Golden Hour and Blue &amp; Silver. Each type's suggested themes are listed first.</p></div>
+<div class="box"><h3>🚪 Door style</h3><p>How the doors look and open: Classic, Cats, Dogs, Race Cars, Dinosaurs, Rocket Ships, Trucks or Farm Animals. Chapter 5 is all about them.</p></div>
+<div class="box"><h3>✨ Feel</h3><p><b>Haptics</b> (a little buzz when a door opens) and <b>Reduce animations</b> (calm fades instead of big moves).</p></div>
+<div class="box"><h3>⏰ Reminder</h3><p>A daily "Door N is ready!" nudge at the time you choose. See Chapter 7.</p></div>
+</div>
+<h3>Edit each door</h3>
+<p>Open <b>Edit each door</b> (Android: <b>Daily messages</b>) and tap any day to change its message and pick its animation. There are 75 to choose from, and any animation works with any type. You can also give a single door its own door style and look.</p>
+<p><b>Little magic words</b> fill themselves in when the door opens:</p>
+<table><thead><tr><th scope="col">Type this</th><th scope="col">And the door shows</th></tr></thead><tbody>
+<tr><td><code>{days}</code></td><td>"12 days" (or "1 day") until the last door</td></tr>
+<tr><td><code>{name}</code>, <code>{age}</code></td><td>The birthday person, baby, graduate or retiree, and the age they're turning</td></tr>
+<tr><td><code>{partner}</code>, <code>{years}</code>, <code>{ordinal}</code></td><td>Your partner's name (the name after the "&amp;", so "Alex" in "Sam &amp; Alex"), years married, and "25th"</td></tr>
+<tr><td><code>{destination}</code>, <code>{travelers}</code></td><td>Where you're going and who's coming</td></tr>
+</tbody></table>
+<p><b>Put a joke on two lines</b> and the second line becomes the tap-to-reveal punchline.</p>
+<p><b>Start over:</b> <b>Restore default messages</b> (Android: <b>Reset to defaults</b>) brings back the starter notes, animations and theme; names and dates stay. <b>Close all doors</b> re-closes every door.</p>
+</section>
+
+<section class="pg" aria-labelledby="t-styles">
+<h2 id="t-styles"><span class="kick">Chapter 5</span>Door styles (meet the cats and dogs)</h2>
+<p>A door style changes how your doors <i>look</i> and how they <i>open</i>. It works with any calendar type and any color theme. Find it in <b>Settings › Door style</b>, where every style has a live preview.</p>
+<div class="row" role="group" aria-label="Door style examples" style="gap:.07in">
+<img style="height:.64in" src="images/cc-classic-door.svg" alt="Classic: a paneled door with a bow">
+<img style="height:.64in" src="images/cc-cat-tuxedo.svg" alt="Cats: a tuxedo cat's face">
+<img style="height:.64in" src="images/cc-dog-corgi.svg" alt="Dogs: a corgi's face with a blue collar and a gold bone tag">
+<img style="height:.64in" src="images/cc-car-2.svg" alt="Race Cars: a yellow taxi">
+<img style="height:.64in" src="images/cc-egg-0.svg" alt="Dinosaurs: a green speckled egg in a nest">
+<img style="height:.64in" src="images/cc-hatch-0.svg" alt="Rocket Ships: a porthole looking at Earth">
+<img style="height:.64in" src="images/cc-truck-1.svg" alt="Trucks: a roll-up garage door">
+<img style="height:.64in" src="images/cc-barn-cow.svg" alt="Farm Animals: a red barn with a cow looking out of the hayloft window">
+</div>
+<table style="table-layout:fixed;width:100%"><colgroup><col style="width:17%"><col style="width:45%"><col style="width:29%"><col style="width:9%"></colgroup><thead><tr><th scope="col">Style</th><th scope="col">The closed door</th><th scope="col">How it opens</th><th scope="col">Price</th></tr></thead><tbody>
+<tr><th scope="row">🚪 Classic</th><td>The original paneled door with a bow</td><td>Swings open on its hinge</td><td><span class="tag free">Free</span></td></tr>
+<tr><th scope="row">🐱 Cats</th><td>24 cats, never the same one twice in a row</td><td>A cat flap that swings up</td><td><span class="tag free">Free</span></td></tr>
+<tr><th scope="row">🐶 Dogs</th><td>12 dogs, never the same one twice in a row</td><td>A pet flap that swings up</td><td><span class="tag free">Free</span></td></tr>
+<tr><th scope="row">🏎️ Race Cars</th><td>6 cars, from a racer to a hot rod</td><td>A car door that swings out</td><td>Everything</td></tr>
+<tr><th scope="row">🦖 Dinosaurs</th><td>Speckled eggs in a nest</td><td>The egg cracks and hatches</td><td>Everything</td></tr>
+<tr><th scope="row">🚀 Rockets</th><td>Portholes onto planets and stars</td><td>The hatch pops open</td><td>Everything</td></tr>
+<tr><th scope="row">🚚 Trucks</th><td>Dump trucks and garages</td><td>Bed tips, or garage rolls up</td><td>Everything</td></tr>
+<tr><th scope="row">🐮 Farm</th><td>A barn with a cow, chicken, pig, sheep or horse</td><td>The barn doors swing open</td><td>Everything</td></tr>
+</tbody></table>
+<aside class="aside left" aria-label="Aside from Sleepy Cat:"><img src="images/cc-cat-sleepy-cat-solo.svg" alt="The sleepy cat in a blue nightcap, eyes closed"><p class="bubble"><span class="who">Sleepy Cat:</span>I'm cat number 22. Wake me up on the 22nd. Not before. Thank you.</p></aside>
+<p><b>The cats:</b> tabby, orange, calico, tuxedo, black, fluffy white, Siamese, gray, kitten, Persian, Maine Coon, striped, Bengal, Russian Blue (with a bell), Scottish Fold (with glasses), Sphynx, ginger kitten (in a Santa hat), tortoiseshell, snowshoe, lilac point (with a flower), black kitten (with a bow), sleepy cat (in a nightcap), cat in a scarf, and silver tabby (in a bow tie). A 24-door Advent shows all 24. <b>The dogs:</b> golden retriever, black Lab, Dalmatian, beagle, corgi, poodle, husky, dachshund, pug, border collie, Chihuahua and a Santa-hat puppy.</p>
+<p><b>When a door opens,</b> the style's characters join in for a second or two above the surprise: a cat bats a paw, a puppy wags, a farm animal says hello, a dino stomps and roars, a car zooms past, a rocket lifts off, a truck tips out confetti. They never cover the note. The other styles rotate five or six looks.</p>
+<h3>Mix in fun facts &amp; jokes</h3>
+<p>Turn on <b>Mix in fun facts &amp; jokes for this style</b> under the style picker, and the starter notes become kid-friendly facts and jokes about that style (27 or 28 of them). If you've already written your own messages, the app asks first: <b>Keep My Messages</b>, <b>Replace Them Too</b>, or <b>Cancel</b>. Turn the switch off and the starter notes come back. Your own messages are never touched. The last door always keeps its big finale.</p>
+<p><b>One door, different style:</b> in <b>Edit each door</b>, pick a door and choose its <b>Door style</b> and <b>Look</b> ("Which cat? Calico"). <b>Got a calendar in a style you don't own?</b> It always shows the sender's style, free.</p>
+<div class="clear"></div>
+<div class="grid3">
+<div class="joke" role="note"><b>Cats:</b> What do you call a pile of kittens? <em>A meow-ntain!</em></div>
+<div class="joke" role="note"><b>Dinosaurs:</b> How do you invite a T. rex to a tea party? <em>Tea, Rex?</em></div>
+<div class="joke" role="note"><b>Rocket Ships:</b> How do you throw a party in space? <em>You planet!</em></div>
+</div>
+</section>
+
+<section class="pg" aria-labelledby="t-interview">
+<h2 id="t-interview"><span class="kick">Chapter 6</span>Help me write the notes</h2>
+<aside class="aside" aria-label="Aside from Lilac Point:"><img src="images/cc-cat-lilac-point-solo.svg" alt="The lilac point cat with a pink flower"><p class="bubble"><span class="who">Lilac Point:</span>Thirty love notes? I can't even write one. Good thing the app asks the questions.</p></aside>
+<p>Staring at 30 blank doors? The <b>guided interview</b> asks you a few friendly questions, skip any you like, and then writes a note for every door from your answers. It works right on your phone: no AI service, no internet, and your answers never leave your device. Only the finished notes go into the calendar.</p>
+<p><b>Works with:</b> Wedding, Anniversary, Valentine's Day, Birthday (with a <b>Kid</b> or <b>Grown-up</b> tone), Baby, Graduation, Retirement, Vacation and Custom.</p>
+<ol class="steps">
+<li>Open <b>Settings › Guided interview</b> (Android: <b>Help me write the notes</b>).</li>
+<li>For a wedding, choose who's writing: <b>Bride</b>, <b>Groom</b> or <b>Partner</b>. For a birthday, pick the Kid or Grown-up style.</li>
+<li>Answer the questions. Some examples:
+<ul><li>Wedding: "Where did you two first meet?" … "One promise you want to make to them?"</li>
+<li>Birthday: "What's their favorite thing right now?"</li>
+<li>Vacation: "What's the one thing you have to eat?"</li>
+<li>Retirement: "What's a funny work story about them?"</li></ul></li>
+<li><b>iPhone and iPad:</b> all the questions sit on one page. Tap <b>Write My 30 Messages</b>. <b>Android:</b> one question per screen with <b>Skip</b>, then a preview where you can <b>Regenerate</b>, edit any note, and accept.</li>
+</ol>
+<figure><img src="images/cc-shot-06-notes-preview.png" alt="A preview list titled 'Your love notes', showing notes written from interview answers, with Shuffle, Edit and Use these notes buttons" style="max-height:3.2in"><figcaption>A design preview of the notes the interview writes</figcaption></figure>
+<p>On a wedding calendar, the doors just before the big day are saved for what you're most excited about and your promise, and the wedding day gets the finale. For example, "Sam &amp; Alex" get 30 days of notes ending in "Wedding Day!" If you've edited some notes and run the interview again, it asks whether to keep yours or replace them all.</p>
+</section>
+
+<section class="fl" aria-labelledby="t-remind">
+<h2 id="t-remind"><span class="kick">Chapter 7</span>Daily reminders</h2>
+<aside class="aside" aria-label="Aside from Black Kitten:"><img src="images/cc-cat-black-kitten-solo.svg" alt="The black kitten wearing a pink bow"><p class="bubble"><span class="who">Black Kitten:</span>Ding! Door 7 is ready! (I'm not the reminder. I just like saying it.)</p></aside>
+<p>Never miss a door. In <b>Settings › Reminder</b>, turn on <b>Daily reminder</b> and choose a <b>Time</b> (it starts at 9:00 AM). The first time, your phone asks if Countdown Calendar can send notifications.</p>
+<ul>
+<li>On each day a door unlocks, you'll get a notification with the calendar's title and <b>"Door N is ready!"</b> Tap it to open the calendar (Android).</li>
+<li>It <b>never shows the message</b>, so surprises stay surprises.</li>
+<li>Reminders stop after the last door. Yearly holidays start up again next season.</li>
+<li>Reminders are set on your phone itself. There's no push service and no server.</li>
+<li>Reminders belong to your phone, not to the calendar. A reminder never travels with a gift, and someone who receives a gift-locked calendar can still turn on their own.</li>
+</ul>
+<div class="box note"><b>If you said "Don't Allow" by mistake:</b> the switch stays off and the app offers to open your phone's Settings, where you can turn notifications on for Countdown Calendar.</div>
+<p class="small">Very long calendars on iPhone (say, 280 days for a baby) keep reminding as long as you open the app now and then, at least every couple of months. On Android, battery saving can sometimes deliver a reminder a few minutes late.</p>
+<div class="joke" role="note"><b>From the Halloween calendar:</b> Why are ghosts bad at telling lies? <em>Because you can see right through them!</em></div>
+</section>
+
+<section class="fl" aria-labelledby="t-share">
+<h2 id="t-share"><span class="kick">Chapter 8</span>Sharing and the gift lock</h2>
+<aside class="aside" aria-label="Aside from Persian:"><img src="images/cc-cat-persian-solo.svg" alt="The fluffy cream Persian cat"><p class="bubble"><span class="who">Persian:</span>Gift lock means no peeking. I peeked once. The door just wiggled at me. Rude.</p></aside>
+<p>A Countdown Calendar makes a lovely gift for a grandchild, a fiancé or a best friend. Open <b>Settings › Share or send as a gift…</b> (Android: <b>Gift &amp; sharing</b>, or the share icon on the calendar). Christmas Advent and Hanukkah calendars can always be shared for free. Every other calendar you make can be shared for free too, and <b>opening a shared calendar is always free</b>, for every type and every door style.</p>
+<h3>Three ways to send it</h3>
+<div class="clear"></div>
+<div class="grid3">
+<div class="box"><h3>📄 As a file</h3><p>Sends a <b>.countdown</b> file by Messages, email, AirDrop, Files or any app on your share sheet. Tap the file on the other phone and it opens in the app. On Android you can also <b>Save to Files…</b></p></div>
+<div class="box"><h3>🔳 As a QR code</h3><p>Shown when the calendar fits (the starter calendars do). The other person opens <b>My Calendars › Scan QR Code</b> and points their camera at your screen, or at a printout.</p></div>
+<div class="box"><h3>🔗 As a link</h3><p>A <b>countdowncalendar://</b> link for messages. If an app doesn't make it tappable, copy it and use <b>My Calendars › Paste Link</b> (iPhone), or share the text to the app (Android).</p></div>
+</div>
+<p><b>iPhone and Android get along.</b> The file, link and QR code work in both directions. Open a calendar you already have (say, an updated copy) and the app asks <b>Replace your copy?</b> Tap <b>Replace</b>, <b>Keep Both</b> or <b>Cancel</b>.</p>
+<h3>🎁 Gift lock and the "From" line</h3>
+<ol class="steps">
+<li>Set <b>From</b>, for example "From Grandma ❤️" or "From Sam &amp; Alex". It shows on the calendar and on every surprise.</li>
+<li>Turn on <b>Gift lock</b>.</li>
+<li>Share it.</li>
+</ol>
+<p>Whoever receives a gift-locked calendar <b>can't edit it, can't open future doors early</b> (not even in preview mode), and its messages aren't listed anywhere. Your own copy stays fully editable.</p>
+<div class="box note"><b>The honest part:</b> gift lock is a <i>friendly</i> lock that keeps the surprise. It isn't encryption. A shared calendar is a plain file, so a determined person could read it. Share with people you trust, and keep anything private out of the messages.</div>
+<p><b>What's in a shared calendar:</b> the type, title, dates, every door's message and animation, the theme and door styles, the names and details you entered, the From line and the gift-lock setting. <b>What isn't:</b> your interview answers, which doors you've opened, and your reminder settings.</p>
+</section>
+
+<section class="pg" aria-labelledby="t-my">
+<h2 id="t-my"><span class="kick">Chapter 9</span>My Calendars</h2>
+<aside class="aside" aria-label="Aside from Tuxedo:"><img src="images/cc-cat-tuxedo-solo.svg" alt="The tuxedo cat"><p class="bubble"><span class="who">Tuxedo:</span>I keep all my calendars here. Also my snacks. Mostly snacks.</p></aside>
+<p><b>My Calendars</b> is home base: the stack icon at the top left on iPhone and iPad, the list icon on Android. Make as many calendars as you like, and every one keeps its own doors.</p>
+<ul>
+<li><b>My Calendars:</b> the ones you made and the ones people sent you. Tap one to open it.</li>
+<li><b>Add a calendar:</b> <b>New Calendar</b>, <b>Scan QR Code</b>, <b>Open a Shared File</b> and <b>Paste Link</b> (iPhone). On Android: <b>＋ New calendar</b>, <b>Open a file</b>, <b>Scan QR</b> and <b>Preview a kind</b>.</li>
+<li><b>Samples:</b> read-only examples of every type with all their doors open.</li>
+<li><b>Delete:</b> swipe left and tap Delete (iPhone), or press and hold (Android). It's removed from this device only.</li>
+</ul>
+<h3>Can I edit a calendar someone sent me?</h3>
+<p>It depends. A <b>gift-locked</b> calendar is look-but-don't-touch, though you can still use <b>Feel</b> (haptics and reduce animations) and turn on your own daily reminder. A calendar of a type you haven't unlocked opens and works perfectly, every door, note and animation included; to edit it, the app shows "Shared with you. Get the Holiday Pack, or Everything, to edit it or make your own." (For a Wedding, Birthday or other special-occasion calendar, it names the Special Occasions Pack instead.) Passing it on is free: you can share any calendar you own.</p>
+<div class="box tint"><b>Moving to a new phone?</b> Purchases come back with <b>Restore Purchases</b>. Your calendars live on your phone, so they move with your phone's own backup (iCloud on iPhone and iPad, or Google's backup on Android). You can also share each calendar to yourself as a file before you switch.</div>
+<div class="row" aria-hidden="false">
+<img src="images/cc-egg-3.svg" alt="A blue speckled dinosaur egg, number 8">
+<img src="images/cc-dino-dinoPeek.svg" alt="A baby green dinosaur peeking out of a cracked egg">
+<img src="images/cc-dino-longNeck.svg" alt="A long-necked blue dinosaur munching leaves">
+</div>
+<p class="end small">The Dinosaurs style, from egg to peek to "whoa, long neck."</p>
+</section>
+
+<section class="pg" aria-labelledby="t-premium">
+<h2 id="t-premium"><span class="kick">Chapter 10</span>What unlocking adds</h2>
+<aside class="aside" aria-label="Aside from Calico:"><img src="images/cc-cat-calico-solo.svg" alt="The calico cat, our ringleader"><p class="bubble"><span class="who">Calico:</span>Four of us stood on each other's shoulders to reach the Everything button. Worth it.</p></aside>
+<p>Christmas Advent and Hanukkah (sharing too), the Classic, Cats and Dogs styles, and opening any calendar sent to you are <b>free, for keeps</b>. Here's what's waiting if you want more.</p>
+<figure style="margin:.04in 0"><div class="row" style="--h:.7in">
+<img style="height:.7in" src="images/cc-car-1.svg" alt="A teal convertible door">
+<img style="height:.7in" src="images/cc-egg-2.svg" alt="An orange speckled egg">
+<img style="height:.7in" src="images/cc-hatch-3.svg" alt="A porthole looking at Saturn">
+<img style="height:.7in" src="images/cc-truck-2.svg" alt="A dump truck with a gray bed">
+<img style="height:.7in" src="images/cc-barn-pig.svg" alt="A barn with a pig in the hayloft window">
+</div><figcaption>The paid door styles. The cats are watching them suspiciously.</figcaption></figure>
+<div class="clear"></div>
+<div class="grid2">
+<div class="box"><h3>🦖 Doors that hatch, zoom, pop and tip</h3><p>An egg hatches a stomping baby dino, a car door swings open, a porthole pops on Mars, a dump bed tips, barn doors swing wide. <span class="price">All 5 come with Everything, $2.99</span></p></div>
+<div class="box"><h3>💌 Thirty love notes, written for you</h3><p>Wedding, Anniversary and Valentine's Day calendars come with the guided interview, so a few answers turn into a note for every door. <span class="price">Valentine's is in the Holiday Pack; Wedding and Anniversary are in the Special Occasions Pack, $1.99 each</span></p></div>
+<div class="box"><h3>💍 The wedding countdown</h3><p>7 to 100 doors, hearts and rings, and "Wedding Day!" on the big day. <span class="price">Special Occasions Pack, $1.99</span></p></div>
+<div class="box"><h3>✨ Custom: any date, any reason</h3><p>A classroom countdown to winter break, Grandpa's visit, the new puppy. Up to 365 doors and your own title. <span class="price">Special Occasions Pack, $1.99</span></p></div>
+</div>
+<table style="table-layout:fixed;width:100%"><colgroup><col style="width:25%"><col style="width:62%"><col style="width:13%"></colgroup><thead><tr><th scope="col">Unlock</th><th scope="col">What you get</th><th scope="col">Price</th></tr></thead><tbody>
+<tr><th scope="row">🎃 Holiday Pack</th><td>Halloween, Thanksgiving, New Year's Eve, Valentine's Day and Easter, with editing</td><td>$1.99</td></tr>
+<tr><th scope="row">💍 Special Occasions Pack</th><td>Wedding, Anniversary, Birthday, Baby, Retirement, Graduation, Vacation and Custom, with editing</td><td>$1.99</td></tr>
+<tr><th scope="row">⭐ Everything</th><td><b>Both packs plus every paid door style</b> (Race Cars, Dinosaurs, Rocket Ships, Trucks and Farm Animals), with editing. Family Sharing on iPhone and iPad</td><td><b>$2.99</b></td></tr>
+</tbody></table>
+<p><b>How it works:</b> tap anything with a 🔒 to see its preview, then pick the pack that includes it, or Everything. Each one is a one-time purchase through Apple or Google: no subscription, nothing to renew.</p>
+<p><b>Restore Purchases</b> is on every unlock screen. Use it on a new phone or after reinstalling, with the same Apple or Google account. <b>Family Sharing:</b> on iPhone and iPad, <b>Everything</b> is shared with your family group (if it doesn't appear, they tap Restore Purchases). The Holiday and Special Occasions Packs aren't shared. On Android, Google Play doesn't share in-app purchases with a family group, so each Google account buys its own.</p>
+<div class="clear"></div>
+</section>
+
+<section class="pg" aria-labelledby="t-phil">
+<h2 id="t-phil"><span class="kick">Chapter 11</span>Our philosophy and your privacy</h2>
+<div class="clear"></div>
+<div class="grid2">
+<div>
+<p>We make apps the way we'd want them for our own family. You pay once, a little, for what you want. There are no ads, no subscriptions and no accounts, and <b>we don't collect or share your data</b>. Your calendars stay on your device.</p>
+<p>Countdown Calendar comes from Zyzygy, Inc., a small company in Goldthwaite, Texas.</p>
+</div>
+<div class="box tint"><h3>What we don't do</h3>
+<ul class="dont"><li>No ads</li><li>No subscriptions</li><li>No accounts</li><li>No analytics or tracking</li><li>No data collected or shared</li></ul></div>
+</div>
+<h3>The fine print, in plain words</h3>
+<ul>
+<li><b>Everything stays on your device:</b> your calendars, names, messages, which doors you've opened, interview answers and reminder settings. Zyzygy has no server and never receives any of it.</li>
+<li><b>The internet is only for purchases.</b> Buying or restoring goes through Apple or Google, under their privacy policies. We never see your payment details. Everything else works without the internet.</li>
+<li><b>Sharing goes only where you send it.</b> A shared calendar travels by the message, email, file or QR code you choose. Remember that it isn't encrypted (see Chapter 8).</li>
+<li><b>The camera</b> is used only when you tap Scan QR Code, to read a calendar's code. Nothing is saved or sent, and the app asks first.</li>
+<li><b>Notifications</b> are optional, scheduled on your phone, and off until you turn them on. On Android the app re-schedules them after your phone restarts.</li>
+<li><b>Backups:</b> your phone's own backup may include the app's data, so a new phone can restore it. That's iCloud on iPhone and iPad, or the backup in your personal Google account on Android if you use it. Those backups belong to your Apple or Google account. Zyzygy never receives or sees them.</li>
+<li><b>Delete anything</b> from My Calendars, or delete the app to remove everything it stored. Purchases stay with your Apple or Google account.</li>
+</ul>
+<aside class="aside left" aria-label="Aside from Siamese:"><img src="images/cc-cat-siamese-solo.svg" alt="The Siamese cat"><p class="bubble"><span class="who">Siamese:</span>We don't even know your name. We're cats. We'd forget it anyway.</p></aside>
+<p>Countdown Calendar is for families of all ages. Grown-ups make and share the calendars, and kids open the doors. We don't collect personal information from anyone, including children.</p>
+<div class="clear"></div>
+</section>
+
+<section class="pg" aria-labelledby="t-trouble">
+<h2 id="t-trouble"><span class="kick">Chapter 12</span>Troubleshooting</h2>
+<aside class="aside" aria-label="Aside from Sphynx:"><img src="images/cc-cat-sphynx-solo.svg" alt="The Sphynx cat with big ears"><p class="bubble"><span class="who">Sphynx:</span>Big ears. Great for listening to problems.</p></aside>
+<div class="faq">
+<h3>A door won't open.</h3><p>It isn't its day yet. Doors unlock at midnight, your local time. Tap it and it tells you when to come back. If your phone's date or time zone is wrong, fix it in your phone's settings.</p>
+<h3>All the doors are open and I didn't open them!</h3><p>You may be looking at a <b>sample</b> (it says "Sample calendar · every door is open"), or preview mode is on. Press and hold the title to leave preview mode, then use Close All.</p>
+<h3>The link isn't tappable.</h3><p>Some apps don't make custom links tappable. Copy the link and use <b>My Calendars › Paste Link</b> on iPhone, share the text to Countdown Calendar on Android, or ask the sender for the file or QR code.</p>
+<h3>"Too big for a QR code."</h3><p>Lots of long messages can make a calendar too big for a QR code. Share it as a file instead.</p>
+<h3>"This calendar is too big to open (over 2 MB)" or "This doesn't look like a Countdown Calendar."</h3><p>The file or link is damaged, cut off, or isn't a calendar. Ask the sender to share it again, as a file if possible. Nothing is saved when this happens.</p>
+<h3>I can't edit a calendar someone sent me.</h3><p>It's gift-locked, or it's a type you haven't unlocked. See Chapter 9.</p>
+<h3>My reminder didn't come.</h3><p>Check that notifications are allowed for Countdown Calendar in your phone's settings and that the reminder is on for that calendar. Reminders only fire on days a new door unlocks. On Android, battery saving can delay one by a few minutes.</p>
+<h3>Prices didn't load, or the Unlock button is gray.</h3><p>Prices come from Apple or Google, so you need an internet connection. Tap <b>Prices didn't load. Try again</b>. On Android, the app also needs Google Play.</p>
+<h3>I bought something, but it's locked on my new phone.</h3><p>Tap <b>Restore Purchases</b> on any unlock screen, signed in to the same Apple or Google account you bought with.</p>
+<h3>My new Easter calendar is set for next year.</h3><p>That's on purpose. Once a holiday has passed, a new calendar counts down to the next one.</p>
+</div>
+</section>
+
+<section class="fl" aria-labelledby="t-faq">
+<h2 id="t-faq"><span class="kick">Chapter 13</span>FAQ</h2>
+<aside class="aside" aria-label="Aside from Cat in a Scarf:"><img src="images/cc-cat-cat-in-a-scarf-solo.svg" alt="The orange and white cat wearing a green scarf"><p class="bubble"><span class="who">Cat in a Scarf:</span>Frequently Asked Questions. Also Frequently Asked Treats.</p></aside>
+<div class="faq">
+<h3>Does the person I send it to have to pay?</h3><p>No. Opening a shared calendar is always free, for every type and every door style, gift-locked ones included. They see your door style and every door's surprise exactly as you made them.</p>
+<h3>Do I have to pay to share?</h3><p>No. Sharing is free for any calendar you can make, and door styles never affect sharing.</p>
+<h3>Does Family Sharing work?</h3><p>For <b>Everything</b> on iPhone and iPad, yes: everyone in your Apple Family Sharing group gets it. The two packs aren't shared, and it shares the purchase only, never your calendars. On Android, Google Play doesn't share in-app purchases with a family group, so each Google account buys its own.</p>
+<h3>Can I send a calendar from my iPhone to an Android phone?</h3><p>Yes. Files, links and QR codes work both ways.</p>
+<h3>Can I add photos behind the doors?</h3><p>No. Doors hold messages, jokes and animations. The door art is drawn by the app itself.</p>
+<h3>How many calendars can I make?</h3><p>As many as you like, of any type you've unlocked.</p>
+<h3>Can I change a calendar after I've shared it?</h3><p>Yes, on your copy. Share it again. When they open it, the app asks <b>Replace your copy?</b> (Replace, Keep Both or Cancel).</p>
+<h3>Will the reminder spoil the surprise?</h3><p>No. It only says "Door N is ready!" and never shows the message.</p>
+<h3>How are Hanukkah, Easter and Thanksgiving dates worked out?</h3><p>The app calculates them every year: Hanukkah from the Hebrew calendar, Easter Sunday with the standard Western method, and Thanksgiving as the fourth Thursday of November (US).</p>
+<h3>Does it work without the internet?</h3><p>Yes. Only buying or restoring a purchase needs a connection, and sending a calendar uses whatever you choose to send it with.</p>
+<h3>Is it accessible?</h3><p>Every door reads its date and whether it's locked, ready or opened to VoiceOver and TalkBack. Text grows with your phone's text-size setting (Dynamic Type on iPhone and iPad, font size on Android), and Reduce animations swaps every movement for a gentle fade.</p>
+</div>
+<div class="joke" role="note"><b>One more for the road:</b> Why does Santa go down the chimney? <em>Because it soots him!</em></div>
+</section>
+
+<section class="pg" aria-labelledby="t-hello">
+<h2 id="t-hello"><span class="kick">The last door</span>Say hello</h2>
+<div class="cover" style="text-align:center">
+<p class="lead" style="margin-top:0">Questions, ideas, or a story about the best countdown ever? We'd love to hear it.</p>
+<p style="font-size:16pt;margin:.06in 0"><b>support@zyzygy.us</b></p>
+<p>We reply within 2 business days.</p>
+<p>Website: <b>zyzygy.us</b></p>
+<div class="cast"><img src="images/cc-cat-ginger-kitten.svg" alt="The ginger kitten in a Santa hat"><img src="images/cc-cat-black-kitten.svg" alt="The black kitten with a pink bow"><img src="images/cc-cat-sleepy-cat.svg" alt="The sleepy cat in a nightcap"><img src="images/cc-cat-scottish-fold.svg" alt="The Scottish Fold in glasses"></div>
+<p class="small">Countdown Calendar is coming this holiday season to the App Store and Google Play. Prices are set in the stores and shown here as current US prices. © Zyzygy, Inc., Goldthwaite, Texas.</p>
+</div>
+<div class="clear"></div>
+<div class="grid2" style="margin-top:.15in">
+<div class="joke" role="note"><b>Race Cars:</b> What kind of car does a sheep drive? <em>A Lamb-orghini!</em></div>
+<div class="joke" role="note"><b>Trucks:</b> What do you call a sleeping bulldozer? <em>A dozer!</em></div>
+</div>
+<p class="end small">You've reached the end of the guide. No more doors here. (We checked. Twice.)</p>
+</section>
+</main></body></html>
