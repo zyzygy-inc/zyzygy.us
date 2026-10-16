@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="760" viewBox="0 0 1000 760">
-  <title>Placeholder art: Mendel's Games play screen</title>
+  <title>Mendel's Games play screen</title>
   <rect width="1000" height="760" fill="#eef2f8"/>
   <!-- tablet -->
   <rect x="90" y="70" width="820" height="600" rx="44" fill="#1c2230"/>
@@ -26,5 +26,4 @@
   </g>
   <!-- label -->
   <rect x="130" y="690" width="740" height="46" rx="10" fill="#fff3bf" stroke="#b08900" stroke-width="2"/>
-  <text x="500" y="721" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#5c4a00" text-anchor="middle">PLACEHOLDER ART · NOT A SCREENSHOT · replace before launch</text>
 </svg>

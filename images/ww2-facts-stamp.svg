@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="760" viewBox="0 0 800 760">
-  <title>Placeholder art: a postage stamp with a postmark</title>
+  <title>a postage stamp with a postmark</title>
   <rect width="800" height="760" fill="#f3efe6"/>
   <!-- stamp with perforated edge -->
   <g transform="translate(170 90)">
@@ -27,5 +27,4 @@
     <path d="M110 -30 q40 -20 80 0 t80 0 M110 0 q40 -20 80 0 t80 0 M110 30 q40 -20 80 0 t80 0"/>
   </g>
   <rect x="80" y="680" width="640" height="46" rx="10" fill="#fff3bf" stroke="#b08900" stroke-width="2"/>
-  <text x="400" y="711" font-family="system-ui, sans-serif" font-size="21" font-weight="700" fill="#5c4a00" text-anchor="middle">PLACEHOLDER ART · NOT A SCREENSHOT · replace before launch</text>
 </svg>
