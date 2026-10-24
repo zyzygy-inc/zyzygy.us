@@ -62,3 +62,18 @@ nav a.here{text-decoration:underline;text-decoration-style:dotted;text-underline
 .splash .btn.alt{background:transparent;color:#fff;border:2px solid #fff}
 .splash .btn.big{background:#ffd23f;color:#0f1e3d;font-size:1.15rem;padding:.85rem 1.6rem}
 @media (max-width:30rem){nav ul{gap:.35rem .8rem}nav a{font-size:.95rem}}
+/* Oct 23, 2026 round 2: list entries, galleries, decorative strips. */
+.applist{list-style:none;padding:0;margin:1rem 0;display:grid;gap:1rem}
+.applist li{display:flex;gap:1rem;align-items:center;background:#fff;border:1px solid var(--line);border-radius:1rem;padding:1rem}
+.applist img{width:6rem;height:6rem;object-fit:cover;border-radius:.75rem;flex:none}
+.applist .when{display:block;color:var(--muted);font-size:.95rem}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:1.25rem;margin-top:1.25rem}
+.gallery figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:1rem;padding:.6rem}
+.gallery img{display:block;width:100%;border-radius:.6rem}
+.gallery figcaption{font-size:.95rem;color:var(--muted);padding:.4rem .2rem 0}
+.strip{display:flex;justify-content:center;flex-wrap:wrap;gap:.75rem;padding:1.25rem 0}
+.strip img{width:5.5rem;height:5.5rem;object-fit:cover;border-radius:50%;border:3px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.15)}
+.scroller{display:flex;gap:1rem;overflow-x:auto;padding:.5rem 0 1rem;scroll-snap-type:x mandatory}
+.scroller figure{flex:0 0 16rem;margin:0;scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:1rem;padding:.5rem}
+.scroller img{display:block;width:100%;border-radius:.6rem}
+.scroller figcaption{font-size:.95rem;font-weight:600;padding:.4rem .2rem 0}
