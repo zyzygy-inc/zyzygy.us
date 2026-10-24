@@ -1,0 +1,7 @@
+9c2fdf0fd124aee84ce1801bbc00e86048c0331340717b8e947be0b7790b4b8b  door-a-day-1.0.26.apk
+06d0422f14f0616a553bc8e14f31f9cabb3da2fa247ac3bce62c38d171744b79  kittys-fun-emporium-1.0.23.apk
+91ddc65041c65dc117a5f2ca6269b3674917a46efba556e2e67d5a8dcf99d2ab  mendels-games-1.0.2.apk
+e93c9e02e19504b65311557d2b6e4bc43701dce3718b39b5c63972c60c93a8ae  peggys-presidents-1.0.17.apk
+6fd3939c708a617add1ea8fa67d6c819f4b2230fd4dc3bf7fcac79055dba3bb1  puns-apple-tree-1.0.7.apk
+42c27a564101e0a8a5a7c2cdf0c143f6f2d72edb293d31d6cdc2a5c1cff26a79  reward-buddy-1.0.3.apk
+1741546aaebd1a3df3cc4debbdcdc11d28f7cb17e56e281a5c9f5b44faabda14  wwii-facts-1.0.apk
