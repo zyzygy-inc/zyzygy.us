@@ -77,3 +77,11 @@ nav a.here{text-decoration:underline;text-decoration-style:dotted;text-underline
 .scroller figure{flex:0 0 16rem;margin:0;scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:1rem;padding:.5rem}
 .scroller img{display:block;width:100%;border-radius:.6rem}
 .scroller figcaption{font-size:.95rem;font-weight:600;padding:.4rem .2rem 0}
+
+/* Kitty games grid (staging 2026-10-23) */
+.game-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem;padding:.5rem 0 1rem}
+@media (min-width:40rem){.game-grid{grid-template-columns:repeat(3,1fr);gap:1rem}}
+@media (min-width:60rem){.game-grid{grid-template-columns:repeat(4,1fr)}}
+.game-grid figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:1rem;padding:.5rem;display:flex;flex-direction:column}
+.game-grid figcaption{font-size:.95rem;font-weight:600;line-height:1.25;padding:.1rem .2rem .45rem;color:#14264a}
+.game-grid img{display:block;width:100%;height:auto;border-radius:.6rem;margin-top:auto}
