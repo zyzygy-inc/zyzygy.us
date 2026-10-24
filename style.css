@@ -77,3 +77,9 @@ nav a.here{text-decoration:underline;text-decoration-style:dotted;text-underline
 .scroller figure{flex:0 0 16rem;margin:0;scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:1rem;padding:.5rem}
 .scroller img{display:block;width:100%;border-radius:.6rem}
 .scroller figcaption{font-size:.95rem;font-weight:600;padding:.4rem .2rem 0}
+
+.game-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem;padding:.5rem 0 1rem}
+@media (min-width:40rem){.game-grid.four{grid-template-columns:repeat(4,1fr);gap:1rem}}
+.game-grid figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:1rem;padding:.5rem}
+.game-grid img{display:block;width:100%;height:auto;border-radius:.6rem}
+.game-grid figcaption{font-size:.95rem;font-weight:600;line-height:1.25;padding:.4rem .2rem 0}
